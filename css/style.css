@@ -104,9 +104,12 @@ table{
   border-radius: 4px;
   box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
 }
+
+
+
 /* checked mark aspect */
-[type="checkbox"]:not(:checked) + label:after,
-[type="checkbox"]:checked + label:after {
+[type="checkbox"].checkbox-checked + label:after,
+[type="checkbox"].checkbox-checked + label:after {
   content: '\2713\0020';
   position: absolute;
   top: .15em; left: .22em;
@@ -121,7 +124,7 @@ table{
   opacity: 0;
   transform: scale(0);
 }
-[type="checkbox"]:checked + label:after {
+[type="checkbox"].checkbox-checked + label:after {
   opacity: 1;
   transform: scale(1);
 }
@@ -133,7 +136,7 @@ table{
   
   
 }
-[type="checkbox"]:checked + label:before{
+[type="checkbox"].checkbox-checked + label:before{
     background: #0ad1f1;
 }
 
@@ -165,6 +168,11 @@ label:hover:before {
 
 .height50{
     height: 50px;
+    vertical-align: top;
+}
+
+.height100{
+    height: 100px;
     vertical-align: top;
 }
 
