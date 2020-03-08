@@ -86,7 +86,7 @@
                 </tr>                
                 <tr>
                     <td class="">
-                        Personal Information 個人資料  <strong>XXXXXXXX</strong>
+                        Personal Information 個人資料 
                     </td>
                 </tr>
                 <tr>
@@ -103,7 +103,7 @@
                                     <strong>Given Name:</strong>
                                 </td>
                                 <td width="25%">
-                                    <strong>XXXXXXXX</strong>
+                                    <!-- <strong>XXXXXXXX</strong> -->
                                 </td>
                             </tr>
                             
@@ -124,7 +124,7 @@
                                     <strong>名:</strong>
                                 </td>
                                 <td  width="25%">
-                                    <strong>XXXXXXXX</strong>
+                                    <!-- <strong>XXXXXXXX</strong> -->
                                 </td>
                             </tr>
                             
@@ -139,14 +139,15 @@
                                     <strong>Date of Birth</strong> <br>出生日期:            
                                 </td>
                                 <td class=" bod-right" width="30%">
-                                    <div class="right-align">(日/月/年) <br>(dd/mm/yyyy)</div>
+                                  <strong>{{account_info.dob}}</strong>
+                                  <div class="right-align">(日/月/年) <br>(dd/mm/yyyy)</div>
                                 </td>
                                 <td class="light bod-right" width="25%">
                                     <strong>Place of Birth</strong><br>
                                         出生地:
                                 </td>
                                 <td  width="30%">
-                                    <strong>XXXXXXXX</strong>
+                                    <strong>{{account_info.place_of_birth_country_string}}</strong>
                                 </td>
                             </tr>
                             
@@ -162,14 +163,14 @@
                                     <strong>Nationality</strong> <br>國籍:           
                                 </td>
                                 <td class=" bod-right" width="30%">
-                                    <strong>XXXXXXXX</strong>
+                                    <strong>{{account_info.identification_country}}</strong>
                                 </td>
                                 <td class="light bod-right" width="25%">
                                     <strong>Identity Card / Passport No.</strong><br>
                                     身份證/護照號碼:
                                 </td>
                                 <td  width="30%">
-                                    <strong>XXXXXXXX</strong>
+                                    <strong>{{account_info.identification_number}}</strong>
                                 </td>
                             </tr>
                             
@@ -224,10 +225,12 @@
                                 <td class="  pad0" width="85%" >
                                     <table width="100%">
                                         <tr>
-                                            <td class="bod-bottom"><strong>XXXXXXXX</strong></td>
+                                            <td class="bod-bottom"><strong>{{account_info.address}}</strong></td>
                                         </tr>
                                         <tr>
-                                            <td><strong>XXXXXXXX</strong></td>
+                                            <td>
+                                              <!-- <strong>XXXXXXXX</strong> -->
+                                            </td>
                                         </tr>
 
 
@@ -312,7 +315,7 @@
                                     僱主（如屬自僱，謹請註明）:
                                 </td>
                                 <td class="" width="67%">
-                                    <strong>XXXXXXXX</strong>
+                                    <strong>{{account_info.employer_address}}</strong>
                                     
                                 </td>
                              
@@ -737,7 +740,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                     </td>
                     <td class="" width="30%">
                         <div class="bod-bottom">
-                            <strong>XXXXXXXX</strong>
+                            <strong>{{account_info.bank_name}}</strong>
                         </div>
                         
                     </td>
@@ -748,7 +751,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                     </td>
                     <td width="35%">
                         <div class="bod-bottom">
-                            <strong>XXXXXXXX</strong>
+                          <strong>{{account_info.bank_account_number}}</strong>
                         </div>
                     </td>
                 </tr>
@@ -761,7 +764,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                     </td>
                     <td colspan="3" width="80%">
                         <div class="bod-bottom">
-                            <strong>XXXXXXXX</strong>
+                            <strong>{{account_info.bank_account_holder}}</strong>
                         </div>
                     </td>
 
@@ -956,7 +959,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 </td>
                 <td class="height50" width="20%">
                     Mr/Mrs/Miss/Ms.<br>
-                    <strong>XXXXXXXX</strong>
+                    <strong>{{account_info.authorised_person_1_name}}</strong>
                 </td>
                 <td class="dark height50" width="20%">
                     Relationship: <br>
@@ -964,7 +967,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 </td>
                 <td class="height50" width="20%">
                    
-                    <strong>XXXXXXXX</strong>
+                    <strong>{{account_info.authorised_person_1_relationship}}</strong>
                 </td>
                 <td class="" rowspan="2" valign="bottom" width="22%">
                    
@@ -978,7 +981,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 </td>
                 <td class="height50">
                     
-                    <strong>XXXXXXXX</strong>
+                  <strong>{{account_info.authorised_person_1_id_card}}</strong>
                 </td>
                 <td class="dark height50">
                     Contact Tel. No <br>
@@ -987,7 +990,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 </td>
                 <td class="height50">
                    
-                    <strong>XXXXXXXX</strong>
+                  <strong>{{account_info.authorised_person_1_country_phone_code}}{{account_info.authorised_person_1_phone_number}}</strong>
                 </td>
                
             </tr>
@@ -999,15 +1002,14 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 </td>
                 <td class="height50">
                     Mr/Mrs/Miss/Ms.<br>
-                    <strong>XXXXXXXX</strong>
+                    <strong>{{account_info.authorised_person_2_relationship}}</strong>
                 </td>
                 <td class="dark height50">
                     Relationship: <br>
                     關係:
                 </td>
                 <td class="height50">
-                   
-                    <strong>XXXXXXXX</strong>
+                  <strong>{{account_info.authorised_person_2_relationship}}</strong>
                 </td>
                 <td class="" rowspan="2" valign="bottom">
                    
@@ -1021,7 +1023,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 </td>
                 <td class="height50">
                     
-                    <strong>XXXXXXXX</strong>
+                  <strong>{{account_info.authorised_person_2_id_card}}</strong>
                 </td>
                 <td class="dark height50">
                     Contact Tel. No <br>
@@ -1030,7 +1032,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 </td>
                 <td class="height50">
                    
-                    <strong>XXXXXXXX</strong>
+                  <strong>{{account_info.authorised_person_2_country_phone_code}}{{account_info.authorised_person_2_phone_number}}</strong>
                 </td>
                
             </tr>
@@ -1042,7 +1044,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 </td>
                 <td class="height50">
                     Mr/Mrs/Miss/Ms.<br>
-                    <strong>XXXXXXXX</strong>
+                    <strong>{{account_info.authorised_person_3_name}}</strong>
                 </td>
                 <td class="dark height50">
                     Relationship: <br>
@@ -1050,7 +1052,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 </td>
                 <td class="height50">
                    
-                    <strong>XXXXXXXX</strong>
+                  <strong>{{account_info.authorised_person_3_relationship}}</strong>
                 </td>
                 <td class="" rowspan="2" valign="bottom">
                    
@@ -1064,7 +1066,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 </td>
                 <td class=" height50">
                     
-                    <strong>XXXXXXXX</strong>
+                  <strong>{{account_info.authorised_person_3_id_card}}</strong>
                 </td>
                 <td class="dark height50">
                     Contact Tel. No <br>
@@ -1073,7 +1075,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 </td>
                 <td class="height50">
                    
-                    <strong>XXXXXXXX</strong>
+                  <strong>{{account_info.authorised_person_3_country_phone_code}}{{account_info.authorised_person_3_phone_number}}</strong>
                 </td>
                
             </tr>
@@ -1305,13 +1307,17 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
 
         <div class="clear mt-15">
             <div class="left">Applicant’s Background:</div>
-            <div class="right bod-bottom" style="width:70%"><strong>XXXXXXXX</strong></div>
+            <div class="right bod-bottom" style="width:70%">
+              <!-- <strong>XXXXXXXX</strong> -->
+            </div>
             <div class="clear"></div>
         </div>
         
         <div class="clear mt-15">
             <div class="left">Applicant’s relationship with AE:</div>
-            <div class="right bod-bottom" style="width:70%"><strong>XXXXXXXX</strong></div>
+            <div class="right bod-bottom" style="width:70%">
+              <!-- <strong>XXXXXXXX</strong> -->
+            </div>
             <div class="clear"></div>
         </div>
         
@@ -1336,7 +1342,9 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
 
         <div class="clear mt-15">
             <div class="left">For Cash Securities Trading Account Proposed Trading Limit (HK$):</div>
-            <div class="right bod-bottom" style="width:50%"><strong>XXXXXXXX</strong></div>
+            <div class="right bod-bottom" style="width:50%">
+              <!-- <strong>XXXXXXXX</strong> -->
+            </div>
             <div class="clear"></div>
         </div>
 
@@ -1347,13 +1355,17 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                         For Comm. Rate:
                     </td>
                     <td width="33%">
-                        <div class="bod-bottom"><strong>XXXXXXXX</strong></div>
+                        <div class="bod-bottom">
+                          <!-- <strong>XXXXXXXX</strong> -->
+                        </div>
                     </td>
                     <td width="33%">
                         Min Charge (in HK$):
                     </td>
                     <td width="33%">
-                        <div class="bod-bottom" ><strong>XXXXXXXX</strong></div>
+                        <div class="bod-bottom" >
+                          <!-- <strong>XXXXXXXX</strong> -->
+                        </div>
                     </td>
                 </tr>
                 <tr><td colspan="4">&nbsp;</td></tr>
@@ -1362,13 +1374,17 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                         AE Name:
                     </td>
                     <td width="33%">
-                        <div class="bod-bottom"><strong>XXXXXXXX</strong></div>
+                        <div class="bod-bottom">
+                          <!-- <strong>XXXXXXXX</strong> -->
+                        </div>
                     </td>
                     <td width="33%">
                         C.E. No. :
                     </td>
                     <td width="33%">
-                        <div class="bod-bottom" ><strong>XXXXXXXX</strong></div>
+                        <div class="bod-bottom" >
+                          <!-- <strong>XXXXXXXX</strong> -->
+                        </div>
                     </td>
                 </tr>
                 
@@ -1378,13 +1394,17 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                         Account opening approved by:
                     </td>
                     <td width="33%">
-                        <div class="bod-bottom"><strong>XXXXXXXX</strong></div>
+                        <div class="bod-bottom">
+                          <!-- <strong>XXXXXXXX</strong> -->
+                        </div>
                     </td>
                     <td width="33%">
                         Account opening checked / endorsed by:
                     </td>
                     <td width="33%">
-                        <div class="bod-bottom" ><strong>XXXXXXXX</strong></div>
+                        <div class="bod-bottom" >
+                          <!-- <strong>XXXXXXXX</strong> -->
+                        </div>
                     </td>
                 </tr>
                 <tr><td colspan="4">&nbsp;</td></tr>
@@ -1393,13 +1413,17 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                         Name (please print):
                     </td>
                     <td width="33%">
-                        <div class="bod-bottom"><strong>XXXXXXXX</strong></div>
+                        <div class="bod-bottom">
+                          <!-- <strong>XXXXXXXX</strong> -->
+                        </div>
                     </td>
                     <td width="33%">
                         Name( please print):
                     </td>
                     <td width="33%">
-                        <div class="bod-bottom" ><strong>XXXXXXXX</strong></div>
+                        <div class="bod-bottom" >
+                          <!-- <strong>XXXXXXXX</strong> -->
+                        </div>
                     </td>
                 </tr>
                 <tr><td colspan="4">&nbsp;</td></tr>
@@ -1408,13 +1432,17 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                         Date:
                     </td>
                     <td width="33%">
-                        <div class="bod-bottom"><strong>XXXXXXXX</strong></div>
+                        <div class="bod-bottom">
+                          <!-- <strong>XXXXXXXX</strong> -->
+                        </div>
                     </td>
                     <td width="33%">
                         Date:
                     </td>
                     <td width="33%">
-                        <div class="bod-bottom" ><strong>XXXXXXXX</strong></div>
+                        <div class="bod-bottom" >
+                          <!-- <strong>XXXXXXXX</strong> -->
+                        </div>
                     </td>
                 </tr>
                 
@@ -1430,7 +1458,9 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                         Documentation checked by:
                     </td>
                     <td width="33%">
-                        <div class="bod-bottom" ><strong>XXXXXXXX</strong></div>
+                        <div class="bod-bottom" >
+                          <!-- <strong>XXXXXXXX</strong> -->
+                        </div>
                     </td>
                 </tr>
                 
@@ -1440,7 +1470,9 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                         Remarks:
                     </td>
                     <td width="67%" colspan="3">
-                        <div class="bod-bottom" ><strong>XXXXXXXX</strong></div>
+                        <div class="bod-bottom" >
+                          <!-- <strong>XXXXXXXX</strong> -->
+                        </div>
                     </td>
                 </tr>
         </table>
