@@ -250,24 +250,24 @@
                                 <td class=" bod-right" width="15%">
                                     
                                     <p>
-                                        <input type="checkbox" id="Owned"  />
+                                        <input type="checkbox" id="Owned" class="{{account_info.address_type_id_1_checkbox_class}}" />
                                         <label for="Owned"> Owned 自置</label>
                                       </p>
                                 </td>
                                 <td class=" bod-right" width="15%">
                                     
                                     <p>
-                                        <input type="checkbox" id="Rented"  />
+                                        <input type="checkbox" id="Rented" class="{{account_info.address_type_id_2_checkbox_class}}" />
                                         <label for="Rented"> Rented 租用 </label>
                                       </p>
                                 </td>
                                 <td class="" width="37%">
                                     
                                     <p>
-                                        <input type="checkbox" id="Others2"  />
-                                        <label for="Others2"> Others 其他 __________________________</label>
+                                        <input type="checkbox" id="Others2" class="{{account_info.address_type_id_999_checkbox_class}}" />
+                                        <label for="Others2"> Others 其他 {{account_info.address_type_other_text}}</label>
                                       </p>
-                                    &nbsp; &nbsp;  &nbsp; &nbsp; Years in residence 居住年數 _____________
+                                    &nbsp; &nbsp;  &nbsp; &nbsp; Years in residence 居住年數 {{account_info.address_live_duration}}
                                 </td>
                                 
                             </tr>
@@ -285,7 +285,7 @@
                                     住宅電話號碼:
                                 </td>
                                 <td class=" bod-right" width="20%">
-                                    <strong>XXXXXXXX</strong>
+                                    <strong>{{account_info.country_phone_code_home}}{{account_info.phone_number_home}}</strong>
                                     
                                 </td>
                                 <td class="light bod-right" width="27%">
@@ -294,7 +294,7 @@
 
                                 </td>
                                 <td width="20%">
-                                    <strong>XXXXXXXX</strong>
+                                    <strong>{{account_info.country_phone_code}}{{account_info.phone_number}}</strong>
                                 </td>
                             </tr>
                             
@@ -332,7 +332,7 @@
                                     僱主業務性質:
                                 </td>
                                 <td class=" bod-right" width="15%">
-                                    <strong>XXXXXXXX</strong>
+                                    <strong>{{account_info.business_nature_text}}</strong>
                                     
                                 </td>
                                 <td class="light bod-right" width="10%">
@@ -340,15 +340,15 @@
                                     職位:
                                 </td>
                                 <td width="15%">
-                                    <strong>XXXXXXXX</strong>
+                                    <strong>{{account_info.career_position}}</strong>
                                 </td>
                                 
-                                <td class="light bod-right" width="12%">
+                                <td class="light bod-right TODO_field" width="12%">
                                     <strong>Year of Service</strong><br>
                                     服務僱主年期:
                                 </td>
                                 <td width="15%">
-                                    <strong>XXXXXXXX</strong>
+                                    <strong></strong>
                                 </td>
                             </tr>
                             
@@ -366,8 +366,7 @@
                                     營業/辦公地址:
                                 </td>
                                 <td class="" width="67%">
-                                    <strong>XXXXXXXX</strong>
-                                    
+                                    <strong>{{account_info.employer_address}}</strong>
                                 </td>
                              
                             </tr>
@@ -386,7 +385,7 @@
                                     營業電話號碼
                                 </td>
                                 <td class=" bod-right" width="20%">
-                                    <strong>XXXXXXXX</strong>
+                                    <strong>{{account_info.employer_country_phone_code}}{{account_info.employer_phone_number}}</strong>
                                     
                                 </td>
                                 <td class="light bod-right" width="25%">
@@ -394,7 +393,7 @@
                                     營業傳真號碼:
                                 </td>
                                 <td width="22%">
-                                    <strong>XXXXXXXX</strong>
+                                    <strong>{{account_info.employer_fax_text}}</strong>
                                 </td>
                             </tr>
                             
@@ -411,7 +410,7 @@
                                     電子郵件地址:
                                 </td>
                                 <td class="" width="67%">
-                                    <strong>XXXXXXXX</strong>
+                                    <strong>{{account_info.email}}</strong>
                                     
                                 </td>
                              
@@ -447,21 +446,21 @@
                                         <tr>
                                             <td class="bod-right" width="33%">
                                                 <p>
-                                                    <input type="checkbox" id="Direct" class="{{#checkbox}}{{account_info.settlement_collection_by_mail_yesno}}+{{account_info.settlement_collection_in_person_yesno}}{{/checkbox}}" />
+                                                    <input type="checkbox" id="Direct" />
                                                     <label for="Direct"> <strong>Direct Mail</strong> <br>
                                                         &nbsp; &nbsp; &nbsp; 郵寄</label>
                                                   </p>
                                             </td>
                                             <td class="bod-right" width="33%">
                                                 <p>
-                                                    <input type="checkbox" id="Residential" class="{{#checkbox}}{{account_info.settlement_collection_by_mail_yesno}}{{/checkbox}}" />
+                                                    <input type="checkbox" id="Residential" class="{{account_info.settlement_collection_by_mail_yesno_checkbox_class}}" />
                                                     <label for="Residential"> <strong>Residential Address</strong> <br>
                                                         &nbsp; &nbsp; &nbsp; 住址</label>
                                                   </p>
                                             </td>
                                             <td width="33%">
                                                 <p>
-                                                    <input type="checkbox" id="Business" class="{{#checkbox}}{{account_info.settlement_collection_in_person_yesno}}{{/checkbox}}" />
+                                                    <input type="checkbox" id="Business" class="{{account_info.settlement_collection_by_mail_yesno_checkbox_class}}" />
                                                     <label for="Business"><strong>Business / Office Address </strong> <br>
                                                         &nbsp; &nbsp; &nbsp; 營業 / 辦公地址</label>
                                                   </p>
@@ -490,7 +489,7 @@
                                 <td class="bod-right" width="30%"> 
 
                                                  <p>
-                                                    <input type="checkbox" id="English"  />
+                                                    <input type="checkbox" id="English" class="{{account_info.settlement_lang_en_checkbox_class}}" />
                                                     <label for="English"><strong>English</strong> <br>
                                                         &nbsp; &nbsp; &nbsp; 英文發出</label>
                                                   </p>
@@ -499,7 +498,7 @@
                                 
                                 <td class="" width="37%">
                                      <p>
-                                        <input type="checkbox" id="Chinese"  />
+                                        <input type="checkbox" id="Chinese" class="{{account_info.settlement_lang_zh_checkbox_class}}" />
                                         <label for="Chinese"><strong>Chinese</strong> <br>
                                             &nbsp; &nbsp; &nbsp; 中文發出</label>
                                         </p>
@@ -603,24 +602,24 @@
                 <td>Investment Objectives <br>投資目標:  </td>
                 <td> 
                     <p>
-                        <input type="checkbox" id="Short-term"  />
+                        <input type="checkbox" id="Short-term" class="{{account_info.investment_objective_id_1_checkbox_class}}" />
                         <label for="Short-term">Short term <br> &nbsp; &nbsp; &nbsp; 短線</label>
                         </p>
                  </td>
                 <td> 
                     <p>
-                        <input type="checkbox" id="Medium"  />
+                        <input type="checkbox" id="Medium" class="{{account_info.investment_objective_id_2_checkbox_class}}" />
                         <label for="Medium">Medium <br> &nbsp; &nbsp; &nbsp; 中線 </label>
                         </p>
                     </td>
                 <td>  <p>
-                    <input type="checkbox" id="LongTerm"  />
+                    <input type="checkbox" id="LongTerm" class="{{account_info.investment_objective_id_3_checkbox_class}}" />
                     <label for="LongTerm">Long Term <br> &nbsp; &nbsp; &nbsp; 長線</label>
                     </p>                
                 </td>
                 <td>
                     <p>
-                        <input type="checkbox" id="OthersInvestment"  />
+                        <input type="checkbox" id="OthersInvestment" class="{{account_info.investment_objective_id_4_checkbox_class}}" />
                         <label for="OthersInvestment">Others <br> &nbsp; &nbsp; &nbsp; 其他</label>
                         </p>   
                 </td>
@@ -629,19 +628,19 @@
                 <td>Risk Tolerance 可承受風險:  </td>
                 <td> 
                     <p>
-                        <input type="checkbox" id="Aggressive"  />
+                        <input type="checkbox" id="Aggressive" class="{{account_info.risk_tolerance_id_1_checkbox_class}}" />
                         <label for="Aggressive">Aggressive 高 (5)</label>
                         </p> 
                     </td>
                 <td>
                     <p>
-                        <input type="checkbox" id="Moderate"  />
+                        <input type="checkbox" id="Moderate" class="{{account_info.risk_tolerance_id_2_checkbox_class}}" />
                         <label for="Moderate"> Moderate 中 (3) </label>
                         </p> 
                    </td>
                 <td> 
                     <p>
-                        <input type="checkbox" id="Conservative"  />
+                        <input type="checkbox" id="Conservative" class="{{account_info.risk_tolerance_id_3_checkbox_class}}" />
                         <label for="Conservative"> Conservative 低 (1) </label>
                         </p> 
                  </td>
@@ -652,25 +651,25 @@
                     （以港元計）: </td>
                 <td width="16%"> 
                     <p>
-                        <input type="checkbox" id="≤$500000"  />
+                        <input type="checkbox" id="≤$500000" class="{{account_info.annual_income_id_1_checkbox_class}}" />
                         <label for="≤$500000"> ≤$500,000 </label>
                         </p> 
                     </td>
                 <td width="18%"> 
                     <p>
-                        <input type="checkbox" id="5-9"  />
+                        <input type="checkbox" id="5-9" class="{{account_info.annual_income_id_2_checkbox_class}}" />
                         <label for="5-9"> $500,001-$900,000 </label>
                         </p> 
                     </td>
                 <td width="18%"> 
                     <p>
-                        <input type="checkbox" id="9-13"  />
+                        <input type="checkbox" id="9-13" class="{{account_info.annual_income_id_3_checkbox_class}}" />
                         <label for="9-13"> $900,001-$1,300,000 </label>
                         </p> 
                      </td>
                 <td width="176%"> 
                     <p>
-                        <input type="checkbox" id="gt13"  />
+                        <input type="checkbox" id="gt13" class="{{account_info.annual_income_id_4_checkbox_class}}" />
                         <label for="gt13"> ＞$1,300,001 </label>
                         </p>
                     </td>
@@ -681,26 +680,26 @@
                     </td>
                 <td> 
                     <p>
-                        <input type="checkbox" id="gt13"  />
+                        <input type="checkbox" id="gt13" class="{{account_info.total_net_asset_value_id_1_checkbox_class}}" />
                         <label for="gt5"> ≤$500,000 </label>
                         </p>
                      </td>
                 <td> <input type="checkbox"> 
                     <p>
-                        <input type="checkbox" id="5-9"  />
+                        <input type="checkbox" id="5-9" class="{{account_info.total_net_asset_value_id_2_checkbox_class}}" />
                         <label for="5-9">$500,001-$900,000 </label>
                         </p>
                      </td>
                 <td> 
                     <p>
-                        <input type="checkbox" id="5-9"  />
+                        <input type="checkbox" id="5-9" class="{{account_info.total_net_asset_value_id_3_checkbox_class}}" />
                         <label for="9-2"> $900,001-$2,000,000</label>
                         </p>
                     
                  </td>
                 <td>   
                     <p>
-                        <input type="checkbox" id="assets2"  />
+                        <input type="checkbox" id="assets2" class="{{account_info.total_net_asset_value_id_4_checkbox_class}}" />
                         <label for="assets2">＞$2,000,001</label>
                       </p>
                 </td>
