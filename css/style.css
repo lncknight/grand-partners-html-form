@@ -178,3 +178,7 @@ label:hover:before {
 
 
 
+
+.break-after {
+    page-break-after: always;
+}
