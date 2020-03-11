@@ -7,6 +7,31 @@ body{
     line-height: 1.3em;
 }
 p{margin: 0.5em 0;}
+.d-in{
+    display:inline-block;
+}
+.m-width{
+    min-width: 20%; 
+}
+
+.thbg{
+    background:#d9d9d9;
+  }
+  .bod-top{
+      border-top: 2px dashed #000;
+      padding-top: 0.5em;
+  }
+
+  .bod-top2{
+    border-top: 1px solid #000;
+    padding-top: 0.5em;
+}
+
+
+.text-center{
+    text-align: center;
+}
+
 .wrapper{
     width: 1000px;
     margin: 0px auto;
