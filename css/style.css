@@ -59,6 +59,15 @@ p{margin: 0.5em 0;}
 .light{
     background: #e5b8b7;
 }
+.dark-p{
+    background: #b2a1c7;
+}
+
+.light-p{
+    background: #e5dfec;
+}
+
+
 .table{
     padding: 0px;
     border-collapse: collapse;
