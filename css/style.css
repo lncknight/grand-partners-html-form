@@ -14,6 +14,9 @@ p{margin: 0.5em 0;}
 .m-width{
     min-width: 20%; 
 }
+ol li{
+    margin-bottom: 5px;
+}
 
 .thbg{
     background:#d9d9d9;
