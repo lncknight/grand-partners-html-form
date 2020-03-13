@@ -80,6 +80,11 @@ ol li{
     line-height: 1.5em;
 
 }
+
+.linespace2{
+    line-height: 2em;
+
+}
 .table td{
     padding: 0.4em 0.5em;
 }
