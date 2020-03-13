@@ -72,14 +72,13 @@ ol li{
 }
 
 
-.table{
+.table, table{
     padding: 0px;
     border-collapse: collapse;
-    line-height: 1.5em;
 }
-table{
-    border-collapse: collapse;
-    padding: 0px;
+.linespace1-5{
+    line-height: 1.5em;
+
 }
 .table td{
     padding: 0.4em 0.5em;
