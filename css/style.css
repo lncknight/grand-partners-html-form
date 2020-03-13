@@ -106,13 +106,16 @@ ol li{
 .pad{
     padding: 0.5em;
 }
-.mt-15{
-    margin-top: 15px;
-}
-
 .mt-10{
     margin-top: 10px;
 }
+.mt-15{
+    margin-top: 15px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+
 
 .pt-15{
     padding-top: 15px;
