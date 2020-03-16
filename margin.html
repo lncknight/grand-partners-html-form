@@ -719,7 +719,428 @@
         </div>
         <div class="clear break-after"></div>
 
+        <!--page1-->
+        </div>
+        
+        <div class="container">
 
+            <div class="mt10">&nbsp;</div>
+        <div class="dark-p  pad mt-15">
+            SECTION B GENERAL INFORMATION 一般資料
+        </div>
+        <div class="linespace1-5">
+            Details of the Applicant’s bank account for payment of money (if any) by Grand Partners Securities Limited to the Applicant (under the name of the Applicant).
+可供利盟證券有限公司用作支付任何款項 (若有的話) 予申請人之銀行帳戶詳細資料 (需以申請人名義持有)
+Further , the Applicant hereby agrees that if this Account Application is approved by Grand Partners Securities Limited, the bank account below shall be used
+to receive payments (if any) to the Applicant in accordance with the Documents.
+再者，申請人現同意，若本開戶申請表獲利盟證券有限公司核准，以下銀行帳戶將被用作接受按文件給予申請人的款項 (如有的話) 。
+        </div>
+        <table width="100%" class="mt-15">
+                <tr>
+                    <td width="20%">
+                        Designated Bank <br>
+                        指定銀行:
+                    </td>
+                    <td class="" width="30%">
+                        <div class="bod-bottom">
+                            <strong>{{account_info.bank_name}}</strong>
+                        </div>
+                        
+                    </td>
+
+                    <td class="bod0" width="15%">
+                        Bank account no. <br>
+                        銀行帳戶號碼:
+                    </td>
+                    <td width="35%">
+                        <div class="bod-bottom">
+                          <strong>{{account_info.bank_account_number}}</strong>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td width="20%">
+                        Name of bank account holder<br> 
+                        銀行帳戶持有人姓名: 
+                        
+                    </td>
+                    <td colspan="3" width="80%">
+                        <div class="bod-bottom">
+                            <strong>{{account_info.bank_account_holder}}</strong>
+                        </div>
+                    </td>
+
+                   
+                </tr>
+
+        </table>
+
+        <div class="dark-p  pad mt-15">
+            <strong> SECTION C IDENTITY DECLARATION 身分聲明</strong>
+        </div>
+        <p>Is the Applicant 申請人是否</p>
+        <table width="100%"> 
+            <tr>
+                <td width="5%" valign="top">(1)</td>
+                <td>
+                    <p  class="linespace1-5">A person licensed by or registered with the Hong Kong Securities and Futures Commission or an employee of such person? (if yes, please specify
+                    his/her CE no) <br>
+                    香港證券及期貨事務監察委員會持牌或註冊人士或該人士之僱員？（如是，謹請說明他 / 她的中央編號） </p>
+                    <table width="100%">
+                        <tr>
+                            <td width="25%">
+                                
+                                <span>
+                                    <input type="checkbox" id="noApplicant" class="{{account_info.identity_declaration1_id_1_class}}" />
+                                    <label for="noApplicant">No 否</label>
+                                </span>
+                            </td>
+                            <td width="25%">
+                                <span>
+                                    <input type="checkbox" id="YesApplicant" class="{{account_info.identity_declaration1_id_999_checkbox_class}}" />
+                                    <label for="YesApplicant">Yes 是, CE No 中央編號</label>
+                                  </span>
+                            </td>
+                            <td width="25%"> 
+                                <div class=" pad bod-bottom">
+                                    <strong>{{account_info.identity_declaration1_text}}</strong>
+                                </div>
+                            </td>
+
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr ><td colspan="2"  height="3px"></td></tr>
+            <tr>
+                <td width="5%" valign="top">(2)</td>
+                <td><p  class="linespace1-5">An employee/licensed representative of Grand Partners Securities Limited (or a relative of such person)? (If yes, please provide the name of the
+                    employee/licensed representative is working with, his/her name and CE no.) <br>
+                    利盟證券有限公司之僱員/持牌代表或該人士之親屬？（如是，謹請提供該僱員/持牌代表、姓名及中央編號） </p>
+                    <table width="100%">
+                        <tr>
+                            <td width="25%">
+                                
+                                <span>
+                                    <input type="checkbox" id="nolicensed" class="{{account_info.identity_declaration2_id_1_checkbox_class}}" />
+                                    <label for="nolicensed">No 否</label>
+                                </span>
+                            </td>
+                            <td width="25%">
+                                <span>
+                                    <input type="checkbox" id="Yeslicensed" class="{{account_info.identity_declaration2_id_999_checkbox_class}}" />
+                                    <label for="Yeslicensed">Yes 是, Name 姓名: </label>
+                                  </span>
+                            </td>
+                            <td width="20%">
+                                <div class=" pad bod-bottom">
+                                    <strong>{{account_info.name}}</strong>
+                                </div>
+                            </td>
+
+                            <td width="30%">
+                                CE No. 中央編號:
+                                <span class=" pad bod-bottom">
+                                    <strong>{{account_info.identity_declaration2_text}}</strong>
+                                </span>
+                            </td>
+
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr ><td colspan="2"  height="3px"></td></tr>
+            <tr>
+                <td width="5%" >(3)</td>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            
+                            <td width="25%">
+                                Name of Referral (介紹人姓名):
+                            </td>
+                            <td width="75%">
+                                <div class=" pad bod-bottom">
+                                    <strong>{{account_info.referral_person_text}}</strong>
+                                </div>
+                            </td>
+
+                           
+
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr ><td colspan="2"  height="3px"></td></tr>
+            <tr>
+                <td width="5%" valign="top">(4)</td>
+                <td><p  class="linespace1-5">Spouse/Company has a margin account in Grand Partners Securities Limited? (If yes, please provide the account number of spouse in Grand Partners
+                    Securities Limited.) <br>
+                    配偶/公司於利盟證券有限公司擁有孖展證券戶口？（如是，謹請提供該戶口號碼） </p>
+                    <table width="100%">
+                        <tr>
+                            <td width="25%">
+                                
+                                <span>
+                                    <input type="checkbox" id="nolicensed" class="checkbox-checked-TODO" />
+                                    <label for="nolicensed">No 否</label>
+                                </span>
+                            </td>
+                            <td width="25%">
+                                <span>
+                                    <input type="checkbox" id="Yeslicensed" class="checkbox-checked-TODO" />
+                                    <label for="Yeslicensed">Yes 是,  Account No. 戶口號碼: </label>
+                                  </span>
+                            </td>
+                            <td width="20%">
+                                <div class=" pad bod-bottom">
+                                    <!--<strong>XXXXXXXX</strong>-->
+                                </div>
+                            </td>
+
+                            <td width="30%">
+                                CE No. 中央編號:
+                                <span class=" pad bod-bottom">
+                                    <!--<strong>XXXXXXXX</strong>-->
+                                </span>
+                            </td>
+
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr ><td colspan="2"  height="3px"></td></tr>
+
+        </table>
+        <div class="dark-p  pad mt-15">
+            Capacity of the Applicant 申請人之身份
+        </div>
+        <table width="100%">
+            <tr>
+                <td>
+                    Is the Applicant the ultimate beneficiary of the Account and transactions (“ultimate beneficiary”)? <br>
+                    申請人是否帳戶及交易的最終實益持有人(「最終實益持有人」)?
+                </td>
+                <td>
+                    <span>
+                        <input type="checkbox" id="YesCapacity" class="{{account_info.capacity_of_applicant_yesno_1_yes}}" />
+                        <label for="YesCapacity">Yes 是 </label>
+                      </span>
+                </td>
+                <td>
+                    <span>
+                        <input type="checkbox" id="noCapacity" class="{{account_info.capacity_of_applicant_yesno_1_no}}" />
+                        <label for="noCapacity">No 否 </label>
+                      </span>
+                    
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    Is the Applicant ultimately responsible for originating the instruction in relation to a transaction?<br>
+                    申請人是否最終負責作出交易指示的人士?
+                </td>
+                <td>
+                    <span>
+                        <input type="checkbox" id="YesCapacity2" class="{{account_info.capacity_of_applicant_yesno_2_yes}}" />
+                        <label for="YesCapacity2">Yes 是 </label>
+                      </span>
+                </td>
+                <td>
+                    <span>
+                        <input type="checkbox" id="noCapacity2" class="{{account_info.capacity_of_applicant_yesno_2_no}}" />
+                        <label for="noCapacity2">No 否 </label>
+                      </span>
+                    
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    Is the Applicant the only person with authority to operate the Account?<br>
+                    申請人是否唯一有權操作此帳戶者?
+                    
+                </td>
+                <td>
+                    <span>
+                        <input type="checkbox" id="YesCapacity3" class="{{account_info.capacity_of_applicant_yesno_3_yes}}" />
+                        <label for="YesCapacity3">Yes 是 </label>
+                      </span>
+                </td>
+                <td>
+                    <span>
+                        <input type="checkbox" id="noCapacity3" class="{{account_info.capacity_of_applicant_yesno_3_no}}" />
+                        <label for="noCapacity3">No 否 </label>
+                      </span>
+                    
+                </td>
+            </tr>
+
+        </table>
+        <div class="dark-p  pad mt-15">
+            <p  class="linespace1-5">Person(s) authorized to operate the Account 帳戶獲授權人士 No. of Signature required 所需簽名數目 ( )
+            The Client’s Securities Account can be operated on the instructions of the Authorized Person. I (the Client) hereby declare that I (the Client) shall be fully
+            responsible for any instructions given or purported to be given by the Authorized Person (including but not limiting to the verbal instructions or written
+            instructions), and shall fully indemnify Grand Partners Securities Limited against all damages, losses, costs and expenses whatsoever incurred as a result of
+            any act, inactivity or omission of the Authorized Person.<br>
+            When I, the Authorized Person listed below, after signing in the signature column hereinbelow, indicated that I accept the abovementioned Client’s
+            authorization to become its Authorized Person. I hereby agree that shall be fully responsible for all the liabilities arising from the Client’s relevant account(s)
+            with Grand Partners Securities Limited and shall fully indemnify Grand Partners Securities Limited against all damages, losses, costs and expenses whatsoever
+            incurred as a result of any act, inactivity or omission of the Client and/or myself.<br>
+            客戶之證券帳戶可根據獲授權人士之指示運作。本人(客戶)茲聲明對由獲授權人士或聲稱為獲授權人士所發出之任何指示(包括但不限於口頭指示
+            或書面指示)承擔全部責任，並會就利盟證券因該等獲授權人士之任何行為，不作為或遺漏而引致的一切賠償、損失、費用及開支向利盟證券作出
+            全部彌償。<br>
+            當本人(獲授權人士)於下列簽署欄內簽署後，即表示同意接受客戶的授權成為其獲授權人士，並同意承擔客戶之帳戶內之一切責任，亦須就利盟
+            證券因客戶及／或本人之任何行為，不作為或遺漏而引致的一切賠償、損失、費用及開支向利盟證券作出全部彌償。 </p>
+        </div>
+        <table border="1" width="100%" class="table">
+            <tr>
+                <td class="dark-p height50" width="18%">
+                    Name: <br>
+姓名:
+                </td>
+                <td class="height50" width="20%">
+                    Mr/Mrs/Miss/Ms.<br>
+                    <strong>{{account_info.authorised_person_1_name}}</strong>
+                </td>
+                <td class="dark-p height50" width="20%">
+                    Relationship: <br>
+                    關係:
+                </td>
+                <td class="height50" width="20%">
+                   
+                    <strong>{{account_info.authorised_person_1_relationship}}</strong>
+                </td>
+                <td class="" rowspan="2" valign="bottom" width="22%">
+                   
+                    Specimen Signature 簽名樣式
+                </td>
+            </tr>
+            <tr>
+                <td class="dark-p height50">
+                    I.D. Card /Passport No. <br>
+                    身份證/護照號碼:
+                </td>
+                <td class="height50">
+                    
+                  <strong>{{account_info.authorised_person_1_id_card}}</strong>
+                </td>
+                <td class="dark-p height50">
+                    Contact Tel. No <br>
+                    聯絡電話:
+
+                </td>
+                <td class="height50">
+                   
+                  <strong>{{account_info.authorised_person_1_country_phone_code}}{{account_info.authorised_person_1_phone_number}}</strong>
+                </td>
+               
+            </tr>
+
+            <tr>
+                <td class="dark-p height50">
+                    Name: <br>
+姓名:
+                </td>
+                <td class="height50">
+                    Mr/Mrs/Miss/Ms.<br>
+                    <strong>{{account_info.authorised_person_2_relationship}}</strong>
+                </td>
+                <td class="dark-p height50">
+                    Relationship: <br>
+                    關係:
+                </td>
+                <td class="height50">
+                  <strong>{{account_info.authorised_person_2_relationship}}</strong>
+                </td>
+                <td class="" rowspan="2" valign="bottom">
+                   
+                    Specimen Signature 簽名樣式
+                </td>
+            </tr>
+            <tr>
+                <td class="dark-p height50">
+                    I.D. Card /Passport No. <br>
+                    身份證/護照號碼:
+                </td>
+                <td class="height50">
+                    
+                  <strong>{{account_info.authorised_person_2_id_card}}</strong>
+                </td>
+                <td class="dark-p height50">
+                    Contact Tel. No <br>
+                    聯絡電話:
+
+                </td>
+                <td class="height50">
+                   
+                  <strong>{{account_info.authorised_person_2_country_phone_code}}{{account_info.authorised_person_2_phone_number}}</strong>
+                </td>
+               
+            </tr>
+
+            <tr>
+                <td class="dark-p height50">
+                    Name: <br>
+姓名:
+                </td>
+                <td class="height50">
+                    Mr/Mrs/Miss/Ms.<br>
+                    <strong>{{account_info.authorised_person_3_name}}</strong>
+                </td>
+                <td class="dark-p height50">
+                    Relationship: <br>
+                    關係:
+                </td>
+                <td class="height50">
+                   
+                  <strong>{{account_info.authorised_person_3_relationship}}</strong>
+                </td>
+                <td class="" rowspan="2" valign="bottom">
+                   
+                    Specimen Signature 簽名樣式
+                </td>
+            </tr>
+            <tr>
+                <td class="dark-p height50">
+                    I.D. Card /Passport No. <br>
+                    身份證/護照號碼:
+                </td>
+                <td class=" height50">
+                    
+                  <strong>{{account_info.authorised_person_3_id_card}}</strong>
+                </td>
+                <td class="dark-p height50">
+                    Contact Tel. No <br>
+                    聯絡電話:
+
+                </td>
+                <td class="height50">
+                   
+                  <strong>{{account_info.authorised_person_3_country_phone_code}}{{account_info.authorised_person_3_phone_number}}</strong>
+                </td>
+               
+            </tr>
+        </table>
+        <div class="clear"></div>
+        
+        <div class="page-footer mt-20">
+            <div class="light-p pad left" style="width: 15%;">
+                2
+            </div>
+            <div class="left">
+                Grand Partners Securities Limited Cash Account - Individual Account Opening Form 
+            </div>
+
+            <div class="foot-right">
+                <span class="pt-15">(06/2017) </span>
+                
+            </div>
+        </div>
+        <div class="clear break-after"></div>
+        <!--page2-->
         </div>
 
 
