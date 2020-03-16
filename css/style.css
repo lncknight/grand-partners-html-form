@@ -31,7 +31,7 @@ ol li{
     padding-top: 0.5em;
 }
 
-.posre{
+.posre, .container{
     position: relative;
 }
 .h-100{
@@ -205,9 +205,10 @@ label:hover:before {
 
 .page-footer{
     border-top:2px solid #000;
-    margin-top: 5px;
-    position: fixed;
+    margin-top: 15px;
+    position: absolute;
     width: 100%;
+    bottom: 0px;
 }
 .foot-right{
     float: right;
