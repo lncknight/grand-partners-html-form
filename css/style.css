@@ -33,7 +33,6 @@ ol li{
 
 .posre, .container{
     position: relative;
-    padding-bottom: 85px;
     height: calc(100% - 85px);
 }
 .h-100{
