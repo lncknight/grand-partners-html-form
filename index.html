@@ -97,13 +97,13 @@
                                     <strong>Name (in English): Mr/Mrs/Miss/Ms</strong>  &nbsp; &nbsp;  &nbsp; Surname:              
                                 </td>
                                 <td class=" bod-right" width="25%">
-                                  <strong>{{account_info.name_english}}</strong>
+                                  <strong>{{account_info.first_name_english}}</strong>
                                 </td>
                                 <td class="light bod-right" width="15%">
                                     <strong>Given Name:</strong>
                                 </td>
                                 <td width="25%">
-                                    <!-- <strong>XXXXXXXX</strong> -->
+                                    <strong>{{account_info.last_name_english}}</strong>
                                 </td>
                             </tr>
                             
@@ -118,13 +118,13 @@
                                     <strong>姓名(中文):先生/太太/小姐/女士</strong>  &nbsp; &nbsp;  &nbsp; 姓::              
                                 </td>
                                 <td class=" bod-right"  width="25%">
-                                  <strong>{{account_info.name_chinese}}</strong>
+                                    <strong>{{account_info.first_name_chinese}}</strong>
                                 </td>
                                 <td class="light bod-right" width="15%">
                                     <strong>名:</strong>
                                 </td>
                                 <td  width="25%">
-                                    <!-- <strong>XXXXXXXX</strong> -->
+                                    <strong>{{account_info.last_name_chinese}}</strong>
                                 </td>
                             </tr>
                             
@@ -788,19 +788,19 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                             <td width="25%">
                                 
                                 <span>
-                                    <input type="checkbox" id="noApplicant"  />
+                                    <input type="checkbox" id="noApplicant" class="{{account_info.identity_declaration1_id_1_checkbox_class}}" />
                                     <label for="noApplicant">No 否</label>
                                 </span>
                             </td>
                             <td width="25%">
                                 <span>
-                                    <input type="checkbox" id="YesApplicant"  />
+                                    <input type="checkbox" id="YesApplicant" class="{{account_info.identity_declaration1_id_999_checkbox_class}}" />
                                     <label for="YesApplicant">Yes 是, CE No 中央編號</label>
                                   </span>
                             </td>
                             <td width="25%"> 
                                 <div class=" pad bod-bottom">
-                                    <strong>XXXXXXXX</strong>
+                                    <strong>{{account_info.identity_declaration1_text}}</strong>
                                 </div>
                             </td>
 
@@ -818,26 +818,26 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                             <td width="25%">
                                 
                                 <span>
-                                    <input type="checkbox" id="nolicensed"  />
+                                    <input type="checkbox" id="nolicensed" class="{{account_info.identity_declaration2_id_1_checkbox_class}}" />
                                     <label for="nolicensed">No 否</label>
                                 </span>
                             </td>
                             <td width="25%">
                                 <span>
-                                    <input type="checkbox" id="Yeslicensed"  />
+                                    <input type="checkbox" id="Yeslicensed" class="{{account_info.identity_declaration2_id_999_checkbox_class}}" />
                                     <label for="Yeslicensed">Yes 是, Name 姓名: </label>
                                   </span>
                             </td>
                             <td width="20%">
                                 <div class=" pad bod-bottom">
-                                    <strong>XXXXXXXX</strong>
+                                    <strong>{{account_info.name}}</strong>
                                 </div>
                             </td>
 
                             <td width="30%">
                                 CE No. 中央編號:
                                 <span class=" pad bod-bottom">
-                                    <strong>XXXXXXXX</strong>
+                                    <strong>{{account_info.identity_declaration2_text}}</strong>
                                 </span>
                             </td>
 
@@ -857,7 +857,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                             </td>
                             <td width="75%">
                                 <div class=" pad bod-bottom">
-                                    <strong>XXXXXXXX</strong>
+                                    <strong>{{account_info.referral_person_text}}</strong>
                                 </div>
                             </td>
 
@@ -880,13 +880,13 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 </td>
                 <td>
                     <span>
-                        <input type="checkbox" id="YesCapacity"  />
+                        <input type="checkbox" id="YesCapacity" class="{{account_info.capacity_of_applicant_yesno_1_yes}}" />
                         <label for="YesCapacity">Yes 是 </label>
                       </span>
                 </td>
                 <td>
                     <span>
-                        <input type="checkbox" id="noCapacity"  />
+                        <input type="checkbox" id="noCapacity" class="{{account_info.capacity_of_applicant_yesno_1_no}}" />
                         <label for="noCapacity">No 否 </label>
                       </span>
                     
@@ -900,13 +900,13 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 </td>
                 <td>
                     <span>
-                        <input type="checkbox" id="YesCapacity2"  />
+                        <input type="checkbox" id="YesCapacity2" class="{{account_info.capacity_of_applicant_yesno_2_yes}}" />
                         <label for="YesCapacity2">Yes 是 </label>
                       </span>
                 </td>
                 <td>
                     <span>
-                        <input type="checkbox" id="noCapacity2"  />
+                        <input type="checkbox" id="noCapacity2" class="{{account_info.capacity_of_applicant_yesno_2_no}}" />
                         <label for="noCapacity2">No 否 </label>
                       </span>
                     
@@ -921,13 +921,13 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 </td>
                 <td>
                     <span>
-                        <input type="checkbox" id="YesCapacity3"  />
+                        <input type="checkbox" id="YesCapacity3" class="{{account_info.capacity_of_applicant_yesno_3_yes}}" />
                         <label for="YesCapacity3">Yes 是 </label>
                       </span>
                 </td>
                 <td>
                     <span>
-                        <input type="checkbox" id="noCapacity3"  />
+                        <input type="checkbox" id="noCapacity3" class="{{account_info.capacity_of_applicant_yesno_3_no}}" />
                         <label for="noCapacity3">No 否 </label>
                       </span>
                     
@@ -1240,7 +1240,9 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
             
         </div>
         <div class="linespace1-5 pad">
-            <p>Executed as a deed on 簽訂作契約於: <span class="bod-bottom" style="width: 50%; display: inline-block;">XXXXXXXX</span>			(insert date 請填上日期)</p>
+            <p>Executed as a deed on 簽訂作契約於: <span class="bod-bottom" style="width: 50%; display: inline-block;">
+                <!--<strong>XXXXXXXX</strong>-->
+            </span>			(insert date 請填上日期)</p>
             <p>Signed and delivered by: 簽署、蓋印及交付：</p>
         </div>
         <table width="100%">
@@ -1256,12 +1258,20 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
 
                 <tr>
                     <td width="32%" >
-                        <div class="bod-bottom"><strong>XXXXXXXX</strong></div>
+                        <div class="bod-bottom">
+                            <!--<strong>XXXXXXXX</strong>-->
+                        </div>
                     </td>
-                    <td width="32%"><div class="bod-bottom"><strong>XXXXXXXX</strong></div></td>
+                    <td width="32%"><div class="bod-bottom">
+                        <!--<strong>XXXXXXXX</strong>-->
+                    </div></td>
                     <td width="32%">
-                        <div class="bod-bottom"><strong>XXXXXXXX</strong></div>
-                        CE No. 持牌代表中央編號: <span class="bod-bottom"><strong>XXXXXXXX</strong></span>
+                        <div class="bod-bottom">
+                            <!--<strong>XXXXXXXX</strong>-->
+                        </div>
+                        CE No. 持牌代表中央編號: <span class="bod-bottom">
+                        <!--<strong>XXXXXXXX</strong>-->
+                    </span>
                         </td>
                 </tr>
 
@@ -1284,12 +1294,16 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
         <table width="80%" class="mt-15">
             <tr>
                 <td width="30%">
-                    <div class="bod-bottom"><strong>XXXXXXXX</strong></div>
+                    <div class="bod-bottom">
+                        <!--<strong>XXXXXXXX</strong>-->
+                    </div>
                     Signature of licensed person 持牌人簽署
                 </td>
                 <td width="10%"></td>
                 <td width="30%">
-                    <div class="bod-bottom"><strong>XXXXXXXX</strong></div>
+                    <div class="bod-bottom">
+                        <!--<strong>XXXXXXXX</strong>-->
+                    </div>
                     Date 日期
                 </td>
             </tr>
@@ -1298,14 +1312,18 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
         <table width="80%" class="mt-15">
             <tr>
                 <td width="30%">
-                    <div class="bod-bottom"><strong>XXXXXXXX</strong></div>
+                    <div class="bod-bottom">
+                        <!--<strong>XXXXXXXX</strong>-->
+                    </div>
                     Name of licensed person (please print) <br>
 持牌人姓名（正楷）
 
                 </td>
                 <td width="10%"></td>
                 <td width="30%">
-                    <div class="bod-bottom"><strong>XXXXXXXX</strong></div>
+                    <div class="bod-bottom">
+                        <!--<strong>XXXXXXXX</strong>-->
+                    </div>
                     CE No.  <br>
 中央編號
 
@@ -1514,7 +1532,9 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
         </div>
         
         <div class="clear pad mt-20" >
-            參考編號：<span class="bod-bottom d-in  m-width"><strong>XXXXXXXX</strong></span>
+            參考編號：<span class="bod-bottom d-in  m-width">
+            <!--<strong>XXXXXXXX</strong>-->
+        </span>
         </div>
         <div class="mt-15">
             <p class="text-center"><strong>自我證明表格 - 個人 </strong></p>
@@ -1545,7 +1565,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td>稱謂 (例如：先生、太太、女士、小姐) </td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <strong>XXXXXXXX</strong>
+                        <!--<strong>XXXXXXXX</strong>-->
                     </div>
                 </td>
             </tr>
@@ -1554,7 +1574,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td>姓氏 *</td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <strong>XXXXXXXX</strong>
+                        <!--<strong>XXXXXXXX</strong>-->
                     </div>
                 </td>
             </tr>
@@ -1563,7 +1583,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td>名字 *</td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <strong>XXXXXXXX</strong>
+                        <!--<strong>XXXXXXXX</strong>-->
                     </div>
                 </td>
             </tr>
@@ -1572,7 +1592,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td>中間名 </td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <strong>XXXXXXXX</strong>
+                        <!--<strong>XXXXXXXX</strong>-->
                     </div>
                 </td>
             </tr>
@@ -1582,7 +1602,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td><strong>(2) 香港身份證或護照號碼 </strong> </td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <strong>XXXXXXXX</strong>
+                        <!--<strong>XXXXXXXX</strong>-->
                     </div>
                 </td>
             </tr>
@@ -1598,7 +1618,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td>道、地區) </td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <strong>XXXXXXXX</strong>
+                        <!--<strong>XXXXXXXX</strong>-->
                     </div>
                 </td>
             </tr>
@@ -1607,7 +1627,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td>第 2 行 (城市)</td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <strong>XXXXXXXX</strong>
+                        <!--<strong>XXXXXXXX</strong>-->
                     </div>
                 </td>
             </tr>
@@ -1616,7 +1636,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td>第 3 行 (例如：省、州) </td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <strong>XXXXXXXX</strong>
+                        <!--<strong>XXXXXXXX</strong>-->
                     </div>
                 </td>
             </tr>
@@ -1625,7 +1645,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td>國家 * </td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <strong>XXXXXXXX</strong>
+                        <!--<strong>XXXXXXXX</strong>-->
                     </div>
                 </td>
             </tr>
@@ -1634,7 +1654,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td>郵政編碼 /郵遞區號碼 </td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <strong>XXXXXXXX</strong>
+                        <!--<strong>XXXXXXXX</strong>-->
                     </div>
                 </td>
             </tr> 
@@ -1649,7 +1669,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td>道、地區) </td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <strong>XXXXXXXX</strong>
+                        <!--<strong>XXXXXXXX</strong>-->
                     </div>
                 </td>
             </tr> 
@@ -1658,7 +1678,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td>第 2 行 (城市) </td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <strong>XXXXXXXX</strong>
+                        <!--<strong>XXXXXXXX</strong>-->
                     </div>
                 </td>
             </tr> 
@@ -1667,7 +1687,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td>第 3 行 (例如：省、州)</td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <strong>XXXXXXXX</strong>
+                        <!--<strong>XXXXXXXX</strong>-->
                     </div>
                 </td>
             </tr> 
@@ -1676,7 +1696,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td>國家 *</td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <strong>XXXXXXXX</strong>
+                        <!--<strong>XXXXXXXX</strong>-->
                     </div>
                 </td>
             </tr> 
@@ -1685,7 +1705,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td>郵政編碼 / 郵遞區號碼</td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <strong>XXXXXXXX</strong>
+                        <!--<strong>XXXXXXXX</strong>-->
                     </div>
                 </td>
             </tr>  
@@ -1694,7 +1714,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td><strong>(5) 出生日期 * </strong> (日 /月 /年) </td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <strong>XXXXXXXX</strong>
+                        <!--<strong>XXXXXXXX</strong>-->
                     </div>
                 </td>
             </tr> 
@@ -1703,7 +1723,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td><strong>(6) 出生地點</strong> (可不填寫) </td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <strong>XXXXXXXX</strong>
+                        <!--<strong>XXXXXXXX</strong>-->
                     </div>
                 </td>
             </tr> 
@@ -1711,8 +1731,8 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td>鎮 / 城市  </td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <strong>XXXXXXXX</strong>
-                    </div>
+                        <!--<strong>XXXXXXXX</strong>-->
+                    <!--</div>-->
                 </td>
             </tr> 
             <tr><td colspan="2" height="2"></td></tr>
@@ -1720,7 +1740,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td>省 /州 </td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <strong>XXXXXXXX</strong>
+                        <!--<strong>XXXXXXXX</strong>-->
                     </div>
                 </td>
             </tr> 
@@ -1729,7 +1749,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td>國家 </td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <strong>XXXXXXXX</strong>
+                        <!--<strong>XXXXXXXX</strong>-->
                     </div>
                 </td>
             </tr> 
@@ -1823,16 +1843,18 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                     </p>
                 <p class="mt-20"><strong>本人聲明就本人所知所信，本表格內所填報的所有資料和聲明均屬真實、正確和完備。</strong></p>
                 <p class="mt-20">簽署 ：<span class="bod-bottom m-width d-in" >
-                    <strong>XXXXXXXX</strong>
+                    <!--<strong>XXXXXXXX</strong>-->
                 </span></p>
                 <p class="mt-20">姓名 ： <span class="bod-bottom m-width d-in" >
-                    <strong>XXXXXXXX</strong>
+                    <!--<strong>XXXXXXXX</strong>-->
                 </span></p>
                 <p>身分 ： <span class="bod-bottom m-width d-in" >
-                    <strong>XXXXXXXX</strong> (如你不是第 1 部所述的個人，說明你的身分。如果你是
+                    <!--<strong>XXXXXXXX</strong>-->
+                    (如你不是第 1 部所述的個人，說明你的身分。如果你是
                 </span></p>
                 <p>日期 ： <span class="bod-bottom m-width d-in" >
-                    <strong>XXXXXXXX</strong>以授權人身分簽署這份表格，須夾附該援權書的核證副本。)
+                    <!--<strong>XXXXXXXX</strong>-->
+                    以授權人身分簽署這份表格，須夾附該援權書的核證副本。)
                 </span></p>
                 <p class="mt-15"># 刪去不適用者</p>
                 <div class="pad bod mt-20">
@@ -1869,7 +1891,8 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
         <div class="mt-15">U.S. Tax Withholding and Reporting FATCA Return Sheet 
             <div class="right "> 
                 <span class="d-in">日期(月/日/年) : <span class="bod-bottom  d-in m-width" >
-                <strong>XXXXXXXX</strong></span></span>  
+                <!--<strong>XXXXXXXX</strong>-->
+                </span></span>
            </div>
            <div class="clear"></div>
         </div>
@@ -1878,7 +1901,8 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
         <div><美國賬戶稅務合規法案>回覆便條
             <div class="right "> 
                 <span class="d-in">Date (MM/DD/YY) : <span class="bod-bottom  d-in m-width" >
-                <strong>XXXXXXXX</strong></span></span>  
+                <!--<strong>XXXXXXXX</strong>-->
+                </span></span>
            </div>
         </div>
         <p class="mt-20">
@@ -1918,21 +1942,22 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td>
                     <p>ID Document Type  &nbsp;  &nbsp;  &nbsp;
                         <span>
-                        <input type="checkbox" id="HKID " class="checkbox-checked" />
+                        <input type="checkbox" id="HKID " class="checkbox-checked-TODO" />
                         <label for="HKID ">HKID </label>
                       </span>&nbsp;  &nbsp;  &nbsp;
                       <span>
-                        <input type="checkbox" id="Passport" class="checkbox-checked" />
+                        <input type="checkbox" id="Passport" class="checkbox-checked-TODO" />
                         <label for="Passport">Passport </label>
                       </span> &nbsp;  &nbsp;  &nbsp;
                       
                       <span>
-                        <input type="checkbox" id="Others" class="" />
+                        <input type="checkbox" id="Others" class="checkbox-checked-TODO" />
                         <label for="Others">Others: </label>
                       </span>
                 </p>
                     <p>身份證明文件類別 &nbsp;  &nbsp;  &nbsp; 香港身份證&nbsp;  &nbsp;  &nbsp; 護照 &nbsp;  &nbsp;  &nbsp; 其他 <span class="bod-bottom  d-in m-width" >
-                        <strong>XXXXXXXX</strong></span></p>
+                        <!--<strong>XXXXXXXX</strong>-->
+                    </span></p>
                 </td>
             </tr><tr>
                 <td>
@@ -1953,13 +1978,13 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
             <tr>
                 <td>
                     <p>
-                        <input type="checkbox" id="W-8BEN" class="checkbox-checked" />
+                        <input type="checkbox" id="W-8BEN" class="checkbox-checked-TODO" />
                         <label for="W-8BEN"> I, by ticking this box, declare that I am not a U.S. citizen. (To complete Form W-8BEN)<br>
                             &nbsp;  &nbsp;  &nbsp; 本人，通過在此格中加上剔號，謹此聲明本人並非美國公民。(需填寫 W-8BEN 表格) </label>
                         </p>
 
                       <p>
-                        <input type="checkbox" id="W-9" class="" />
+                        <input type="checkbox" id="W-9" class="checkbox-checked-TODO" />
                         <label for="W-9">I, by ticking this box, declare that I am a U.S. citizen. (To complete Form W-9)<br>
                             &nbsp;  &nbsp;  &nbsp; 本人，通過在此格中加上剔號，謹此聲明本人是美國公民。(需填寫 W-9 表格) </label>
                         </p>
@@ -1971,12 +1996,12 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
             <p>Signature of Customer 客戶簽署</p>
 
             <p class="mt-15">X &nbsp;  &nbsp;  &nbsp; <span class="bod-bottom m-width d-in" >
-                <strong>XXXXXXXX</strong> 
+                <!--<strong>XXXXXXXX</strong> -->
             </span>
             </p>
 
             <p class="mt-15">Date (MM/DD/YY) 日期(月/日/年) &nbsp;  &nbsp;  &nbsp; <span class="bod-bottom m-width d-in" >
-                <strong>XXXXXXXX</strong> 
+                <!--<strong>XXXXXXXX</strong> -->
             </span>
             </p>
         </div>
@@ -2003,13 +2028,13 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
         <p class="text-center"><strong>新開立客戶之風險評估表</strong></p>
         <p>
             客戶姓名: <span class="bod-bottom m-width d-in" >
-                <strong>XXXXXXXX</strong> 
+                <!--<strong>XXXXXXXX</strong> -->
             </span> &nbsp;  &nbsp;  &nbsp;
             授權人姓名: <span class="bod-bottom m-width d-in" >
-                <strong>XXXXXXXX</strong> 
+                <!--<strong>XXXXXXXX</strong> -->
             </span> &nbsp;  &nbsp;  &nbsp;
             開戶日期: _ <span class="bod-bottom m-width d-in" >
-                <strong>XXXXXXXX</strong> 
+                <!--<strong>XXXXXXXX</strong> -->
             </span>
         </p>
         <table width="100%" class="table mt-10">
@@ -2031,7 +2056,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                             <td width="25%">個人客戶國籍</td>
                             <td width="27%">
                                 <span class="bod-bottom m-width d-in" >
-                                    <strong>XXXXXXX</strong> 
+                                    <!--<strong>XXXXXXX</strong> -->
                                 </span> 
                             </td>
                             <td width="30%">
@@ -2056,7 +2081,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                             <td width="25%">機構客戶總部設立於那一個國家</td>
                             <td width="27%">
                                 <span class="bod-bottom m-width d-in" >
-                                    <strong>XXXXXXX</strong> 
+                                    <!--<strong>XXXXXXX</strong> -->
                                 </span> 
                             </td>
                             <td width="30%">
@@ -2092,7 +2117,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                             <td width="25%">客戶從事什麼類型的企業 </td>
                             <td width="27%">
                                 <span class="bod-bottom m-width d-in" >
-                                    <strong>XXXXXXX</strong> 
+                                    <!--<strong>XXXXXXX</strong> -->
                                 </span> 
                             </td>
                             <td width="30%">
@@ -2115,7 +2140,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                             <td width="25%">是屬於現金密集及較為容易牽涉到洗錢的業務</td>
                             <td width="27%">
                                 <span class="bod-bottom m-width d-in" >
-                                    <strong>XXXXXXX</strong> 
+                                    <!--<strong>XXXXXXX</strong> -->
                                 </span> 
                             </td>
                             <td width="30%">
@@ -2147,7 +2172,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                             <td width="25%">是屬於複雜結構的機構 </td>
                             <td width="27%">
                                 <span class="bod-bottom m-width d-in" >
-                                    <strong>XXXXXXX</strong> 
+                                    <!--<strong>XXXXXXX</strong> -->
                                 </span> 
                             </td>
                             <td width="30%">
@@ -2183,7 +2208,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                             <td width="25%">我們提供什麼樣的產品/服務可能容易牽涉到洗黑錢 </td>
                             <td width="27%">
                                 <span class="bod-bottom m-width d-in" >
-                                    <strong>XXXXXXX</strong> 
+                                    <!--<strong>XXXXXXX</strong> -->
                                 </span> 
                             </td>
                             <td width="30%">
@@ -2215,7 +2240,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                             <td width="25%">我們直接從客戶那裡接受現金 </td>
                             <td width="27%">
                                 <span class="bod-bottom m-width d-in" >
-                                    <strong>XXXXXXX</strong> 
+                                    <!--<strong>XXXXXXX</strong> -->
                                 </span> 
                             </td>
                             <td width="30%">
@@ -2252,7 +2277,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                             <td width="25%">客戶過往投資經驗</td>
                             <td width="27%">
                                 <span class="bod-bottom m-width d-in" >
-                                    <strong>XXXXXXX</strong> 
+                                    <!--<strong>XXXXXXX</strong> -->
                                 </span> 
                             </td>
                             <td width="30%">
@@ -2288,7 +2313,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                             <td width="25%">客戶收入與資產</td>
                             <td width="27%">
                                 <span class="bod-bottom m-width d-in" >
-                                    <strong>XXXXXXX</strong> 
+                                    <!--<strong>XXXXXXX</strong> -->
                                 </span> 
                             </td>
                             <td width="30%">
@@ -2387,11 +2412,11 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                     </table>
                    結論:
                     <p>高風險數量 <span class="bod-bottom m-width d-in" >
-                        <strong>XXXXXXX</strong> 
-                    </span> <spa</p>
+                        <!--<strong>XXXXXXX</strong> -->
+                    </span> </p>
                     
                     <p> 中風險數量 <span class="bod-bottom m-width d-in" >
-                        <strong>XXXXXXX</strong> 
+                        <!--<strong>XXXXXXX</strong> -->
                     </span> </p>
                 </td>
             </tr>
@@ -2412,14 +2437,14 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                         <tr>
                             <td width="50%">
                                 <span class="bod-bottom m-width d-in" style="width: 100%;">
-                                <strong>XXXXXXX</strong> 
+                                <!--<strong>XXXXXXX</strong> -->
                             </span> </td>
                             <td width="5%">
                                
                             </td>
                             <td width="35%">
                                 <span class="bod-bottom m-width d-in" style="width: 100%;">
-                                    <strong>XXXXXXX</strong> 
+                                    <!--<strong>XXXXXXX</strong> -->
                                 </span> 
                                 <p>合規部人員姓名: <br>日期:</p>
                             </td>
@@ -2429,7 +2454,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                     <p class="mt-10">如屬高風險，由負責人員加簽:
                     </p>
                     <p class="bod-bottom m-width d-in" >
-                        <strong>XXXXXXX</strong> 
+                        <!--<strong>XXXXXXX</strong> -->
                     </p> <br>負責人員姓名: <br>
                     日期:
                 </td>
@@ -2482,41 +2507,41 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
             <table width='100%' class='table mt-20'>
                 <tr>
                     <td width="50%">客戶姓名: <span class="bod-bottom m-width d-in" >
-                        <strong>XXXXXXX</strong> 
+                        <!--<strong>XXXXXXX</strong> -->
                         </span> 
                     </td>
                     
                     <td width="50%">持牌人仕: <span class="bod-bottom m-width d-in" >
-                        <strong>XXXXXXX</strong> 
+                        <!--<strong>XXXXXXX</strong> -->
                         </span> 
                     </td>
                 </tr>
                 <tr>
                     <td width="50%">賬戶號碼: <span class="bod-bottom m-width d-in" >
-                        <strong>XXXXXXX</strong> 
+                        <!--<strong>XXXXXXX</strong> -->
                         </span> 
                     </td>
                     
                     <td width="50%">CE No. <span class="bod-bottom m-width d-in" >
-                        <strong>XXXXXXX</strong> 
+                        <!--<strong>XXXXXXX</strong> -->
                         </span> 
                     </td>
                 </tr>
                 <tr class="mt-15">
                     <td width="50%">客戶簽署: <span class="bod-bottom m-width d-in" >
-                        <strong>XXXXXXX</strong> 
+                        <!--<strong>XXXXXXX</strong> -->
                         </span> 
                     </td>
                     
                     <td width="50%">持牌人簽署. <span class="bod-bottom m-width d-in" >
-                        <strong>XXXXXXX</strong> 
+                        <!--<strong>XXXXXXX</strong> -->
                         </span> 
                     </td>
                 </tr>
                 
                 <tr >
                     <td width="50%">日期: <span class="bod-bottom m-width d-in" >
-                        <strong>XXXXXXX</strong> 
+                        <!--<strong>XXXXXXX</strong> -->
                         </span> 
                     </td>
                     
@@ -2588,41 +2613,41 @@ disclosure statement
                     <table width='100%' class='table mt-20'>
                         <tr>
                             <td width="50%">Customer Name: <span class="bod-bottom m-width d-in" >
-                                <strong>XXXXXXX</strong> 
+                                <!--<strong>XXXXXXX</strong> -->
                                 </span> 
                             </td>
                             
                             <td width="50%">Licensed Representative : <span class="bod-bottom m-width d-in" >
-                                <strong>XXXXXXX</strong> 
+                                <!--<strong>XXXXXXX</strong> -->
                                 </span> 
                             </td>
                         </tr>
                         <tr>
                             <td width="50%">Account No.  <span class="bod-bottom m-width d-in" >
-                                <strong>XXXXXXX</strong> 
+                                <!--<strong>XXXXXXX</strong> -->
                                 </span> 
                             </td>
                             
                             <td width="50%">CE. No. <span class="bod-bottom m-width d-in" >
-                                <strong>XXXXXXX</strong> 
+                                <!--<strong>XXXXXXX</strong> -->
                                 </span> 
                             </td>
                         </tr>
                         <tr class="mt-15">
                             <td width="50%">Applicant’s signature : <span class="bod-bottom m-width d-in" >
-                                <strong>XXXXXXX</strong> 
+                                <!--<strong>XXXXXXX</strong> -->
                                 </span> 
                             </td>
                             
                             <td width="50%">Signature of licensed person : <span class="bod-bottom m-width d-in" >
-                                <strong>XXXXXXX</strong> 
+                                <!--<strong>XXXXXXX</strong> -->
                                 </span> 
                             </td>
                         </tr>
                         
                         <tr >
                             <td width="50%">Date : <span class="bod-bottom m-width d-in" >
-                                <strong>XXXXXXX</strong> 
+                                <!--<strong>XXXXXXX</strong> -->
                                 </span> 
                             </td>
                             
@@ -2671,12 +2696,12 @@ disclosure statement
             <table width='100%' class='table'>
                 <tr>
                     <td width="50%">Account Number <br> 帳戶號碼 :<span class="bod-bottom m-width d-in" >
-                        <strong>XXXXXXX</strong> 
+                        <strong>{{account_info.id}}</strong>
                         </span> 
                     </td>
                     
                     <td width="50%">Account Name <br> 帳戶名稱 :  <span class="bod-bottom m-width d-in" >
-                        <strong>XXXXXXX</strong> 
+                        <strong>{{account_info.name_chinese}}</strong>
                         </span> 
                     </td>
                 </tr>
@@ -2703,15 +2728,15 @@ disclosure statement
                     系統發出指示以及通過 貴公司的系統執行的交易渉及各種風險。本人並同意承擔該等風險。</p>
             <p>Password Collection 收取密碼方式 :</p>
             <p>
-                <input type="checkbox" id="Byemail" class="checkbox-checked" />
+                <input type="checkbox" id="Byemail" class={{account_info.settlement_collection_by_email_yesno}} />
                 <label for="Byemail">By email 電子郵件 (必須與本公司紀錄相同)</label>
             </p>
             <p>
-                <input type="checkbox" id="Bymail" class="" />
+                <input type="checkbox" id="Bymail" class={{account_info.settlement_collection_by_mail_yesno}} />
                 <label for="Bymail">By Mail 郵寄 (寄往與本公司紀錄相同地址)</label>
             </p>
             <p>
-                <input type="checkbox" id="Inperson" class="" />
+                <input type="checkbox" id="Inperson" class={{account_info.settlement_collection_in_person_yesno}} />
                 <label for="Inperson">In person (客戶親自到取)</label>
             </p>
             <hr height="5">
@@ -2719,7 +2744,7 @@ disclosure statement
             <div class="mt-15 bod-top">
                 <span class="bod-top2">Client Signature (s) 客戶簽署* :</span>
                 <p>Date 日期 : span class="bod-bottom m-width d-in" >
-                    <strong>XXXXXXX</strong> 
+                    <!--<strong>XXXXXXX</strong> -->
                     </span> 
                 </p>
                 <p><em><u>*Please use the same signature filed with our Company
