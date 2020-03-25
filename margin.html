@@ -94,7 +94,7 @@
                         <table width="100%" cellspacing="0">
                             <tr>
                                 <td class="light-p bod-right" width="35%"> 
-                                    <strong>Name (in English): Mr/Mrs/Miss/Ms</strong>  &nbsp; &nbsp;  &nbsp; Surname:              
+                                    <strong>Name (in English): Mr/Mrs/Miss/Ms</strong>  &nbsp; &nbsp;  &nbsp; <strong>Surname</strong>:              
                                 </td>
                                 <td class=" bod-right" width="25%">
                                     <strong>{{account_info.lastname_en}}</strong>
@@ -115,7 +115,7 @@
                         <table width="100%" cellspacing="0">
                             <tr>
                                 <td class="light-p bod-right" width="35%"> 
-                                    <strong>姓名(中文):先生/太太/小姐/女士</strong>  &nbsp; &nbsp;  &nbsp; 姓::              
+                                    <strong>姓名(中文):先生/太太/小姐/女士</strong>  &nbsp; &nbsp;  &nbsp; 姓:            
                                 </td>
                                 <td class=" bod-right"  width="25%">
                                     <strong>{{account_info.firstname_zh}}</strong>
@@ -138,7 +138,7 @@
                                 <td class="light-p bod-right" width="15%"> 
                                     <strong>Date of Birth</strong> <br>出生日期:            
                                 </td>
-                                <td class=" bod-right" width="30%">
+                                <td class=" bod-right" width="30%" valign="middle" style="padding-top: 10px;">
                                   <strong>{{account_info.dob}}</strong>
                                   <div class="right-align">(日/月/年) <br>(dd/mm/yyyy)</div>
                                 </td>
@@ -228,9 +228,12 @@
                                             <td class="bod-bottom"><strong>{{account_info.address}}</strong></td>
                                         </tr>
                                         <tr>
-                                            <td>
-                                              <!-- <strong>XXXXXXXX</strong> -->
-                                            </td>
+                                            <td class="bod-bottom" ><!--<strong> </strong>--></td> 
+                                        </tr>
+
+                                        
+                                        <tr>
+                                            <td class="bod-bottom">&nbsp;</td> 
                                         </tr>
 
 
@@ -569,7 +572,7 @@
                         <!--<label for="Yes3">Yes 有 _____year (s) 年</label>-->
                         </p>
                 </td>
-                <td width="20%">>Forex / Bullion 外匯交易/貴金屬 </td>
+                <td width="20%">Forex / Bullion 外匯交易/貴金屬 </td>
                 <td width="9%"> 
                     <p>
                         <input type="checkbox" id="No4" class="{{account_info.foreign_currency_gold_experience_id_no_checkbox_class}}" />
@@ -2293,7 +2296,7 @@ disclosure statement
 </p>
 <hr height="5">
 
-<div class="mt-20 bod-top">
+<div class="mt-20 bod-top" style="padding-top: 30px;">
     <span class="bod-top2">Client Signature (s) 客戶簽署* :</span>
     <p>Date 日期 : <span class="bod-bottom m-width d-in" >
         <!--<strong>XXXXXXX</strong> -->
@@ -2424,9 +2427,10 @@ disclosure statement
     <p> On Duplicate</p>
     <p class="linespace1-5">I/We have read, understood and accept the terms of this Credit Facility Letter and request Grand Partners Securities
         Limited to provide the Credit Facility to me/us on the terms hereof.</p>
-    <p><span class="bod-bottom">
+    <p class="" style="margin-top: 20px;">
+        <span class="bod-bottom">
         <!--<strong>XXXXXXX</strong>-->
-    </span>> (Signature & confirm)
+    </span> (Signature & confirm)
     </p>
 
     <p>Client:</p>
@@ -2501,29 +2505,54 @@ disclosure statement
 <p>致 : 利盟證券有限公司</p>
 <table width="100%" border="1" class="table mt-20">
     <tr>
-        <td class="thbg">
+        <td class="thbg" colspan="2">
             Account Information 戶口資料
         </td>
+
     </tr>
     <tr>
-        <td>
+        <td width="30%" class="bod-right0">
             Account No. 戶口號碼
+        </td>
+        
+        <td class="bod-left0">
+            <span class="bod-bottom m-width d-in" style="margin-left: 15px;" >
+                <strong>XXXXXXXX</strong>
+            </span>
         </td>
     </tr>
     <tr>
-        <td>
+        <td width="30%" class="bod-right0">
             <p>Name in Chinese</p>
             <p>客戶姓名 (中文)</p>
         </td>
-    </tr>
-    <tr>
-        <td>
-            <p>Name in English</p>
-            <p>客戶姓名 (英文)</p>
+        
+        <td class="bod-left0">
+            <span class="bod-bottom m-width d-in" style="margin-left: 15px;" >
+                <strong>XXXXXXXX</strong>
+            </span>
         </td>
     </tr>
     <tr>
-        <td>
+        <td width="30%" class="bod-right0">
+            <p>Name in English</p>
+            <p>客戶姓名 (英文)</p>
+        </td>
+        <td class="bod-left0">
+            <p>
+                <span class="bod-bottom m-width d-in" style="margin-left: 15px;" >
+                    <strong>XXXXXXXX</strong>
+                </span>
+            </p>
+            <p>
+                <span class="bod-bottom m-width d-in" style="margin-left: 15px;" >
+                    <strong>XXXXXXXX</strong>
+                </span>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
             <p>ID Document Type  &nbsp;  &nbsp;  &nbsp;
                 <span>
                 <input type="checkbox" id="HKID " class="checkbox-checked-TODO" />
@@ -2543,10 +2572,26 @@ disclosure statement
                 <!--<strong>XXXXXXXX</strong>-->
             </span></p>
         </td>
+
+
     </tr><tr>
-        <td>
+        <td width="30%"  class="bod-right0">
             <p>ID Document No</p>
             <p>身份證明文件號碼</p>
+        </td>
+        <td class="bod-left0">
+            <p>
+                <span class="bod-bottom m-width d-in" style="margin-left: 15px;" >
+                    <strong>XXXXXXXX</strong>
+                </span>
+            </p>
+            <p>
+                <span class="bod-bottom m-width d-in" style="margin-left: 15px;" >
+                    <strong>XXXXXXXX</strong>
+                </span>
+            </p>
+            
+            
         </td>
     </tr>
 
@@ -2624,7 +2669,7 @@ disclosure statement
             授權人姓名: <span class="bod-bottom m-width d-in" >
                 <!--<strong>XXXXXXXX</strong> -->
             </span> &nbsp;  &nbsp;  &nbsp;
-            開戶日期: _ <span class="bod-bottom m-width d-in" >
+            開戶日期: <span class="bod-bottom m-width d-in" >
                 <!--<strong>XXXXXXXX</strong> -->
             </span>
         </p>
