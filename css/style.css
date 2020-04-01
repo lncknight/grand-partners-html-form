@@ -121,6 +121,9 @@ ol li{
 .pad{
     padding: 0.5em;
 }
+.mt-5{
+    margin-top: 5px;
+}
 .mt-10{
     margin-top: 10px;
 }
