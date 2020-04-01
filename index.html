@@ -207,7 +207,6 @@
                                         <input type="checkbox" id="others"  />
                                         <label for="others"> Others 其他__________</label>
                                       </p>
-
                                 </td>
                                 
                             </tr>
@@ -228,7 +227,7 @@
                                             <td class="bod-bottom"><strong>{{account_info.address}}</strong></td>
                                         </tr>
                                         <tr>
-                                            <td class="bod-bottom" style="margin-top: 15px;" ><!--<strong> </strong>--></td> 
+                                            <td class="bod-bottom" style="padding-top: 15px;" ><!--<strong> </strong>--></td> 
                                         </tr>
                                         <tr>
                                             <td class="bod-bottom">&nbsp;</td> 
@@ -255,15 +254,13 @@
                                         <label for="Owned"> Owned 自置</label>
                                       </p>
                                 </td>
-                                <td class=" bod-right" width="15%">
-                                    
+                                <td class=" bod-right" width="15%">                                    
                                     <p>
                                         <input type="checkbox" id="Rented" class="{{account_info.address_type_id_2_checkbox_class}}" />
                                         <label for="Rented"> Rented 租用 </label>
                                       </p>
                                 </td>
-                                <td class="" width="37%">
-                                    
+                                <td class="" width="37%">                                    
                                     <p>
                                         <input type="checkbox" id="Others2" class="{{account_info.address_type_id_999_checkbox_class}}" />
                                         <label for="Others2"> Others 其他 {{account_info.address_type_other_text}}</label>
@@ -279,7 +276,7 @@
                 
                 <tr>
                     <td class="pad0">
-                        <table width="100%" cellspacing="0"     >
+                        <table width="100%" cellspacing="0">
                             <tr>
                                 <td class="light bod-right" width="33%"> 
                                     <strong>Home Telephone No.</strong> <br>
@@ -358,7 +355,7 @@
                 
                 <tr>
                     <td class="pad0">
-                        <table width="100%" cellspacing="0"     >
+                        <table width="100%" cellspacing="0">
                             <tr>
                                 <td class="light bod-right" width="33%"> 
                                     <strong>Business/Office Address</strong> <br>
@@ -367,7 +364,6 @@
                                 <td class="" width="67%">
                                     <strong>{{account_info.employer_address}}</strong>
                                 </td>
-                             
                             </tr>
                             
                         </table>
@@ -377,7 +373,7 @@
                 
                 <tr>
                     <td class="pad0">
-                        <table width="100%" cellspacing="0"     >
+                        <table width="100%" cellspacing="0">
                             <tr>
                                 <td class="light bod-right" width="33%"> 
                                     <strong>Office Telephone </strong> <br>
@@ -596,7 +592,7 @@
             </tr>
         </table>
 
-        <table width="100%" cellspacing="0" border="0" class="table mt-15">
+        <table width="100%" cellspacing="0" border="0" class="table mt-5">
             <tr>
                 <td>Investment Objectives <br>投資目標:  </td>
                 <td> 
@@ -1943,8 +1939,6 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
             <tr>
                 <td class="thbg" colspan="2">
                     Account Information 戶口資料
-
-
                 </td>
             </tr>
             <tr>
@@ -1970,14 +1964,10 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td class="bod-left0">
                     <p>
                         <span class="bod-bottom m-width d-in" style="margin-left: 15px;" >
-                            <strong>  {{account_info.firstname_zh}}</strong>
+                            <strong>  {{account_info.firstname_zh}} {{account_info.lastname_zh}}</strong>
                         </span>
                     </p>
-                    <p>
-                        <span class="bod-bottom m-width d-in" style="margin-left: 15px;" >
-                            <strong>   {{account_info.lastname_zh}}</strong>
-                        </span>
-                    </p>
+                   
                 </td>
             </tr>
             <tr>
@@ -1990,14 +1980,10 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td class="bod-left0">
                     <p>
                         <span class="bod-bottom m-width d-in" style="margin-left: 15px;" >
-                            <strong>  {{account_info.firstname_en}}</strong>
+                            <strong>  {{account_info.firstname_en}} {{account_info.lastname_en}}</strong>
                         </span>
                     </p>
-                    <p>
-                        <span class="bod-bottom m-width d-in" style="margin-left: 15px;" >
-                            <strong> {{account_info.lastname_en}}</strong>
-                        </span>
-                    </p>
+                   
                 </td>
             </tr>
             <tr>
