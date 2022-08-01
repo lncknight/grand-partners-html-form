@@ -2,7 +2,16 @@
 
 In this project, there are HTML templates source for PDF generator.
 
-This source is connected to PHP backend using Musache template engine a dynamic pages.
+This source is connected to PHP backend using Mustache template engine a dynamic pages.
+
+```mermaid
+graph
+    gen[generate PDF request] --> be[Backend]
+    subgraph PDF generator
+        be --> |collect user data, html source `this project`| engine[Mustache Engine]
+        engine --> |PDF generate| file[PDF file]
+    end
+```
 
 ## File desciption
 
