@@ -35,6 +35,10 @@ ol li{
     position: relative;
     height: calc(100% - 85px);
 }
+
+.container{
+    font-size: 14px;
+}
 .h-100{
     height: 100%;
 }
