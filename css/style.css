@@ -260,3 +260,25 @@ label:hover:before {
 .break-after {
     page-break-after: always;
 }
+
+/* newpages */
+.mini-container{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#newImg{
+    width: 40%;
+    height: 9vw;
+    
+}
+
+.btmu 
+{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+    padding-top: 25px;
+  }
+  
