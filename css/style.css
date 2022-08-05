@@ -274,7 +274,7 @@ label:hover:before {
 #newImg{
     width: 40%;
     height: 9vw;
-    
+    padding-top: 50px;
 }
 
 .btmu 
@@ -284,5 +284,9 @@ label:hover:before {
     background: transparent;
     border-bottom: 1px solid black;
     padding-top: 25px;
+    margin-right: 30px;
   }
-  
+  .col{
+    text-align: left;
+    align-items: flex-start;
+  }
