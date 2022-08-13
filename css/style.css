@@ -288,3 +288,7 @@ label:hover:before {
     text-align: left;
     align-items: flex-start;
   }
+
+  td{
+    vertical-align: bottom;
+  }
