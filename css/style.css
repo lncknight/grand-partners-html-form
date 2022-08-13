@@ -33,7 +33,8 @@ ol li{
 
 .posre, .container{
     position: relative;
-    height: calc(100% - 85px);
+    min-height: 1714px;
+    /* height: calc(100% - 85px); */
 }
 
 .container{
