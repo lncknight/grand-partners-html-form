@@ -1246,7 +1246,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
         </div>
         <div class="linespace1-5 pad mt-50">
             <p>Executed as a deed on 簽訂作契約於: <span class="bod-bottom" style="width: 50%; display: inline-block;">
-                <!--<strong>XXXXXXXX</strong>-->
+                <strong>{{account_info.create_time}}</strong>
             </span>			(insert date 請填上日期)</p>
             <p>Signed and delivered by: 簽署、蓋印及交付：</p>
         </div>
@@ -1264,7 +1264,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <tr>
                     <td width="32%" >
                         <div class="bod-bottom mt-20">
-                            <!--<strong>XXXXXXXX</strong>-->
+                            <strong>{{account_info.firstname_en}} {{account_info.lastname_en}}</strong>
                         </div>
                     </td>
                     <td width="32%"><div class="bod-bottom mt-20">
@@ -1274,14 +1274,18 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                         <div class="bod-bottom mt-20">
                             <!--<strong>XXXXXXXX</strong>-->
                         </div>
-                        <p class="mt-10">
-                            CE No. 持牌代表中央編號:
-                             <span class="bod-bottom m-width">
-                                <strong>XXXXXXXX</strong>
-                            </span>
-                        </p>
                         
                         </td>
+                </tr>
+                <tr style="height: 15px;">
+                    <td></td>
+                    <td></td>
+                    <td style="vertical-align: bottom; display: flex; padding-top: 15px;">
+                        CE No. 持牌代表中央編號: 
+                        <div class="bod-bottom" style="width: 50%">
+                            <!-- <strong>XXXXXXXX</strong> -->
+                        </div>
+                    </td>
                 </tr>
 
         </table>
@@ -1311,7 +1315,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td width="10%"></td>
                 <td width="30%">
                     <div class="bod-bottom">
-                        <!--<strong>XXXXXXXX</strong>-->
+                        <strong>{{account_info.create_time}}</strong>
                     </div>
                     Date 日期
                 </td>
@@ -1580,7 +1584,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td>稱謂 (例如：先生、太太、女士、小姐) </td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <!--<strong>XXXXXXXX</strong>-->
+                        <strong>{{account_info.applicant_title}}</strong>
                     </div>
                 </td>
             </tr>
@@ -1589,7 +1593,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td>姓氏 *</td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <!--<strong>XXXXXXXX</strong>-->
+                        <strong>{{account_info.lastname_zh}}</strong>
                     </div>
                 </td>
             </tr>
@@ -1598,7 +1602,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td>名字 *</td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <!--<strong>XXXXXXXX</strong>-->
+                        <strong>{{account_info.firstname_zh}}</strong>
                     </div>
                 </td>
             </tr>
@@ -1617,7 +1621,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td><strong>(2) 香港身份證或護照號碼 </strong> </td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <!--<strong>XXXXXXXX</strong>-->
+                        <strong>{{account_info.identification_number}}</strong>
                     </div>
                 </td>
             </tr>
@@ -1633,7 +1637,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td>道、地區) </td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <!--<strong>XXXXXXXX</strong>-->
+                        <strong>{{account_info.address}}</strong>
                     </div>
                 </td>
             </tr>
@@ -1642,7 +1646,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td>第 2 行 (城市)</td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <!--<strong>XXXXXXXX</strong>-->
+                        <strong>{{account_info.address_city}}</strong>
                     </div>
                 </td>
             </tr>
@@ -1651,7 +1655,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td>第 3 行 (例如：省、州) </td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <!--<strong>XXXXXXXX</strong>-->
+                        <strong>{{account_info.address_type_other_text}}</strong>
                     </div>
                 </td>
             </tr>
@@ -1669,7 +1673,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td>郵政編碼 /郵遞區號碼 </td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <!--<strong>XXXXXXXX</strong>-->
+                        <strong>{{account_info.address_country}}</strong>
                     </div>
                 </td>
             </tr> 
@@ -1729,7 +1733,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td><strong>(5) 出生日期 * </strong> (日 /月 /年) </td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <!--<strong>XXXXXXXX</strong>-->
+                        <strong>{{account_info.dob_format2}}</strong>
                     </div>
                 </td>
             </tr> 
@@ -1755,7 +1759,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td>省 /州 </td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <!--<strong>XXXXXXXX</strong>-->
+                        <strong>{{account_info.place_of_birth_province_text}}</strong>
                     </div>
                 </td>
             </tr> 
@@ -1764,7 +1768,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                 <td>國家 </td>
                 <td width="50%">
                     <div class="bod-bottom">
-                        <!--<strong>XXXXXXXX</strong>-->
+                        <strong>{{account_info.place_of_birth_other_country_text}}</strong>
                     </div>
                 </td>
             </tr> 
@@ -1812,19 +1816,19 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                     <th align="left" class="pad" width="15%">(1) </th>
                     <td width="15%">
                         <div class="" >
-                             <strong>XXXXXXXX</strong> 
+                             <strong>{{account_info.tax_id}}</strong> 
                           </div>
                     </td>
                     <td  width="25%">
                         
                         <div class="" >
-                            <strong>XXXXXXXX</strong> 
+                            <!-- <strong>XXXXXXXX</strong>  -->
                          </div>
                     </td>
                     <td  width="45%"> 
                         
                         <div class="" >
-                            <strong>XXXXXXXX</strong> 
+                            <!-- <strong>XXXXXXXX</strong>  -->
                          </div>
                     </td>
                 </tr>
@@ -1833,19 +1837,19 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                     <td>
                         
                         <div class="" >
-                            <strong>XXXXXXXX</strong> 
+                            <!-- <strong>XXXXXXXX</strong>  -->
                          </div>
                     </td>
                     <td>
                         
                         <div class="" >
-                            <strong>XXXXXXXX</strong> 
+                            <!-- <strong>XXXXXXXX</strong>  -->
                          </div>
                     </td>
                     <td>
                         
                         <div class="" >
-                            <strong>XXXXXXXX</strong> 
+                            <!-- <strong>XXXXXXXX</strong>  -->
                          </div>
                     </td>
                 </tr>
@@ -1854,19 +1858,19 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                     <td>
                         
                         <div class="" >
-                            <strong>XXXXXXXX</strong> 
+                            <!-- <strong>XXXXXXXX</strong>  -->
                          </div>
                     </td>
                     <td>
                         
                         <div class="" >
-                            <strong>XXXXXXXX</strong> 
+                            <!-- <strong>XXXXXXXX</strong>  -->
                          </div>
                     </td>
                     <td>
                         
                         <div class="" >
-                            <strong>XXXXXXXX</strong> 
+                            <!-- <strong>XXXXXXXX</strong>  -->
                          </div>
                     </td>
                 </tr>
@@ -1875,19 +1879,19 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                     <td>
                         
                         <div class="" >
-                            <strong>XXXXXXXX</strong> 
+                            <!-- <strong>XXXXXXXX</strong>  -->
                          </div>
                     </td>
                     <td>
                         
                         <div class="" >
-                            <strong>XXXXXXXX</strong> 
+                            <!-- <strong>XXXXXXXX</strong>  -->
                          </div>
                     </td>
                     <td>
                         
                         <div class="" >
-                            <strong>XXXXXXXX</strong> 
+                            <!-- <strong>XXXXXXXX</strong>  -->
                          </div>
                     </td>
                 </tr>
@@ -1896,19 +1900,19 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                     <td>
                         
                         <div class="" >
-                            <strong>XXXXXXXX</strong> 
+                            <!-- <strong>XXXXXXXX</strong>  -->
                          </div>
                     </td>
                     <td>
                         
                         <div class="" >
-                            <strong>XXXXXXXX</strong> 
+                            <!-- <strong>XXXXXXXX</strong>  -->
                          </div>
                     </td>
                     <td>
                         
                         <div class="" >
-                            <strong>XXXXXXXX</strong> 
+                            <!-- <strong>XXXXXXXX</strong>  -->
                          </div>
                     </td>
                 </tr>
@@ -1930,16 +1934,16 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                     <!--<strong>XXXXXXXX</strong>-->
                 </span></p>
                 <p class="mt-20">姓名 ： <span class="bod-bottom m-width d-in" >
-                    <!--<strong>XXXXXXXX</strong>-->
+                    <strong>{{account_info.name_chinese}}</strong>
                 </span></p>
                 <p>身分 ： <span class="bod-bottom m-width d-in" >
-                    <!--<strong>XXXXXXXX</strong>-->
-                    (如你不是第 1 部所述的個人，說明你的身分。如果你是
-                </span></p>
+                    <!-- <strong>XXXXXXXX</strong> -->
+                </span>(如你不是第 1 部所述的個人，說明你的身分。如果你是
+                </p>
                 <p>日期 ： <span class="bod-bottom m-width d-in" >
-                    <!--<strong>XXXXXXXX</strong>-->
-                    以授權人身分簽署這份表格，須夾附該援權書的核證副本。)
-                </span></p>
+                    <strong>{{account.create_date}}</strong>
+                </span>以授權人身分簽署這份表格，須夾附該援權書的核證副本。)
+                </p>
                 <p class="mt-15"># 刪去不適用者</p>
                 <div class="pad bod mt-20">
                     <strong>
@@ -2183,7 +2187,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                             <td width="25%">個人客戶國籍</td>
                             <td width="27%">
                                 <span class="bod-bottom m-width d-in" >
-                                   <strong>XXXXXXX</strong> 
+                                   <!-- <strong>XXXXXXX</strong>  -->
                                 </span> 
                             </td>
                             <td width="30%">
@@ -2208,7 +2212,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                             <td width="25%">機構客戶總部設立於那一個國家</td>
                             <td width="27%">
                                 <span class="bod-bottom m-width d-in" >
-                                   <strong>XXXXXXX</strong> 
+                                   <!-- <strong>XXXXXXX</strong>  -->
                                 </span> 
                             </td>
                             <td width="30%">
@@ -2244,7 +2248,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                             <td width="25%">客戶從事什麼類型的企業 </td>
                             <td width="27%">
                                 <span class="bod-bottom m-width d-in" >
-                                    <strong>XXXXXXX</strong> 
+                                    <!-- <strong>XXXXXXX</strong>  -->
                                 </span> 
                             </td>
                             <td width="30%">
@@ -2267,7 +2271,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                             <td width="25%">是屬於現金密集及較為容易牽涉到洗錢的業務</td>
                             <td width="27%">
                                 <span class="bod-bottom m-width d-in" >
-                                   <strong>XXXXXXX</strong>
+                                   <!-- <strong>XXXXXXX</strong> -->
                                 </span> 
                             </td>
                             <td width="30%">
@@ -2299,7 +2303,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                             <td width="25%">是屬於複雜結構的機構 </td>
                             <td width="27%">
                                 <span class="bod-bottom m-width d-in" >
-                                    <strong>XXXXXXX</strong>
+                                    <!-- <strong>XXXXXXX</strong> -->
                                 </span> 
                             </td>
                             <td width="30%">
@@ -2335,7 +2339,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                             <td width="25%">我們提供什麼樣的產品/服務可能容易牽涉到洗黑錢 </td>
                             <td width="27%">
                                 <span class="bod-bottom m-width d-in" >
-                                    <strong>XXXXXXX</strong> 
+                                    <!-- <strong>XXXXXXX</strong>  -->
                                 </span> 
                             </td>
                             <td width="30%">
@@ -2367,7 +2371,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                             <td width="25%">我們直接從客戶那裡接受現金 </td>
                             <td width="27%">
                                 <span class="bod-bottom m-width d-in" >
-                                    <strong>XXXXXXX</strong> 
+                                    <!-- <strong>XXXXXXX</strong>  -->
                                 </span> 
                             </td>
                             <td width="30%">
@@ -2404,7 +2408,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                             <td width="25%">客戶過往投資經驗</td>
                             <td width="27%">
                                 <span class="bod-bottom m-width d-in" >
-                                    <strong>XXXXXXX</strong> 
+                                    <!-- <strong>XXXXXXX</strong>  -->
                                 </span> 
                             </td>
                             <td width="30%">
@@ -2440,7 +2444,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                             <td width="25%">客戶收入與資產</td>
                             <td width="27%">
                                 <span class="bod-bottom m-width d-in" >
-                                    <strong>XXXXXXX</strong> 
+                                    <!-- <strong>XXXXXXX</strong>  -->
                                 </span> 
                             </td>
                             <td width="30%">
@@ -2539,11 +2543,11 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                     </table>
                    結論:
                     <p>高風險數量 <span class="bod-bottom m-width d-in" >
-                       <strong>XXXXXXX</strong> 
+                       <!-- <strong>XXXXXXX</strong>  -->
                     </span> </p>
                     
                     <p> 中風險數量 <span class="bod-bottom m-width d-in" >
-                        <strong>XXXXXXX</strong> 
+                        <!-- <strong>XXXXXXX</strong>  -->
                     </span> </p>
                 </td>
             </tr>
@@ -2564,14 +2568,14 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                         <tr>
                             <td width="50%">
                                 <span class="bod-bottom m-width d-in" style="width: 100%;">
-                               <strong>XXXXXXX</strong>
+                               <!-- <strong>XXXXXXX</strong> -->
                             </span> </td>
                             <td width="5%">
                                
                             </td>
                             <td width="35%">
                                 <span class="bod-bottom m-width d-in" style="width: 100%;">
-                                    <strong>XXXXXXX</strong> 
+                                    <!-- <strong>XXXXXXX</strong>  -->
                                 </span> 
                                 <p>合規部人員姓名: <br>日期:</p>
                             </td>
@@ -2581,7 +2585,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                     <p class="mt-10">如屬高風險，由負責人員加簽:
                     </p>
                     <p class="bod-bottom m-width d-in" >
-                        <strong>XXXXXXX</strong> 
+                        <!-- <strong>XXXXXXX</strong>  -->
                     </p> <br>負責人員姓名: <br>
                     日期: <br>
                 </td>
@@ -2654,7 +2658,7 @@ to receive payments (if any) to the Applicant in accordance with the Documents.
                     </td>
                     
                     <td width="50%">CE No. <span class="bod-bottom m-width d-in" >
-                        {{account_info.identity_declaration1_texth}}
+                        {{account_info.identity_declaration1_text}}
                         </span>
                     </td>
                 </tr>
@@ -2753,18 +2757,18 @@ disclosure statement
                 <table width='100%' class='table mt-20'>
                     <tr>
                         <td width="50%">Customer Name: <span class="bod-bottom m-width d-in" >
-                            <!--<strong>XXXXXXX</strong> -->
+                            <strong>{{account_info.name_english}}</strong>
                             </span> 
                         </td>
                         
                         <td width="50%">Licensed Representative : <span class="bod-bottom m-width d-in" >
-                            <!--<strong>XXXXXXX</strong> -->
+                            <!-- <strong>XXXXXXX</strong> -->
                             </span> 
                         </td>
                     </tr>
                     <tr>
                         <td width="50%">Account No.  <span class="bod-bottom m-width d-in" >
-                            <!--<strong>XXXXXXX</strong> -->
+                            <strong>{{account.id}}</strong>
                             </span> 
                         </td>
                         
@@ -2787,7 +2791,7 @@ disclosure statement
                     
                     <tr >
                         <td width="50%">Date : <span class="bod-bottom m-width d-in" >
-                            <!--<strong>XXXXXXX</strong> -->
+                            <strong>{{account.create_date}}</strong>
                             </span> 
                         </td>
                         
