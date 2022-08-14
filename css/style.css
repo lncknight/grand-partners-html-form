@@ -292,3 +292,9 @@ label:hover:before {
   td{
     vertical-align: bottom;
   }
+
+  .flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
