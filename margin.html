@@ -1327,7 +1327,7 @@ opinion if I so wish. <br>
         </div>
         <div class="pad">
             <p>Executed as a deed on 簽訂作契約於: <span class="bod-bottom" style="width: 50%; display: inline-block;">
-                <strong>{{account_info.create_time}}</strong>
+                <strong>{{account.create_date}}</strong>
             </span>			(insert date 請填上日期)</p>
             <p class="mt20">Signed and delivered by: 簽署、蓋印及交付：</p>
         </div>
@@ -1368,9 +1368,8 @@ opinion if I so wish. <br>
                         </div>
                     </td>
                 </tr>
-
         </table>
-
+        <br>
         <div class="dark-p  pad mt-20">
             Declaration by a licensed person accredited to Grand Partners Securities Limited <br>
 隸屬於利盟證券有限公司持牌人士聲明
@@ -1394,13 +1393,13 @@ opinion if I so wish. <br>
                 <td width="10%"></td>
                 <td width="30%">
                     <div class="bod-bottom">
-                        <strong>{{account_info.create_time}}</strong>
+                        <strong>{{account.create_date}}</strong>
                     </div>
                     Date 日期
                 </td>
             </tr>
         </table>
-        
+        <br>
         <table width="80%" class="mt-20">
             <tr>
                 <td width="30%">
@@ -3389,18 +3388,23 @@ Reference Letter). <br>
                 <br>
             </div>
             &nbsp;
-            <div class="col">
-                <label for="type1">客戶簽名 ：</label>
-                <input type="text" name="" id="type1"  class="btmu" size="40" autocomplete>
-                <br>
-                <label for="type2">客戶名稱 ：</label>
-                <input type="text" name="" id="type2"  class="btmu" size="40" autocomplete>
-                <br>
-                <label for="type3">戶口號碼 ：</label>
-                <input type="text" name="" id="type3"  class="btmu" size="40" autocomplete>
-                <br>
-                <label for="type4">日期 <span style="margin-left: 2.65vw;">:</span></label>
-                <input style="margin-left: 1vw;" type="text" name="" id="type4"  class="btmu" size="40" autocomplete>      
+            <div class="flex">
+                <div>
+                    <label for="type1">客戶簽名 ：</label>
+                    <input type="text" name="" id="type1"  class="btmu" size="40" autocomplete>
+                </div>
+                <div>    
+                    <label for="type2">客戶名稱 ：</label>
+                    <input type="text" name="" id="type2"  class="btmu" size="40" autocomplete>
+                </div>
+                <div>
+                    <label for="type3">戶口號碼 ：</label>
+                    <input type="text" name="" id="type3"  class="btmu" size="40" autocomplete>
+                </div>
+                <div>
+                    <label for="type4">日期 <span style="margin-left: 31px;">:</span></label>
+                    <input style="margin-left: 1vw;" type="text" name="" id="type4"  class="btmu" size="40" autocomplete>      
+                </div>
             </div>
             <p style="padding-top:25px;">
                 備注： 個人信息收集聲明關於中華通北向交易
