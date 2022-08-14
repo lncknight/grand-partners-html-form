@@ -239,7 +239,8 @@ label:hover:before {
 .pb85{padding-bottom: 85px;}
 
 .right{
-    float: right;
+    float: left;
+    margin-right: 300px;
 }
 
 .height50{

@@ -2560,23 +2560,31 @@ disclosure statement
             Tel : (852) 3701 3200 Fax : (852) 3102 1855</p>
     </div>
 </div>
-<div>U.S. Tax Withholding and Reporting FATCA Return Sheet 
+<br>
+<div style="display: flex;">
+    <span style="width: 80%;">strong U.S. Tax Withholding and Reporting FATCA Return Sheet</span>
+    <div style="display: flex; width: 700px;margin-left: 100px;">
+        <span>日期(月/日/年): </span> <span style="margin-left: 5px;" class="bod-bottom  d-in m-width" >
+            <strong >{{account.create_date}}</strong>
+        </span>
+    </div>
+    <!-- strong U.S. Tax Withholding and Reporting FATCA Return Sheet 
     <div class="right "> 
         <span class="d-in">日期(月/日/年) : <span class="bod-bottom  d-in m-width" >
-        <!--<strong>XXXXXXXX</strong>-->
-        </span></span>
+        <strong>XXXXXXXX</strong>
    </div>
    <div class="clear"></div>
+</div> -->
 </div>
-
-
-<div><美國賬戶稅務合規法案>回覆便條
-    <div class="right "> 
-        <span class="d-in">Date (MM/DD/YY) : <span class="bod-bottom  d-in m-width" >
-        <!--<strong>XXXXXXXX</strong>-->
-        </span></span>
+<div style="display: flex; margin-top: 10px;">
+    <span style="width: 80%;"><美國賬戶稅務合規法案>回覆便條</span>
+    <div style="display: flex; width: 700px;margin-left: 100px;"> 
+        <span class="d-in">Date (MM/DD/YY) : </span><span style="margin-left: 5px;" class="bod-bottom  d-in m-width" >
+        <strong>{{account.create_date}}</strong>
+        </span>
    </div>
 </div>
+<br><br><br>
 <p>
     Please complete and sign this form. And provide the following documentation(s) to :</p>
     <p>請填寫並簽署此表格，連同以下所需文件一併交回:</p>
@@ -2585,8 +2593,10 @@ disclosure statement
     <p>利盟證券有限公司</p>
     <p>香港干諾道西 35-36 號康諾維港大廈 9 樓
 </p>
+<br>
 <p class="mt-15">To : Grand Partners Securities Limited</p>
 <p>致 : 利盟證券有限公司</p>
+<br>
 <table width="100%" border="1" class="table mt-20">
     <tr>
         <td class="thbg" colspan="2">
@@ -2613,7 +2623,7 @@ disclosure statement
         
         <td class="bod-left0">
             <span class="bod-bottom m-width d-in" style="margin-left: 15px;" >
-                <strong>{{account_info.name_chinese}</strong>
+                <strong>{{account_info.name_chinese}}</strong>
             </span>
         </td>
     </tr>
@@ -2625,7 +2635,7 @@ disclosure statement
         <td class="bod-left0">
             <p>
                 <span class="bod-bottom m-width d-in" style="margin-left: 15px;" >
-                    <strong>{{account_info.name_english}</strong>
+                    <strong>{{account_info.name_english}}</strong>
                 </span>
             </p>
         </td>
