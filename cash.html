@@ -3077,7 +3077,7 @@ disclosure statement
             <div class="clear break-after"></div>
            </div>
            <!--page12-->
-           <div style="font-size: 1.5vw;" class="container pb85">
+           <!-- <div style="font-size: 1.5vw;" class="container pb85">
             <div class="mini-container">
                 <h2>常設授權 STANDING AUTHORITY</h2>
             </div>
@@ -3130,8 +3130,185 @@ disclosure statement
                         13
                     </div>
                 </div>
-           </div>
+           </div> -->
+           <div class="container">
+            <div class="header mt-20">
+                <div class="head-left">
+                    <img src="images/logo.jpg" alt="logo">
+                </div>
+            </div>
+            <div class="mini-container">
+                <h2>常設授權</h2>
+                <h2>STANDING AUTHORITY</h2>
+            </div>
 
+            <div width="30%">
+                <p>日期 Date: <span class="bod-bottom m-width d-in"> <strong>{{account.create_date}}</strong></span></p>
+            </div>
+
+            <div width="30%" style="margin-top: 15px;">
+                <p>日期 Securities A/C Name: <span class="bod-bottom m-width d-in"><strong>{{account.id}}</strong></span></p>
+            </div>
+            <div width="30%" style="margin-top: 15px;">
+                <p>日期 A/C Name: <span class="bod-bottom m-width d-in"><strong>{{account_info.name_english}}</strong></span></p>
+            </div>
+            <div style="margin-top: 30px;">
+                <p>懇請貴公司在接獲本人/吾等/本公司之電話提款指示後:-</p>
+                <p>Upon receipt of my/our telephone instruction for fund withdrawal:</p>
+                <ol style="list-style: none; padding: 0;">
+                    <li class="mt-20">
+                        <input type="checkbox" name="" id="issue_cheque">
+                        <label for="issue_cheque">發出以本人/吾等/本公司為抬頭人之支票 Issue cheque in my /our/our company’s favor.</label>
+                    </li>
+                    <br>
+                    <li>
+                        <input type="checkbox" name="" id="credit">
+                        <label  for="credit">將款項存入本人/吾等/本公司在上列銀行之港幣儲蓄/往來帳戶.- 
+                            Credit to my/our HK$ saving /current account with the above bank.
+                            </label>
+                    </li>
+                </ol>
+            </div>
+            <p class="mini-container">Credit to my/our HK$ saving /current account with the above bank.</p>
+            
+            <table width="100%" cellspacing="0" border="1" class="table">
+                <tr>
+                    <td width="35%">
+                        <input type="checkbox" name="" id="HSBC">
+                        <label  for="HSBC">將款項 <br>&nbsp; &nbsp; &nbsp; &nbsp;  HSBC</label>
+                    </td>
+                    <td class="pad0">
+                        <table width="100%">
+                            <tbody>
+                                <tr class="bod-bottom">
+                                    <td>AC No.</td>
+                                </tr>
+                                <tr>
+                                    <td>AC Name</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="35%">
+                        <input type="checkbox" name="" id="bank_of_china">
+                        <label  for="bank_of_china">將款項 <br>&nbsp; &nbsp; &nbsp; &nbsp;  Bank of China</label>
+                    </td>
+                    <td class="pad0">
+                        <table width="100%">
+                            <tbody>
+                                <tr class="bod-bottom">
+                                    <td>AC No.</td>
+                                </tr>
+                                <tr>
+                                    <td>AC Name</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="35%">
+                        <input type="checkbox" name="" id="hang_seng_bank">
+                        <label  for="hang_seng_bank">將款項 <br>&nbsp; &nbsp; &nbsp; &nbsp;  Hang Seng China (HK)</label>
+                    </td>
+                    <td class="pad0">
+                        <table width="100%">
+                            <tbody>
+                                <tr class="bod-bottom">
+                                    <td>AC No.</td>
+                                </tr>
+                                <tr>
+                                    <td>AC Name</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="35%">
+                        <input type="checkbox" name="" id="standard_chartered">
+                        <label  for="standard_chartered">將款項 <br>&nbsp; &nbsp; &nbsp; &nbsp;  Standard Chartered Bank</label>
+                    </td>
+                    <td class="pad0">
+                        <table width="100%">
+                            <tbody>
+                                <tr class="bod-bottom">
+                                    <td>AC No.</td>
+                                </tr>
+                                <tr>
+                                    <td>AC Name</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="35%">
+                        <input type="checkbox" name="" id="other_bank">
+                        <label  for="other_bank">將款項 Other Bank Name<br>&nbsp; &nbsp; &nbsp; &nbsp;  將款項將款項</label>
+                    </td>
+                    <td class="pad0">
+                        <table width="100%">
+                            <tbody>
+                                <tr class="bod-bottom">
+                                    <td>AC No. <strong style="margin-left: 10px">{{account_info.bank_account_number}}</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>AC Name <strong style="margin-left: 10px">{{account_info.bank_name}}</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <div class="mt-20">
+                <p>本人/吾等/本公司願意對本人/吾等/本公司所發出指示的絕對準確性負上全部責任，特別是有關本人/吾等/本公司之受
+                    款銀行帳戶名稱及號碼之詳細資料。對於因輸入的資料不準確而導致款項錯誤存入或轉出，本人/吾等/本公司將不會為收回款項之延誤或追討賠償而向 
+                    貴公司作出要求、索償或訴訟，貴公司毋須為此負上任何責任。本人/本公司確認及同意本常設授權自即日生效直至另行通知為上。</p>
+               <p>
+                <br>
+                <p>
+                    I/We accept full responsibility for the absolute correctness of my/our instruction, in particular, the absolute correctness 
+                    of my/our account name and number, particulars of the payee bank as the case may be. I/We will not demand, claim or prosecute 
+                    against you for recovery of damage and generally hold you harmless in the event that the funds were wrongly deposited or paid out on delay 
+                    due to mistakes in the entered particulars.
+                     I/We acknowledge and agree that this Standing Authority (Issue of Cheque) is effective from the date hereof until further notice.
+                </p>
+            </div>
+
+
+            <table width="100%" class="mt-50" style="margin-top: 120px;">
+                <tbody>
+                    <tr>
+                        <td width="70%" >adasd</td>
+                        <td width="100%" >adasd</td>
+                    </tr>
+                    <tr>
+                        <td>Client's Specimen Signature(s)</td>
+                        <td>Responsible Officer's Approval</td>
+
+                    </tr>
+                    <tr>
+                        <td><span class="bod-bottom  d-in mt-50" style="min-width: 220px; margin-top: 60px;"></span></td>
+                        <td><span class="bod-bottom  d-in mt-50" style="min-width: 220px; margin-top: 60px;"></span></td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <div class="page-footer mt-20">          
+
+                <div class="foot-right">
+                    <span class="pt-15">(06/2017) </span>
+                    <div class="light-p pad">
+                        13
+                    </div>
+                </div>
+            </div>
+            
+            <!-- <div class="clear break-after"></div> -->
+        </div>
            <!--page13-->
     </div>
 </body>
