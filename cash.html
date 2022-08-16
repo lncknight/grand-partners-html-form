@@ -3009,18 +3009,23 @@ disclosure statement
                 <br>
             </div>
             &nbsp;
+            <br><br><br>
             <div class="col">
-                <label for="type1">客戶簽名 ：</label>
-                <input type="text" name="" id="type1"  class="btmu" size="60" autocomplete>
-                <br>
-                <label for="type2">客戶名稱 ：</label>
-                <input type="text" name="" id="type2"  class="btmu" size="60" autocomplete>
-                <br>
-                <label for="type3">戶口號碼 ：</label>
-                <input type="text" name="" id="type3"  class="btmu" size="60" autocomplete>
-                <br>
-                <label for="type4">日期 <span  style="margin-left: 28px;"">:</span></label>
-                <input style="margin-left: 10px;" type="text" name="" id="type4"  class="btmu" size="60" autocomplete>      
+                </span> 客戶簽名 : <span class="bod-bottom m-width d-in" style="margin-left:10px ; width: 430px">
+                    <!-- <strong>XXXXXX</strong> -->
+                </span><br><br>
+
+                </span> 客戶名稱 : <span class="bod-bottom m-width d-in" style="margin-left:10px ; width: 430px">
+                    <strong>{{account_info.name_chinese}}</strong>
+                </span><br><br>
+
+                </span> 戶口號碼 : <span class="bod-bottom m-width d-in" style="margin-left:10px ; width: 430px">
+                    <strong>{{account.id}}</strong>
+                </span><br><br>
+
+                </span> 日期  <span class="bod-bottom m-width d-in" style="margin-left:30px ; width: 430px">:
+                    <strong>{{account.create_date}}</strong>
+                </span>      
             </div>
             <p style="padding-top:25px;">
                 備注： 個人信息收集聲明關於中華通北向交易
