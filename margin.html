@@ -3075,14 +3075,16 @@
                                             style="padding-left: 5px;">Name
                                             of individual who is the beneficial
                                             Owner</strong>(see instructions)
-                                            </span> </p>
+                                        </span> </p>
                                 </div>
+                                <span><strong style="padding-left: 70px;">{{account_info.name_chinese}}</strong></span>
                             </td>
                             <td style="border:1px solid black; border-right: 0ch;">
-                                <div style="margin-top: -10px; margin-bottom: 20px;">
+                                <div style="margin-top: -60px; margin-bottom: 20px;">
                                     <p style="border-left: 3px; "><strong>2</strong> <span
                                             style="padding-left: 5px;">Country of citizenship</span></p>
                                 </div>
+                                <span><strong>{{account_info.identification_country.name_en_US}}</strong></span>
                             </td>
                         </div>
                     </tr>
@@ -3091,7 +3093,7 @@
                             <td>
                                 <div style="margin-top: -10px; margin-bottom: 20px;">
                                     <p style="border-left: 3px; "><strong>3</strong> <span
-                                            style="padding-left: 5px;">Permanent residence address (street, apt. or
+                                            style="padding-left: 5px; ">Permanent residence address (street, apt. or
                                             suite no., or rural route). <strong>. Do not use a P.O. box or in-care-of
                                                 address. </strong>
                                         </span></p>
@@ -3102,15 +3104,17 @@
                     <tr style="border:1px solid black; border-left: 0ch; border-right: 0ch; ">
                         <div>
                             <td>
-                                <div style="margin-top: -10px; margin-bottom: 20px;">
+                                <div style="margin-top: -60px; margin-bottom: 20px;">
                                     <p style="border-left: 3px; "><span style="padding-left: 20px;">City or town, state
                                             or province. Include postal code where appropriate.</span></p>
                                 </div>
+                                <span><strong style="padding-left: 50px;">{{account_info.identification_country.name_en_US}}</strong></span>
                             </td>
                             <td style="border:1px solid black; border-right: 0ch;">
                                 <div style="margin-top: -10px; margin-bottom: 20px;">
                                     <p style="border-left: 3px; "> <span style="padding-left: 5px;">Country</span></p>
                                 </div>
+                                <span><strong>{{account_info.identification_country}}</strong></span>
                             </td>
                         </div>
                     </tr>
@@ -3178,7 +3182,7 @@
                         </tr>
                         <tr style="border:1px solid #000000; border-left: 0ch; border-right: 0ch; ">
                             <td>
-                                <div style="margin-top: -10px; margin-bottom: 20px;">
+                                <div style="margin-top: -60px; margin-bottom: 20px;">
                                     <p style="border-left: 3px; "><strong>7</strong> <span
                                             style="padding-left: 5px;">Reference number(s) (see instructions)
                                         </span></p>
@@ -3190,6 +3194,7 @@
                                             style="padding-left: 5px;">Date of birth (MM-DD-YYYY) (see
                                             instructions</span></p>
                                 </div>
+                                <span style="padding-left: 50px; "><strong>{{account.create_date}}</strong></span>
                             </td>
                         </tr>
                     </table>
@@ -3257,12 +3262,14 @@
                                     <div>
                                         <span class="bod-bottom  d-in" style="min-width: 460px;"></span>
                                         <span class="bod-bottom  d-in"
-                                            style="min-width: 300px; margin-left: 50px;"></span>
+                                            style="min-width: 300px; margin-left: 50px;"><strong style="padding-left: 50px;">{{account.create_date}}</strong></span>
                                         <sub style="padding-left: 30px;">Signature of beneficial owner (or individual
                                             authorized to sign for beneficial owner)</sub>
                                         <sub style="padding-left: 130px;">Date (MM-DD-YYYY)</sub>
                                     </div>
+                                    <span class="bod-bottom  d-in" style="min-width: 460px;"><strong style="padding-left: 70px;">{{account_info.name_chinese}}</strong></span>
                             </div>
+                             
                         </div>
                     </div>
                     <div>
@@ -3279,7 +3286,7 @@
                     <div class="foot-right">
                            <span class="pt-15">(06/2017) </span>
                            <div class="light-p pad">
-                               10
+                               11
                            </div>
                        </div>
                    </div>
@@ -4110,6 +4117,12 @@
                 <p>本人/吾等如未能向 貴公司提供個人資料或拒絕或撤回同意，可能意味著
                     貴公司不會或不能夠再（視情況而定）執行本人/吾等的交易指示或向本人/吾等提供證券交易之相關服務，惟出售、轉出或提取本人/吾等現有的證券持倉（如有）除外。 </p>
             </div>
+            <div class="foot-right">
+                <span class="pt-15">(06/2017) </span>
+                <div class="light-p pad">
+                    13
+                </div>
+            </div>
         </div>
         <!-- ................................................-->
         <!-- Adding page 14 -->
@@ -4159,7 +4172,13 @@
                 3701
                 3200。
             </p>
-        </div>
+            <div class="foot-right">
+                <span class="pt-15">(06/2017) </span>
+                <div class="light-p pad">
+                    14
+                </div>
+            </div>
+        </div>        
         <!-- ................................................-->
         <div class="container">
             <div class="header mt-20">
