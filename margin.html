@@ -1786,6 +1786,520 @@
             </div>
             <div class="clear break-after"></div>    
         </div>
+
+                 <!--page5-->
+                 <div class="container">
+                    <div class="header mt-20">
+                        <div class="head-left">
+                            <img src="images/logo.jpg" alt="logo">
+                        </div>
+                    </div>
+                    <div class="mini-container">
+                        <h2>常設授權</h2>
+                        <h2>STANDING AUTHORITY</h2>
+                    </div>
+        
+                    <div width="30%">
+                        <p>日期 Date: <span class="bod-bottom m-width d-in"> <strong>{{account.create_date}}</strong></span>
+                        </p>
+                    </div>
+        
+                    <div width="30%" style="margin-top: 15px;">
+                        <p>证券账户名称 Securities A/C Name: <span
+                                class="bod-bottom m-width d-in"><strong>{{account.id}}</strong></span>
+                        </p>
+                    </div>
+                    <div width="30%" style="margin-top: 15px;">
+                        <p>帳戶名稱 A/C Name: <span
+                                class="bod-bottom m-width d-in"><strong>{{account_info.name_english}}</strong></span></p>
+                    </div>
+                    <div style="margin-top: 30px;">
+                        <p>懇請貴公司在接獲本人/吾等/本公司之電話提款指示後:-</p>
+                        <p>Upon receipt of my/our telephone instruction for fund withdrawal:</p>
+                        <ol style="list-style: none; padding: 0;">
+                            <li class="mt-20">
+                                <input type="checkbox" name="" id="issue_cheque">
+                                <label for="issue_cheque">發出以本人/吾等/本公司為抬頭人之支票 Issue cheque in my /our/our company’s
+                                    favor.</label>
+                            </li>
+                            <br>
+                            <li>
+                                <input type="checkbox" name="" id="credit" class="checkbox-checked">
+                                <label for="credit">將款項存入本人/吾等/本公司在上列銀行之港幣儲蓄/往來帳戶.-
+                                    Credit to my/our HK$ saving /current account with the above bank.
+                                </label>
+                            </li>
+                        </ol>
+                    </div>
+                    <!-- <p class="mini-container">Credit to my/our HK$ saving /current account with the above bank.</p> -->
+        
+                    <table width="100%" cellspacing="0" border="1" class="table">
+                        <!-- <tr>
+                            <td width="35%">
+                                <input type="checkbox" name="" id="HSBC">
+                                <label for="HSBC">匯豐銀行 <br>&nbsp; &nbsp; &nbsp; &nbsp; HSBC</label>
+                            </td>
+                            <td class="pad0">
+                                <table width="100%">
+                                    <tbody>
+                                        <tr class="bod-bottom">
+                                            <td>帳戶號碼 AC No.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>帳戶名稱 AC Name</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="35%">
+                                <input type="checkbox" name="" id="bank_of_china">
+                                <label for="bank_of_china">中國銀行（香港）<br>&nbsp; &nbsp; &nbsp; &nbsp; Bank of China
+                                    (HK)</label>
+                            </td>
+                            <td class="pad0">
+                                <table width="100%">
+                                    <tbody>
+                                        <tr class="bod-bottom">
+                                            <td>帳戶號碼 AC No.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>帳戶名稱 AC Name</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="35%">
+                                <input type="checkbox" name="" id="hang_seng_bank">
+                                <label for="hang_seng_bank">恒生銀行<br>&nbsp; &nbsp; &nbsp; &nbsp; Hang Seng Bank</label>
+                            </td>
+                            <td class="pad0">
+                                <table width="100%">
+                                    <tbody>
+                                        <tr class="bod-bottom">
+                                            <td>帳戶號碼 AC No.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>帳戶名稱 AC Name</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="35%">
+                                <input type="checkbox" name="" id="standard_chartered">
+                                <label for="standard_chartered">渣打銀行<br>&nbsp; &nbsp; &nbsp; &nbsp; Standard Chartered
+                                    Bank</label>
+                            </td>
+                            <td class="pad0">
+                                <table width="100%">
+                                    <tbody>
+                                        <tr class="bod-bottom">
+                                            <td>帳戶號碼 AC No.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>帳戶名稱 AC Name</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr> -->
+                        <tr>
+                            <td width="35%">
+                                <!-- <input type="checkbox" name="" id="other_bank"> -->
+                                <label for="other_bank">
+                                    <!-- 其他銀行 Other Bank Name -->
+                                    <!-- <br>  -->
+                                    銀行名稱 &nbsp; &nbsp; &nbsp; &nbsp;
+                                    {{account_info.bank_name}}
+                                </label>
+                            </td>
+                            <td class="pad0">
+                                <table width="100%">
+                                    <tbody>
+                                        <tr class="bod-bottom">
+                                            <td>帳戶號碼 AC No. <strong
+                                                    style="margin-left: 10px">{{account_info.bank_account_number}}</strong>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>帳戶名稱 AC Name <strong
+                                                    style="margin-left: 10px">{{account_info.name_english}}</strong>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="mt-20">
+                        <p>本人/吾等/本公司願意對本人/吾等/本公司所發出指示的絕對準確性負上全部責任，特別是有關本人/吾等/本公司之受
+                            款銀行帳戶名稱及號碼之詳細資料。對於因輸入的資料不準確而導致款項錯誤存入或轉出，本人/吾等/本公司將不會為收回款項之延誤或追討賠償而向
+                            貴公司作出要求、索償或訴訟，貴公司毋須為此負上任何責任。本人/本公司確認及同意本常設授權自即日生效直至另行通知為上。</p>
+                        <p>
+                            <br>
+                        <p>
+                            I/We accept full responsibility for the absolute correctness of my/our instruction, in
+                            particular,
+                            the absolute correctness
+                            of my/our account name and number, particulars of the payee bank as the case may be. I/We will
+                            not
+                            demand, claim or prosecute
+                            against you for recovery of damage and generally hold you harmless in the event that the funds
+                            were
+                            wrongly deposited or paid out on delay
+                            due to mistakes in the entered particulars.
+                            I/We acknowledge and agree that this Standing Authority (Issue of Cheque) is effective from the
+                            date
+                            hereof until further notice.
+                        </p>
+                    </div>
+        
+        
+                    <table width="100%" class="mt-50" style="margin-top: 120px;">
+                        <tbody>
+                            <tr>
+                                <td width="70%">客戶簽署</td>
+                                <td width="100%">負責人批簽</td>
+                            </tr>
+                            <tr>
+                                <td>Client's Specimen Signature(s)</td>
+                                <td>Responsible Officer's Approval</td>
+        
+                            </tr>
+                            <tr>
+                                <td><span class="bod-bottom  d-in mt-50" style="min-width: 220px; margin-top: 100px;"></span>
+                                </td>
+                                <td><span class="bod-bottom  d-in mt-50" style="min-width: 220px; margin-top: 100px;"></span>
+                                </td>
+        
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="page-footer mt-50" style="bottom: -495px;">
+        
+                        <div class="foot-right">
+                            <span class="pt-15">(06/2017) </span>
+                            <div class="light-p pad">
+                                5
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- <div class="clear break-after"></div> -->
+                </div>
+
+        <!--page6-->
+        <div class="container">
+
+
+            <div class="mt-15"></div>
+
+            <div class="header mt-15">
+                <div class="head-left">
+                    <img src="images/logo.jpg" alt="logo">
+                </div>
+            </div>
+            <br>
+            <h4>親愛的客戶,</h4>
+            <h1 class="mt-15">有關投資衍生產品風險披露聲明的通知</h1><br>
+            <p class="mt-15 linespace1-5" style="font-size: 16px;">為保障投資者的權益， 證券及期貨事務監察委員會於 2011 年 9 月 4 日起，執行已修訂之
+                持牌人或註冊
+                人操守準則。新規定要求客戶在認購交易所買賣的衍生產品時， 須對衍生產品的性質和風險有所認識。</p>
+            <br>
+            <p class="linespace1-5" style="font-size: 16px;">為此， 閣下在使用利盟證券有限公司 (下稱"利盟證券") 開立之證券帳戶買賣於香港交易所上市之衍生產
+                品 (包括但不限於牛熊證、 衍生權證、 交易所買賣基金及股票掛鉤票據等)前， 必須仔細理解及確定完全
+                了解相關產品之各類風險。 有關上市衍生產品之風險披露聲明， 於 2011 年 9 月 4 日生效。 敬請立即詳
+                閱隨函附上的相關風險披露聲明。
+            </p>
+            <br>
+            <p style="font-size: 16px;">-- 買賣衍生權證涉及的風險披露聲明</p>
+            <p style="font-size: 16px;">-- 買賣牛熊證涉及的風險披露聲明</p>
+            <p style="font-size: 16px;"> -- 投資交易所買賣基金的風險披露聲明</p>
+            <br>
+            <p class="linespace1-5" style="font-size: 16px;">如 閣下使用利盟證券所提供的相關服務， 則被視為已清楚明瞭相關產品的風險並接納與利盟證券在交易
+                上的任何相關安排。</p>
+            <br>
+            <p style="font-size: 16px;">如對該說明有任何疑問，請閣下尋求法律顧問/專業人士咨詢獨立意見。
+            </p><br>
+            <p style="font-size: 16px;">閣下如有任何查詢， 請與 閣下之客戶主任或致電 (852) 3701 3200 客戶服務聯絡。</p>
+            <br>
+            <p style="font-size: 16px;">利盟證券有限公司 謹啟</p>
+            <p style="font-size: 16px;">2017 年 6 月 1 日</p>
+
+            <p class="bod-top mt-15 linespace1-5" style="font-size: 16px;">
+                本人已閱畢上述通知及提及的有關投資衍生產品風險披露聲明，並已確認清楚明瞭相關產品的風險及接受
+                利盟證券在交易上的任何相關安排，現同意簽署作實。
+            </p>
+
+            <table width='100%' class='table mt-20'>
+                <tr>
+                    <td width="65%">客戶姓名: <span style="min-width: 45%;" class="bod-bottom m-width d-in">
+                            <strong>{{account_info.name_chinese}}</strong>
+                        </span>
+                    </td>
+
+                    <td width="35%">持牌人仕: <span style="min-width: 70%;" class="bod-bottom m-width d-in">
+                            <!-- <strong>XXXXXXX</strong> -->
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="65%">賬戶號碼: <span style="min-width: 45%;" class="bod-bottom m-width d-in">
+                            <strong>{{account.id}}</strong>
+                        </span>
+                    </td>
+
+                    <td width="35%">CE No. <span style="min-width: 70%;" class="bod-bottom m-width d-in">
+                            <!-- <strong>XXXXX</strong> -->
+                        </span>
+                    </td>
+                </tr>
+                <tr class="mt-15">
+                    <td width="65%">客戶簽署: <span style="min-width: 45%;" class="bod-bottom m-width d-in">
+                            <!--<strong>XXXXXXX</strong> -->
+                        </span>
+                    </td>
+
+                    <td width="35%">持牌人簽署. <span style="min-width: 70%;" class="bod-bottom m-width d-in">
+                            <!--<strong>XXXXXXX</strong> -->
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td width="65%">日期: <span style="min-width: 45%;" class="bod-bottom m-width d-in">
+                            <strong>{{account.create_date}}</strong>
+                        </span>
+                    </td>
+
+                </tr>
+
+            </table>
+
+
+            <div class="page-footer mt-20">
+                <div class="foot-right">
+                    <span class="pt-15">(06/2017) </span>
+                    <div class="light-p pad">
+                        6
+                    </div>
+                </div>
+                <div class="right text-center" style="margin-right: 15px;">
+                    <p>9/F Connaught Harbourfront House, 35-36 Connaught Road West, Hong Kong <br>
+                        香港干諾道西 35-36 號康諾維港大廈 9 樓 <br>
+                        Tel : (852) 3701 3200 Fax : (852) 3102 1855 </p>
+                </div>
+            </div>
+
+            <div class="clear break-after"></div>
+           
+        </div>
+
+        <!--page7-->
+        <div class="container">
+
+
+
+            <div class="mt-15"></div>
+            <div class="header mt-15">
+                <div class="head-left">
+                    <img src="images/logo.jpg" alt="logo">
+                </div>
+                <div class="head-right" style="padding-top: 15px;">
+                    <p>9/F Connaught Harbourfront House,<br>
+                        35-36 Connaught Road West, Hong Kong<br>
+                        香港干諾道西 35-36 號康諾維港大廈 9 樓<br>
+                        Tel : (852) 3701 3200 Fax : (852) 3102 1855</p>
+                </div>
+            </div>
+            <br><br>
+            <p class="linespace1-5 mt-15">
+                To : Grand Partners Securities Limited<br>
+                致 : 利盟證券有限公司
+            </p>
+            <br><br>
+            <div class="linespace1-5">
+                <h2 class="mini-container"><u>Request Service for Electronic-Trading Function</u></h2>
+                <h2 class="mini-container"><u>要求加設電子交易功能服務</u></h2>
+            </div>
+
+            <br><br>
+            <table width='100%' class='table mt-20'>
+                <tr>
+                    <td width="65%">Account Number <br> 帳戶號碼 :<span class="bod-bottom m-width d-in"
+                            style="position: relative;">
+                            <strong style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%);">
+                                {{account.id}}
+                            </strong>
+                        </span>
+                    </td>
+
+                    <td width="35%">Account Name <br> 帳戶名稱 : <span style="min-width: 70%;"
+                            class="bod-bottom m-width d-in">
+                            <strong>{{account_info.name_chinese}}</strong>
+                        </span>
+                    </td>
+                </tr>
+
+
+
+            </table>
+            <p class="mt-20 linespace1-5">This Electronic Stock Trading Services Request is supplemental to the Cash
+                Client Agreement / Margin Client Agreement
+                entered into by Grand Partners Securities Limited (“GPSL”) and me/us, to which this Electronic Stock
+                Trading Service
+                Request is annexed whereby GPSL agrees to provide to me/us Electronic Stock Trading Service which
+                enables me/us to
+                give electronic instructions and to obtain quotation and other information through internet that can
+                connect to a
+                telecommunication network (“Electronic Stock Trading Services”). Where any conflict arises between this
+                Electronic Stock
+                Trading Service Request and the Cash Client Agreement/Margin Client Agreement, the provision of the
+                latter shall prevail.</p>
+            <p class="linespace1-5">Electronic trading facility (i.e. internet or mobile trading) is supported by
+                computer-based component system for orderrouting. As with all facilities and systems, they are
+                vulnerable to temporary disruption of failure. I understand and agree to
+                bear any and all risks involved with all trades or transactions entered via electronic trading system
+                and carried out through
+                your system.
+            </p>
+            <br>
+            <p class="mt-15 linespace1-5">此要求加設電子交易功能服務是附屬利盟證券有限公司及本人 / 吾等簽訂的現金 / 保證金客戶協議。作為現金 / 保證金客戶協議的補充。
+                此要求加設電子交易功能服務，被利盟證券有限公司接受則成為雙方協議書。利盟證券有限公司同意 向本人 / 吾等提供電子證券交易服
+                務 (以下稱電子證券或以手提電話交易服務) 以便本人/ 吾等可透過互聯網絡發出電子指示，並取得報價和其他資訊。若加設電子交易功能
+                服務的條款，與現金 / 保證金客戶協議的條文有任何衝突，概以後者的條文為準。
+            </p><br>
+            <p class="linespace1-5">電子交易的設施 (互聯網) 以電腦組成的系統來進行買賣傳遞。然而，所有設施及系統都有可能暫時中斷或失靈。本人明白到通過電子交易
+                系統發出指示以及通過 貴公司的系統執行的交易渉及各種風險。本人並同意承擔該等風險。</p>
+            <br>
+            <p class="linespace1-5">Password Collection 收取密碼方式 :</p>
+            <p class="mt-20">
+                <input type="checkbox" id="Byemail"
+                    class="{{account_info.password_collection_by_email_yesno_checkbox_class}}" />
+                <label for="Byemail">By email 電子郵件 (必須與本公司紀錄相同)</label>
+            </p>
+            <p class="mt-20">
+                <input type="checkbox" id="Bymail"
+                    class="{{account_info.password_collection_by_mail_yesno_checkbox_class}}" />
+                <label for="Bymail">By Mail 郵寄 (寄往與本公司紀錄相同地址)</label>
+            </p>
+            <p class="mt-20">
+                <input type="checkbox" id="Inperson"
+                    class="{{account_info.password_collection_in_person_yesno_checkbox_class}}" />
+                <label for="Inperson">In person (客戶親自到取)</label>
+            </p>
+            <hr height="5">
+
+            <div class="mt-20" style="padding-top: 30px; margin-top: 150px;">
+                <span class="bod-top2">Client Signature (s) 客戶簽署* :</span>
+                <p>Date 日期 : <span class="bod-bottom m-width d-in">
+                        <strong>{{account.create_date}}</strong>
+                    </span>
+                </p>
+                <p><em><u>*Please use the same signature filed with our Company
+                        </u></em></p>
+                <p><em><u>簽署式樣必須與本公司記錄相同</u></em></p>
+                <p>Note 註 :</p>
+                <p class="linespace1-5">1. &nbsp; &nbsp; &nbsp; If the client cannot receive our notice within 4 working
+                    days from the date hereof, please contact your Account Manager.
+                    <br>客戶如於簽署本函 4 個工作天後，仍未收到本公司職員通知，請立即致電你的客戶經理聯絡。
+                </p>
+                <p class="linespace1-5">2. &nbsp; &nbsp; &nbsp; For any online trading, client must ensure to have
+                    adequate funding.
+                    <br>客戶申請網上交易，必須確保資金充足才可買賣。
+
+                </p>
+
+            </div>
+            <table width="100%" class="table mt-20" border="1">
+                <tr>
+                    <td colspan="2" align="center">
+                        FOR OFFICE USE ONLY
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        ONLINE TRADING LIMIT : &nbsp; &nbsp; &nbsp;
+                        <!-- <div class="">
+                <strong>XXXXXXXX</strong>
+            </div> -->
+
+                        <span class="m-width d-in">
+                            <!-- <strong>XXXXXXX</strong>  -->
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td width="60%">
+                        ONLINE TRADING LIMIT APPROVED BY : &nbsp; &nbsp; &nbsp; <span class="m-width d-in">
+                            <!-- <strong>XXXXXXX</strong>  -->
+                        </span>
+                    </td>
+                    <td>
+                        Date : <span class=" m-width d-in">
+                            <!-- <strong>XXXXXXX</strong>  -->
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        SIGNATURE VERIFIED BY : &nbsp; &nbsp; &nbsp; <span class="m-width d-in">
+                            <!-- <strong>XXXXXXX</strong>  -->
+                        </span>
+                    </td>
+                    <td>
+                        Date : <span class="m-width d-in">
+                            <!-- <strong>XXXXXXX</strong>  -->
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        CHECKED BY : &nbsp; &nbsp; &nbsp; <span class="m-width d-in">
+                            <!-- <strong>XXXXXXX</strong>  -->
+                        </span>
+                    </td>
+                    <td>
+                        Date : &nbsp; &nbsp; &nbsp; <span class="m-width d-in">
+                            <!-- <strong>XXXXXXX</strong>  -->
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        AE SIGNATURE &nbsp; &nbsp; &nbsp; <span class="m-width d-in">
+                            <!-- <strong>XXXXXXX</strong>  -->
+                        </span>
+                    </td>
+                    <td>
+                        Date :&nbsp; &nbsp; &nbsp; <span class="m-width d-in">
+                            <!-- <strong>XXXXXXX</strong>  -->
+                        </span>
+                    </td>
+                </tr>
+
+            </table>
+
+            <div class="page-footer mt-20">
+
+                <div class="foot-right">
+                    <span class="pt-15">(06/2017) </span>
+                    <div class="light-p pad">
+                        7
+                    </div>
+                </div>
+            </div>
+
+            <div class="clear break-after">&nbsp;</div>
+           
+        </div>
+
          <!--page8-->
         <div class="container">
             <div class="mt10">&nbsp;</div>
@@ -2078,6 +2592,7 @@
             </div>
             <div class="clear break-after"></div>
         </div>
+
          <!--page9-->
         <div class="container">
 
@@ -2244,533 +2759,7 @@
             <div class="clear break-after"></div>
             
         </div>
-        <!--page6-->
-        <div class="container">
 
-
-            <div class="mt-15"></div>
-
-            <div class="header mt-15">
-                <div class="head-left">
-                    <img src="images/logo.jpg" alt="logo">
-                </div>
-            </div>
-            <br>
-            <h4>親愛的客戶,</h4>
-            <h1 class="mt-15">有關投資衍生產品風險披露聲明的通知</h1><br>
-            <p class="mt-15 linespace1-5" style="font-size: 16px;">為保障投資者的權益， 證券及期貨事務監察委員會於 2011 年 9 月 4 日起，執行已修訂之
-                持牌人或註冊
-                人操守準則。新規定要求客戶在認購交易所買賣的衍生產品時， 須對衍生產品的性質和風險有所認識。</p>
-            <br>
-            <p class="linespace1-5" style="font-size: 16px;">為此， 閣下在使用利盟證券有限公司 (下稱"利盟證券") 開立之證券帳戶買賣於香港交易所上市之衍生產
-                品 (包括但不限於牛熊證、 衍生權證、 交易所買賣基金及股票掛鉤票據等)前， 必須仔細理解及確定完全
-                了解相關產品之各類風險。 有關上市衍生產品之風險披露聲明， 於 2011 年 9 月 4 日生效。 敬請立即詳
-                閱隨函附上的相關風險披露聲明。
-            </p>
-            <br>
-            <p style="font-size: 16px;">-- 買賣衍生權證涉及的風險披露聲明</p>
-            <p style="font-size: 16px;">-- 買賣牛熊證涉及的風險披露聲明</p>
-            <p style="font-size: 16px;"> -- 投資交易所買賣基金的風險披露聲明</p>
-            <br>
-            <p class="linespace1-5" style="font-size: 16px;">如 閣下使用利盟證券所提供的相關服務， 則被視為已清楚明瞭相關產品的風險並接納與利盟證券在交易
-                上的任何相關安排。</p>
-            <br>
-            <p style="font-size: 16px;">如對該說明有任何疑問，請閣下尋求法律顧問/專業人士咨詢獨立意見。
-            </p><br>
-            <p style="font-size: 16px;">閣下如有任何查詢， 請與 閣下之客戶主任或致電 (852) 3701 3200 客戶服務聯絡。</p>
-            <br>
-            <p style="font-size: 16px;">利盟證券有限公司 謹啟</p>
-            <p style="font-size: 16px;">2017 年 6 月 1 日</p>
-
-            <p class="bod-top mt-15 linespace1-5" style="font-size: 16px;">
-                本人已閱畢上述通知及提及的有關投資衍生產品風險披露聲明，並已確認清楚明瞭相關產品的風險及接受
-                利盟證券在交易上的任何相關安排，現同意簽署作實。
-            </p>
-
-            <table width='100%' class='table mt-20'>
-                <tr>
-                    <td width="65%">客戶姓名: <span style="min-width: 45%;" class="bod-bottom m-width d-in">
-                            <strong>{{account_info.name_chinese}}</strong>
-                        </span>
-                    </td>
-
-                    <td width="35%">持牌人仕: <span style="min-width: 70%;" class="bod-bottom m-width d-in">
-                            <!-- <strong>XXXXXXX</strong> -->
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="65%">賬戶號碼: <span style="min-width: 45%;" class="bod-bottom m-width d-in">
-                            <strong>{{account.id}}</strong>
-                        </span>
-                    </td>
-
-                    <td width="35%">CE No. <span style="min-width: 70%;" class="bod-bottom m-width d-in">
-                            <!-- <strong>XXXXX</strong> -->
-                        </span>
-                    </td>
-                </tr>
-                <tr class="mt-15">
-                    <td width="65%">客戶簽署: <span style="min-width: 45%;" class="bod-bottom m-width d-in">
-                            <!--<strong>XXXXXXX</strong> -->
-                        </span>
-                    </td>
-
-                    <td width="35%">持牌人簽署. <span style="min-width: 70%;" class="bod-bottom m-width d-in">
-                            <!--<strong>XXXXXXX</strong> -->
-                        </span>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td width="65%">日期: <span style="min-width: 45%;" class="bod-bottom m-width d-in">
-                            <strong>{{account.create_date}}</strong>
-                        </span>
-                    </td>
-
-                </tr>
-
-            </table>
-
-
-            <div class="page-footer mt-20">
-                <div class="foot-right">
-                    <span class="pt-15">(06/2017) </span>
-                    <div class="light-p pad">
-                        6
-                    </div>
-                </div>
-                <div class="right text-center" style="margin-right: 15px;">
-                    <p>9/F Connaught Harbourfront House, 35-36 Connaught Road West, Hong Kong <br>
-                        香港干諾道西 35-36 號康諾維港大廈 9 樓 <br>
-                        Tel : (852) 3701 3200 Fax : (852) 3102 1855 </p>
-                </div>
-            </div>
-
-            <div class="clear break-after"></div>
-           
-        </div>
-        <!--page8 cancel page-->
-        <!-- TODO delete -->
-        <div class="container">
-
-
-            <div class="mt-15"></div>
-
-
-            <div class="header mt-15">
-                <div class="head-left">
-                    <img src="images/logo.jpg" alt="logo">
-                </div>
-            </div>
-            <p>Dear Customer,</p>
-            <p class="mt-15"><strong><u>Re: Regulations on investor characterization relating to purchase of derivative
-                        products
-                    </u></strong></p>
-
-            <p class="mt-15 linespace1-5">In order to protect investors’ rights and interests, Securities and Futures
-                Commission has set out requirements on
-                investor characterization relating to purchase of derivative products with the updated effective
-                on 4 Sep 2011. Under this regulation, customer should understand the nature and risks of derivative
-                products prior to
-                the trade of derivative products.</p>
-
-
-            <p class="linespace1-5">
-                In this regard, for customers trading the listed derivative products through Grand Partners Securities
-                Limited
-                (“Grand Partners Securities”), they must fully understand the risks of trading derivative products. The
-                updated “Risk
-                of trading Derivative products disclosure statement” is effective on 4 Sep 2011. Enclosed please find
-                the related risk
-                disclosure statement
-            </p>
-            <p> -- Risk of trading Derivative Warrants disclosure statement</p>
-            <p>-- Risk of trading Callable Bull / Bear Contract (CBBCs) disclosure statement</p>
-            <p>-- Risk of trading Exchange Traded Funds (ETFs) disclosure statement
-            </p>
-
-            <p class="linespace1-5">For customers who use service provided by Grand Partners Securities Limited and
-                trading the listed derivative
-                products will be treated as fully understand the related risk and the updated risk disclosure statement
-            </p>
-            <p class="linespace1-5"> For any queries on the attached explanation, please seek for assistance from legal
-                counsel/professional for
-                independent opinion.
-            </p>
-            <p>For any queries, please contact your Account Manager or Customer Service Department on (852) 3701 3200.
-
-            </p>
-            <p class="linespace1-5">Grand Partners Securities Limited <br>
-                01 June 2017</p>
-            <hr class="mt-20">
-            <p class="linespace1-5 mt-20">I confirmed that I have read the above Risk Disclosure statement regarding
-                derivative products and fully understand
-                the risk and accept the arrangements made by Grand Partners Securities Limited. My confirmation and
-                signature
-                below</p>
-
-            <table width='100%' class='table mt-20'>
-                <tr>
-                    <td width="50%">Customer Name: <span class="bod-bottom m-width d-in">
-                            <strong>{{account_info.name_english}}</strong>
-                        </span>
-                    </td>
-
-                    <td width="50%">Licensed Representative : <span class="bod-bottom m-width d-in">
-                            <!--<strong>XXXXXXX</strong> -->
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="50%">Account No. <span class="bod-bottom m-width d-in">
-                            <strong>{{account.id}}</strong>
-                        </span>
-                    </td>
-
-                    <td width="50%">CE. No. <span class="bod-bottom m-width d-in">
-                            <!--<strong>XXXXXXX</strong> -->
-                        </span>
-                    </td>
-                </tr>
-                <tr class="mt-15">
-                    <td width="50%">Applicant’s signature : <span class="bod-bottom m-width d-in">
-                            <!--<strong>XXXXXXX</strong> -->
-                        </span>
-                    </td>
-
-                    <td width="50%">Signature of licensed person : <span class="bod-bottom m-width d-in">
-                            <!--<strong>XXXXXXX</strong> -->
-                        </span>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td width="50%">Date : <span class="bod-bottom m-width d-in">
-                            <strong>{{account.create_date}}</strong>
-                        </span>
-                    </td>
-
-                </tr>
-
-            </table>
-
-            <div class="page-footer mt-20">
-
-                <div class="foot-right">
-                    <span class="pt-15">(06/2017) </span>
-                    <div class="light-p pad">
-                        8
-                    </div>
-                </div>
-                <div class="right text-center" style="margin-right: 15px;">
-                    <p>9/F Connaught Harbourfront House, 35-36 Connaught Road West, Hong Kong <br>
-                        香港干諾道西 35-36 號康諾維港大廈 9 樓 <br>
-                        Tel : (852) 3701 3200 Fax : (852) 3102 1855 </p>
-                </div>
-            </div>
-
-            <div class="clear break-after">&nbsp;</div>
-           
-        </div>
-         <!--page7-->
-        <div class="container">
-
-
-
-            <div class="mt-15"></div>
-            <div class="header mt-15">
-                <div class="head-left">
-                    <img src="images/logo.jpg" alt="logo">
-                </div>
-                <div class="head-right" style="padding-top: 15px;">
-                    <p>9/F Connaught Harbourfront House,<br>
-                        35-36 Connaught Road West, Hong Kong<br>
-                        香港干諾道西 35-36 號康諾維港大廈 9 樓<br>
-                        Tel : (852) 3701 3200 Fax : (852) 3102 1855</p>
-                </div>
-            </div>
-            <br><br>
-            <p class="linespace1-5 mt-15">
-                To : Grand Partners Securities Limited<br>
-                致 : 利盟證券有限公司
-            </p>
-            <br><br>
-            <div class="linespace1-5">
-                <h2 class="mini-container"><u>Request Service for Electronic-Trading Function</u></h2>
-                <h2 class="mini-container"><u>要求加設電子交易功能服務</u></h2>
-            </div>
-
-            <br><br>
-            <table width='100%' class='table mt-20'>
-                <tr>
-                    <td width="65%">Account Number <br> 帳戶號碼 :<span class="bod-bottom m-width d-in"
-                            style="position: relative;">
-                            <strong style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%);">
-                                {{account.id}}
-                            </strong>
-                        </span>
-                    </td>
-
-                    <td width="35%">Account Name <br> 帳戶名稱 : <span style="min-width: 70%;"
-                            class="bod-bottom m-width d-in">
-                            <strong>{{account_info.name_chinese}}</strong>
-                        </span>
-                    </td>
-                </tr>
-
-
-
-            </table>
-            <p class="mt-20 linespace1-5">This Electronic Stock Trading Services Request is supplemental to the Cash
-                Client Agreement / Margin Client Agreement
-                entered into by Grand Partners Securities Limited (“GPSL”) and me/us, to which this Electronic Stock
-                Trading Service
-                Request is annexed whereby GPSL agrees to provide to me/us Electronic Stock Trading Service which
-                enables me/us to
-                give electronic instructions and to obtain quotation and other information through internet that can
-                connect to a
-                telecommunication network (“Electronic Stock Trading Services”). Where any conflict arises between this
-                Electronic Stock
-                Trading Service Request and the Cash Client Agreement/Margin Client Agreement, the provision of the
-                latter shall prevail.</p>
-            <p class="linespace1-5">Electronic trading facility (i.e. internet or mobile trading) is supported by
-                computer-based component system for orderrouting. As with all facilities and systems, they are
-                vulnerable to temporary disruption of failure. I understand and agree to
-                bear any and all risks involved with all trades or transactions entered via electronic trading system
-                and carried out through
-                your system.
-            </p>
-            <br>
-            <p class="mt-15 linespace1-5">此要求加設電子交易功能服務是附屬利盟證券有限公司及本人 / 吾等簽訂的現金 / 保證金客戶協議。作為現金 / 保證金客戶協議的補充。
-                此要求加設電子交易功能服務，被利盟證券有限公司接受則成為雙方協議書。利盟證券有限公司同意 向本人 / 吾等提供電子證券交易服
-                務 (以下稱電子證券或以手提電話交易服務) 以便本人/ 吾等可透過互聯網絡發出電子指示，並取得報價和其他資訊。若加設電子交易功能
-                服務的條款，與現金 / 保證金客戶協議的條文有任何衝突，概以後者的條文為準。
-            </p><br>
-            <p class="linespace1-5">電子交易的設施 (互聯網) 以電腦組成的系統來進行買賣傳遞。然而，所有設施及系統都有可能暫時中斷或失靈。本人明白到通過電子交易
-                系統發出指示以及通過 貴公司的系統執行的交易渉及各種風險。本人並同意承擔該等風險。</p>
-            <br>
-            <p class="linespace1-5">Password Collection 收取密碼方式 :</p>
-            <p class="mt-20">
-                <input type="checkbox" id="Byemail"
-                    class="{{account_info.password_collection_by_email_yesno_checkbox_class}}" />
-                <label for="Byemail">By email 電子郵件 (必須與本公司紀錄相同)</label>
-            </p>
-            <p class="mt-20">
-                <input type="checkbox" id="Bymail"
-                    class="{{account_info.password_collection_by_mail_yesno_checkbox_class}}" />
-                <label for="Bymail">By Mail 郵寄 (寄往與本公司紀錄相同地址)</label>
-            </p>
-            <p class="mt-20">
-                <input type="checkbox" id="Inperson"
-                    class="{{account_info.password_collection_in_person_yesno_checkbox_class}}" />
-                <label for="Inperson">In person (客戶親自到取)</label>
-            </p>
-            <hr height="5">
-
-            <div class="mt-20" style="padding-top: 30px; margin-top: 150px;">
-                <span class="bod-top2">Client Signature (s) 客戶簽署* :</span>
-                <p>Date 日期 : <span class="bod-bottom m-width d-in">
-                        <strong>{{account.create_date}}</strong>
-                    </span>
-                </p>
-                <p><em><u>*Please use the same signature filed with our Company
-                        </u></em></p>
-                <p><em><u>簽署式樣必須與本公司記錄相同</u></em></p>
-                <p>Note 註 :</p>
-                <p class="linespace1-5">1. &nbsp; &nbsp; &nbsp; If the client cannot receive our notice within 4 working
-                    days from the date hereof, please contact your Account Manager.
-                    <br>客戶如於簽署本函 4 個工作天後，仍未收到本公司職員通知，請立即致電你的客戶經理聯絡。
-                </p>
-                <p class="linespace1-5">2. &nbsp; &nbsp; &nbsp; For any online trading, client must ensure to have
-                    adequate funding.
-                    <br>客戶申請網上交易，必須確保資金充足才可買賣。
-
-                </p>
-
-            </div>
-            <table width="100%" class="table mt-20" border="1">
-                <tr>
-                    <td colspan="2" align="center">
-                        FOR OFFICE USE ONLY
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        ONLINE TRADING LIMIT : &nbsp; &nbsp; &nbsp;
-                        <!-- <div class="">
-                <strong>XXXXXXXX</strong>
-            </div> -->
-
-                        <span class="m-width d-in">
-                            <!-- <strong>XXXXXXX</strong>  -->
-                        </span>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td width="60%">
-                        ONLINE TRADING LIMIT APPROVED BY : &nbsp; &nbsp; &nbsp; <span class="m-width d-in">
-                            <!-- <strong>XXXXXXX</strong>  -->
-                        </span>
-                    </td>
-                    <td>
-                        Date : <span class=" m-width d-in">
-                            <!-- <strong>XXXXXXX</strong>  -->
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        SIGNATURE VERIFIED BY : &nbsp; &nbsp; &nbsp; <span class="m-width d-in">
-                            <!-- <strong>XXXXXXX</strong>  -->
-                        </span>
-                    </td>
-                    <td>
-                        Date : <span class="m-width d-in">
-                            <!-- <strong>XXXXXXX</strong>  -->
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        CHECKED BY : &nbsp; &nbsp; &nbsp; <span class="m-width d-in">
-                            <!-- <strong>XXXXXXX</strong>  -->
-                        </span>
-                    </td>
-                    <td>
-                        Date : &nbsp; &nbsp; &nbsp; <span class="m-width d-in">
-                            <!-- <strong>XXXXXXX</strong>  -->
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        AE SIGNATURE &nbsp; &nbsp; &nbsp; <span class="m-width d-in">
-                            <!-- <strong>XXXXXXX</strong>  -->
-                        </span>
-                    </td>
-                    <td>
-                        Date :&nbsp; &nbsp; &nbsp; <span class="m-width d-in">
-                            <!-- <strong>XXXXXXX</strong>  -->
-                        </span>
-                    </td>
-                </tr>
-
-            </table>
-
-            <div class="page-footer mt-20">
-
-                <div class="foot-right">
-                    <span class="pt-15">(06/2017) </span>
-                    <div class="light-p pad">
-                        7
-                    </div>
-                </div>
-            </div>
-
-            <div class="clear break-after">&nbsp;</div>
-           
-        </div>
-         <!--page10 canel page-->
-        <div class="container">
-            <div class="mt-15"></div>
-            <div class="header mt-15">
-                <div class="head-left">
-                    <img src="images/logo.jpg" alt="logo">
-                </div>
-            </div>
-            <h2 class="text-center mt-20">CREDIT FACILITY LETTER</h2>
-            <p class="mt-20">Date
-                &nbsp; &nbsp; &nbsp;
-                <span class="bod-bottom m-width d-in">
-                    <strong>{{account.create_date}}</strong>
-                </span>
-            </p>
-            <p>Dear Sir/Madam,</p>
-            <p class="mt-20">MARGIN LOAN FACILITY</p>
-
-            <p class="mt-20">Account No : &nbsp; &nbsp; &nbsp;
-                <span class="bod-bottom m-width d-in" style="position: relative;">
-                    <strong style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%);">
-                        {{account.id}}
-                    </strong>
-                </span>
-            </p>
-            <p>Credit Limit : HK$ </p>
-            <p>Normal Interest Rate : Bank Prime Rate plus % </p>
-            <p style="margin-bottom: 20px;">Period of Grant of Margin Loan Facility : year(s) (subject to item 4 below)
-            </p>
-
-
-            <p class="mt-50 linespace1-5">We are pleased to confirm that we are prepared to grant to you a Credit
-                Facility on the terms and conditions as setup
-                of this Credit Facility Letter.</p>
-
-            <ol type="1" class="linespace1-5">
-                <li>This Facility is at all times to be secured by stocks, shares or any other securities or other
-                    property
-                    acceptable to us at our absolute discretion as collateral.</li>
-                <li>Interest will accrue and be compounded monthly on the outstanding loan balance at the interest rates
-                    stated above, provided that if the interest rates stated above would exceed the maximum lawful rate
-                    under the Money Lenders Ordinance, then the maximum lawful interest rate under the Ordinance will
-                    be applied instead. The rates are subject to variation at our sole discretion.</li>
-                <li>We may vary the terms and conditions of this Credit Facility Letter from time to time at our
-                    discretion
-                    in accordance with the Client Agreement.</li>
-                <li>We reserve the overriding right that the owing balance must be repaid immediately on demand.</li>
-                <li>Notwithstanding any provision as outlined in this Credit Facility Letter, all the other forms,
-                    schedules
-
-                    and agreements etc previously signed are valid and legally binding.</li>
-            </ol>
-
-            <p class="mt-20 linespace1-5">Kindly signify your agreement to the terms of this Credit Facility Letter by
-                signing and returning to us the duplicate
-                copy.</p>
-
-            <p class="linespace1-5 mt-50">
-                Grand Partners Securities Limited<br>
-                <em>This is a computer print-out, no signature is required</em>
-            </p>
-            <p class="mt-50"> On Duplicate</p>
-            <p class="linespace1-5">I/We have read, understood and accept the terms of this Credit Facility Letter and
-                request Grand Partners Securities
-                Limited to provide the Credit Facility to me/us on the terms hereof.</p>
-            <p class="" style="margin-top: 50px;">
-                (Signature & confirm) &nbsp; &nbsp; <span class="bod-bottom">
-                    <!--<strong>XXXXXXX</strong>-->
-                </span>
-            </p>
-
-            <p>Client: &nbsp; &nbsp; &nbsp;
-                <span class="bod-bottom m-width d-in">
-                    <strong>{{account_info.name_english}}</strong>
-                </span>
-            </p>
-            <p>Date:&nbsp; &nbsp; &nbsp;
-                <span class="bod-bottom m-width d-in">
-                    <strong>{{account.create_date}}</strong>
-                </span>
-            </p>
-            <div class="page-footer mt-20">
-
-                <div class="foot-right">
-                    <span class="pt-15">(06/2017) </span>
-                    <div class="light-p pad">
-                        10
-                    </div>
-                </div>
-                <div class="right text-center " style="margin-right: 15px;">
-                    <p>9/F Connaught Harbourfront House, 35-36 Connaught Road West, Hong Kong <br>
-                        香港干諾道西 35-36 號康諾維港大廈 9 樓 <br>
-                        Tel : (852) 3701 3200 Fax : (852) 3102 1855 </p>
-                </div>
-            </div>
-
-            <div class="clear break-after">&nbsp;</div>
-           
-        </div>
        <!--page10-->
         <div class="container">
             <div class="mt-15"></div>
@@ -2951,6 +2940,7 @@
             </div>
             <div class="clear break-after"></div>
         </div>
+
         <!-- Add page 11... -->
         <div class="container" style="font-size: 14px;">
             <div class="mt20">&nbsp;</div>
@@ -3317,653 +3307,7 @@
             </div>
             <div class="clear break-after"></div>
         </div>
-        <!--page15-->
-        <div class="container">
-            <div class="mt-15"></div>
-            <div class="header mt-15">
-                <div class="head-left">
-                    <img src="images/logo.jpg" alt="logo">
-                </div>
-            </div>
-            <p class="text-center"><strong>新開立客戶之風險評估表</strong></p>
-            <p>
-                客戶姓名: <span class="bod-bottom m-width d-in">
-                    <strong>{{account_info.name_chinese}}</strong>
-                </span> &nbsp; &nbsp; &nbsp;
-                授權人姓名: <span class="bod-bottom m-width d-in">
-                    <!--<strong>XXXXXXXX</strong> -->
-                </span> &nbsp; &nbsp; &nbsp;
-                開戶日期: <span class="bod-bottom m-width d-in">
-                    <strong>{{account.create_date}}</strong>
-                </span>
-            </p>
-            <table width="100%" class="table mt-10 page12">
-                <tr>
-                    <td width="5%"></td>
-                    <td width="30%"><span class="bod-bottom">風險評估</span></td>
-                    <td width="30%"><span class="bod-bottom">結果</span></td>
-                    <td width="35%"><span class="bod-bottom">風險程度評估</span><br>
-                        低 &nbsp; &nbsp; 中 &nbsp; &nbsp; 高
-
-                    </td>
-                </tr>
-                <tr>
-                    <td valign="top" style="vertical-align: top" width="5%">1.</td>
-                    <td colspan="3" width="95%">
-                        <p>國家/地區性風險</p>
-                        <table width="100%">
-                            <tr>
-                                <td width="25%">個人客戶國籍</td>
-                                <td width="27%">
-                                    <span class="bod-bottom m-width d-in">
-                                        <!--<strong>XXXXXXX</strong> -->
-                                    </span>
-                                </td>
-                                <td width="30%">
-
-                                    <span class="d-in">
-                                        <input type="checkbox" id="1" class="" />
-                                        <label for="1 "> &nbsp;</label>
-                                    </span>
-
-                                    <span class="d-in">
-                                        <input type="checkbox" id="2" class="" />
-                                        <label for="2"> &nbsp;</label>
-                                    </span>
-
-                                    <span class="d-in">
-                                        <input type="checkbox" id="3" class="" />
-                                        <label for="3"> &nbsp;</label>
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td width="25%">機構客戶總部設立於那一個國家</td>
-                                <td width="27%">
-                                    <span class="bod-bottom m-width d-in">
-                                        <!--<strong>XXXXXXX</strong> -->
-                                    </span>
-                                </td>
-                                <td width="30%">
-
-                                    <span>
-                                        <input type="checkbox" id="1" class="" />
-                                        <label for="1 "> &nbsp;</label>
-                                    </span>
-                                    <span>
-                                        <input type="checkbox" id="2" class="" />
-                                        <label for="2"> &nbsp;</label>
-                                    </span>
-
-                                    <span>
-                                        <input type="checkbox" id="3" class="" />
-                                        <label for="3"> &nbsp;</label>
-                                    </span>
-                                </td>
-                            </tr>
-
-                        </table>
-                        <p>**高風險地區 - 根據國際金融反洗黑錢特別工作小組標準的確定為高風險和不合作的司法管轄區)</p>
-                        <p>(**低風險地區 - 根據司法管轄區，關於洗錢問題的四十點建議中的第 40 及第 9 項建議)</p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td valign="top" width="5%" style="vertical-align: top">2.</td>
-                    <td colspan="3" width="95%">
-                        個人客戶風險
-                        <table width="100%">
-                            <tr>
-                                <td width="25%">客戶從事什麼類型的企業 </td>
-                                <td width="27%">
-                                    <span class="bod-bottom m-width d-in">
-                                        <!--<strong>XXXXXXX</strong> -->
-                                    </span>
-                                </td>
-                                <td width="30%">
-
-                                    <span>
-                                        <input type="checkbox" id="1" class="" />
-                                        <label for="1 "> &nbsp;</label>
-                                    </span>
-                                    <span>
-                                        <input type="checkbox" id="2" class="" />
-                                        <label for="2"> &nbsp;</label>
-                                    </span>
-                                    <span>
-                                        <input type="checkbox" id="3" class="" />
-                                        <label for="3"> &nbsp;</label>
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td width="25%">是屬於現金密集及較為容易牽涉到洗錢的業務</td>
-                                <td width="27%">
-                                    <span class="bod-bottom m-width d-in">
-                                        <!--<strong>XXXXXXX</strong> -->
-                                    </span>
-                                </td>
-                                <td width="30%">
-
-                                    <span>
-                                        <input type="checkbox" id="1" class="" />
-                                        <label for="1 "> &nbsp;</label>
-                                    </span>
-                                    <span>
-                                        <input type="checkbox" id="2" class="" />
-                                        <label for="2"> &nbsp;</label>
-                                    </span>
-
-                                    <span>
-                                        <input type="checkbox" id="3" class="" />
-                                        <label for="3"> &nbsp;</label>
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="3">
-                                    <p>(例如:買賣貴重珠寶/油畫) </p>
-                                    <p>(**高風險 - 「是」) </p>
-                                    <p>只供機構客戶使用:</p>
-
-                                </td>
-                            </tr>
-                            <tr>
-                                <td width="25%">是屬於複雜結構的機構 </td>
-                                <td width="27%">
-                                    <span class="bod-bottom m-width d-in">
-                                        <!--<strong>XXXXXXX</strong> -->
-                                    </span>
-                                </td>
-                                <td width="30%">
-
-                                    <span>
-                                        <input type="checkbox" id="1" class="" />
-                                        <label for="1 "> &nbsp;</label>
-                                    </span>
-                                    <span>
-                                        <input type="checkbox" id="2" class="" />
-                                        <label for="2"> &nbsp;</label>
-                                    </span>
-
-                                    <span>
-                                        <input type="checkbox" id="3" class="" />
-                                        <label for="3"> &nbsp;</label>
-                                    </span>
-                                </td>
-                            </tr>
-
-                        </table>
-                        <p>(例如:一個眾多附屬公司和聯營公司，位於世界各地的國家，這有利於公司隱藏其身份)</p>
-                        <p>(**高風險 - 「是」) </p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td valign="top" width="5%" style="vertical-align: top">3.</td>
-                    <td colspan="3" width="95%">
-                        產品服務風險
-                        <table width="100%">
-                            <tr>
-                                <td width="25%">我們提供什麼樣的產品/服務可能容易牽涉到洗黑錢 </td>
-                                <td width="27%">
-                                    <span class="bod-bottom m-width d-in">
-                                        <!--<strong>XXXXXXX</strong> -->
-                                    </span>
-                                </td>
-                                <td width="30%">
-
-                                    <span>
-                                        <input type="checkbox" id="1" class="" />
-                                        <label for="1 "> &nbsp;</label>
-                                    </span>
-                                    <span>
-                                        <input type="checkbox" id="2" class="" />
-                                        <label for="2"> &nbsp;</label>
-                                    </span>
-
-                                    <span>
-                                        <input type="checkbox" id="3" class="" />
-                                        <label for="3"> &nbsp;</label>
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="3">
-                                    <p>(**高風險 – 結構複雜的投資工具)
-                                    </p>
-                                    <p>(**低風險 – 證券/期貨在股市，有健全的監管制度) </p>
-
-                                </td>
-                            </tr>
-                            <tr>
-                                <td width="25%">我們直接從客戶那裡接受現金 </td>
-                                <td width="27%">
-                                    <span class="bod-bottom m-width d-in">
-                                        <!--<strong>XXXXXXX</strong> -->
-                                    </span>
-                                </td>
-                                <td width="30%">
-
-                                    <span>
-                                        <input type="checkbox" id="1" class="" />
-                                        <label for="1 "> &nbsp;</label>
-                                    </span>
-                                    <span>
-                                        <input type="checkbox" id="2" class="" />
-                                        <label for="2"> &nbsp;</label>
-                                    </span>
-
-                                    <span>
-                                        <input type="checkbox" id="3" class="" />
-                                        <label for="3"> &nbsp;</label>
-                                    </span>
-                                </td>
-                            </tr>
-
-                        </table>
-                        <p>(**高風險 - 「是」)
-                        </p>
-                    </td>
-                </tr>
-
-
-                <tr>
-                    <td valign="top" width="5%" style="vertical-align: top">4.</td>
-                    <td colspan="3" width="95%">
-                        其他
-                        <table width="100%">
-                            <tr>
-                                <td width="25%">客戶過往投資經驗</td>
-                                <td width="27%">
-                                    <span class="bod-bottom m-width d-in">
-                                        <!--<strong>XXXXXXX</strong> -->
-                                    </span>
-                                </td>
-                                <td width="30%">
-
-                                    <span>
-                                        <input type="checkbox" id="1" class="" />
-                                        <label for="1 "> &nbsp; </label>
-                                    </span>
-                                    <span>
-                                        <input type="checkbox" id="2" class="" />
-                                        <label for="2"> &nbsp;</label>
-                                    </span>
-
-                                    <span>
-                                        <input type="checkbox" id="3" class="" />
-                                        <label for="3"> &nbsp;</label>
-                                    </span>
-                                </td>
-                            </tr>
-
-                        </table>
-                        <p>**高風險 – 少於一年) </p>
-                        <p>(**低風險 – 多於三年)</p>
-                    </td>
-                </tr>
-
-
-                <tr>
-                    <td valign="top" width="5%" style="vertical-align: top">5.</td>
-                    <td colspan="3" width="95%">
-                        <table width="100%">
-                            <tr>
-                                <td width="25%">客戶收入與資產</td>
-                                <td width="27%">
-                                    <span class="bod-bottom m-width d-in">
-                                        <!--<strong>XXXXXXX</strong> -->
-                                    </span>
-                                </td>
-                                <td width="30%">
-
-                                    <span>
-                                        <input type="checkbox" id="1" class="" />
-                                        <label for="1 "> &nbsp; </label>
-                                    </span>
-                                    <span>
-                                        <input type="checkbox" id="2" class="" />
-                                        <label for="2"> &nbsp;</label>
-                                    </span>
-
-                                    <span>
-                                        <input type="checkbox" id="3" class="" />
-                                        <label for="3"> &nbsp;</label>
-                                    </span>
-                                </td>
-                            </tr>
-
-                        </table>
-                        <p>(**高風險 – 低 / 無收入但高資產)</p>
-                        <p>(**低風險 – 低收入及低資產 / 高收入及高資產 )</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td valign="top" width="5%" style="vertical-align: top">6.</td>
-                    <td colspan="3" width="95%">
-                        <table width="100%">
-                            <tr>
-                                <td width="60%">客戶是被通緝人士(例如:聯邦調查局/香港警務處/廉政公署等等) (用 Google 搜尋)</td>
-                                <td width="10%">
-                                    是/否
-                                </td>
-                                <td width="30%">
-                                    (請刪劃不適合字句)
-                                </td>
-                            </tr>
-
-                        </table>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td valign="top" width="5%" style="vertical-align: top">7.</td>
-                    <td colspan="3" width="95%">
-                        <table width="100%">
-                            <tr>
-                                <td width="60%">客戶是政界人士 (用 Google 搜尋) </td>
-                                <td width="10%">
-                                    是/否
-                                </td>
-                                <td width="30%">
-                                    (請刪劃不適合字句)
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="3">
-                                    <p>**如問題 6 調查結果是「是」，該客戶被視為風險極高，並且不應該被接受。</p>
-                                    <p>*如問題 7 調查結果是「是」，該客戶被視為高風險的人，應該尋求高級管理層的批准。</p>
-
-                                </td>
-                            </tr>
-
-                        </table>
-
-                        <table width="100%">
-                            <tr>
-                                <td width="60%"><span class="bod-bottom">審批程序</span> </td>
-                                <td width="30%">
-                                    <span class="bod-bottom">評估結果</span>
-                                </td>
-                                <td width="10%">
-                                    <span class="bod-bottom"> 歸類</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    必須要得到合規部及負責人員批準 (確定簽署為雙簽)
-
-                                </td>
-                                <td>5-7 個高風險及多於 2 個中風險或以上</td>
-                                <td>高風險</td>
-                            </tr>
-                            <tr>
-                                <td>必須要得到合規部批準</td>
-                                <td>3-4 個高風險同時多於 2 個中風險</td>
-                                <td>中風險</td>
-                            </tr>
-                            <tr>
-                                <td>必須要得到合規部批準</td>
-                                <td>少於 3 個高風險同時少於 2 個中風險</td>
-                                <td>低風險</td>
-                            </tr>
-
-                        </table>
-                        結論:
-                        <p>高風險數量 <span class="bod-bottom m-width d-in">
-                                <!--<strong>XXXXXXX</strong> -->
-                            </span> </p>
-
-                        <p> 中風險數量 <span class="bod-bottom m-width d-in">
-                                <!--<strong>XXXXXXX</strong> -->
-                            </span> </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td valign="top" width="5%" style="vertical-align: top">8.</td>
-                    <td colspan="3" width="95%">
-                        <p>客戶評估為 高 / 中 / 低 風險疑似洗黑錢客戶 (請刪劃不適合字句)</p>
-                        <table width="100%">
-                            <tr>
-                                <td width="50%">客戶是被通緝人士(例如:聯邦調查局/香港警務處/廉政公署等等) (用 Google 搜尋)</td>
-                                <td width="5%">
-
-                                </td>
-                                <td width="35%">
-                                    確定簽署
-                                </td>
-                            </tr>
-                            <tr>
-                                <td width="50%">
-                                    <span class="bod-bottom m-width d-in" style="width: 100%;">
-                                        <!--<strong>XXXXXXX</strong> -->
-                                    </span>
-                                </td>
-                                <td width="5%">
-
-                                </td>
-                                <td width="35%">
-                                    <span class="bod-bottom m-width d-in" style="width: 100%; margin-top: 25px;">
-                                        <!--<strong>XXXXXXX</strong> -->
-                                    </span>
-                                    <p style="margin-top: 10px;">合規部人員姓名: <br>日期:</p>
-                                </td>
-                            </tr>
-
-                        </table>
-                        <p class="mt-10">如屬高風險，由負責人員加簽:
-                        </p>
-                        <p class="bod-bottom m-width d-in" style="margin-top: 25px;">
-                            <!-- <strong>XXXXXXX</strong> -->
-                        </p> <br>負責人員姓名: <br>
-                        日期:
-                    </td>
-                </tr>
-
-            </table>
-
-            <div class="page-footer">
-                <div class="foot-right">
-                    <span class="pt-15">(06/2017) </span>
-                    <div class="light-p pad">
-                        15
-                    </div>
-                </div>
-            </div>
-
-            <div class="clear break-after"></div>
-           
-        </div>
-         <!--page 13 cencel page-->
-        <div style="page-break-after: always;" class="container pb85">
-            <div class="header mt-15">
-                <div class="head-left">
-                    <img src="images/logo.jpg" alt="logo">
-                </div>
-            </div>
-            <h2>Individual Account Opening Requirement</h2>
-            <h2>開立個人戶口所需文件</h2>
-
-            <table class="table" border="1" width="100%">
-                <tr>
-                    <td>
-                        1.
-                    </td>
-                    <td>
-                        Complete and return the account-opening documents. <br>
-                        填妥開戶文件。
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        2.
-                    </td>
-                    <td>
-                        A copy of Hong Kong Identity Card or other valid identity document(s).<br>
-                        香港身份證或其他身份證明文件副本。
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        3.
-                    </td>
-                    <td>
-                        Residential address proof of current three months (e.g. utility bill or bank statement).<br>
-                        最近三個月內發出的住址證明 (如:電費單或銀行月結單) 。
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        4.
-                    </td>
-                    <td>
-                        Bank account supporting documents (e.g. ATM card, Passbook, Statement or Bank Account
-                        Reference Letter). <br>
-                        銀行戶口證明文件 (如:提款卡、存摺、結單或銀行開戶資料) 。
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        5.
-                    </td>
-                    <td>
-                        Provide the Taxpayer Identification Number (TIN) of the Jurisdiction of Residence (if
-                        any).<br>
-                        提供居留司法管轄區的稅務編號(如有)。
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        6.
-                    </td>
-                    <td>
-                        Income or net worth proof (e.g. tax return, salary advice or bank statement) (for margin
-                        client<br>
-                        only) 收入或資產證明 (如:報稅表、工資證明或銀行帳單) (僅適用於保證金戶口)。
-                    </td>
-                </tr>
-            </table>
-
-            <h2><u>國內個人客戶所需文件</u></h2>
-
-            <table class="table" border="1" width="100%">
-                <tr>
-                    <td>
-                        1.
-                    </td>
-                    <td>
-                        國內身份證正面和底面副本。
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        2.
-                    </td>
-                    <td>
-                        客戶往返香港及國內的通行證,必須影印有客戶相片、國內出境日期蓋章的那一頁及入境
-                        香港蓋章或自助入境單據。
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        3.
-                    </td>
-                    <td>
-                        最近三個月內發出的住址證明 (如:水、電、煤或銀行月結單) 。
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        4.
-                    </td>
-                    <td>
-                        香港銀行戶口證明文件 (如:提款卡、存摺、月結單或銀行開戶資料) 。
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        5.
-                    </td>
-                    <td>
-                        提供居留司法管轄區的稅務編號(如有)。
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        6.
-                    </td>
-                    <td>
-                        收入或資產證明 (如:報稅表、工資證明或銀行帳單) (僅適用於保證金戶口)。
-                    </td>
-                </tr>
-            </table>
-            <h3>Procedures for funds deposit</h3>
-            <h3>存款程序及須知 </h3>
-            <p>When clients deposit to our Company, cheques payable to “<strong>“Grand Partners Securities
-                    Limited</strong>”,
-                and deposit to the following bank accounts :<br>
-                當客戶存款到本公司,支票抬頭請寫明「<strong>利盟證券有限公司</strong>」,並存款到以下銀行戶口 :</p>
-            <table class="table" border="1" width="100%">
-                <tr>
-                    <td>Currency<br>
-                        貨幣</td>
-                    <td>Bank name <br>
-                        銀行名稱</td>
-                    <td>Bank account number<br>
-                        銀行戶口號碼</td>
-                </tr>
-                <tr>
-                    <td>
-                        HKD 港幣
-                    </td>
-                    <td>Band of China (Hong Kong) Limited <br>
-                        中國銀行(香港)有限公司</td>
-                    <td>
-                        <strong>012-884-0-012573-9</strong>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        RMB 人⺠幣
-                    </td>
-                    <td>
-                        Band of China (Hong Kong) Limited <br>
-                        中國銀行(香港)有限公司
-                    </td>
-                    <td>
-                        <strong>
-                            012-884-0-601838-3
-                        </strong>
-                    </td>
-                </tr>
-            </table>
-            <div class="clear"></div>
-
-            <div class="page-footer mt-50" style="bottom: -600px;">
-
-                <div class="foot-right">
-                    <span class="pt-15">(06/2017) </span>
-                    <div class="light-p pad">
-                        13
-                    </div>
-                </div>
-                <div class="right text-center" style="margin-right: 15px;">
-                    <p>9/F Connaught Harbourfront House, 35-36 Connaught Road West, Hong Kong <br>
-                        香港干諾道西 35-36 號康諾維港大廈 9 樓 <br>
-                        Tel : (852) 3701 3200 Fax : (852) 3102 1855 </p>
-                </div>
-            </div>
-            <div class="mt-15"></div>
-            <div style="padding-bottom: 30vh;" class="clear page-break">&nbsp;</div>
-
-            
-        </div>
-        <!--page12-->
+<!--page12-->
         <div class="container">
             <div class="mini-container">
                 <img id="newImg" src="images/logo.jpg" alt="logo">
@@ -4072,6 +3416,8 @@
 
             <div class="clear break-after"></div>
         </div>
+        
+
         <!-- Adding page 13  -->
         <div class="container">
             <div style="margin-top: 200px;">&nbsp;</div>
@@ -4145,8 +3491,7 @@
             </div>
             <div class="clear break-after"></div>
         </div>
-        <!-- Adding page 13  -->
-        <!-- ................................................-->
+
         <!-- Adding page 14 -->
         <div class="container">
             <div class="header mt-15">
@@ -4203,215 +3548,469 @@
             </div>
             <div class="clear break-after"></div>
         </div>
-        <!-- ................................................-->
-         <!--page5-->
+
+        <!--page15-->
         <div class="container">
+
+            <div class="mt-15"></div>
+
+
             <div class="header mt-20">
                 <div class="head-left">
                     <img src="images/logo.jpg" alt="logo">
                 </div>
             </div>
-            <div class="mini-container">
-                <h2>常設授權</h2>
-                <h2>STANDING AUTHORITY</h2>
-            </div>
+            <p class="text-center"><strong>新開立客戶之風險評估表</strong></p>
+            <p>
+                客戶姓名: <span class="bod-bottom m-width d-in">
+                    <!--<strong>XXXXXXXX</strong> -->
+                </span> &nbsp; &nbsp; &nbsp;
+                授權人姓名: <span class="bod-bottom m-width d-in">
+                    <!--<strong>XXXXXXXX</strong> -->
+                </span> &nbsp; &nbsp; &nbsp;
+                開戶日期: <span class="bod-bottom m-width d-in">
+                    <!--<strong>XXXXXXXX</strong> -->
+                </span>
+            </p>
+            <table width="100%" class="table mt-10">
+                <tr>
+                    <td width="5%"></td>
+                    <td width="30%"><span class="bod-bottom">風險評估</span></td>
+                    <td width="30%"><span class="bod-bottom">結果</span></td>
+                    <td width="35%"><span class="bod-bottom">風險程度評估</span><br>
+                        低 &nbsp; &nbsp; 中 &nbsp; &nbsp; 高
 
-            <div width="30%">
-                <p>日期 Date: <span class="bod-bottom m-width d-in"> <strong>{{account.create_date}}</strong></span>
-                </p>
-            </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" width="5%" style="vertical-align: top">1.</td>
+                    <td colspan="3" width="95%">
+                        <p>國家/地區性風險</p>
+                        <table width="100%">
+                            <tr>
+                                <td width="25%">個人客戶國籍</td>
+                                <td width="27%">
+                                    <span class="bod-bottom m-width d-in">
+                                        <!-- <strong>XXXXXXX</strong>  -->
+                                    </span>
+                                </td>
+                                <td width="30%">
 
-            <div width="30%" style="margin-top: 15px;">
-                <p>证券账户名称 Securities A/C Name: <span
-                        class="bod-bottom m-width d-in"><strong>{{account.id}}</strong></span>
-                </p>
-            </div>
-            <div width="30%" style="margin-top: 15px;">
-                <p>帳戶名稱 A/C Name: <span
-                        class="bod-bottom m-width d-in"><strong>{{account_info.name_english}}</strong></span></p>
-            </div>
-            <div style="margin-top: 30px;">
-                <p>懇請貴公司在接獲本人/吾等/本公司之電話提款指示後:-</p>
-                <p>Upon receipt of my/our telephone instruction for fund withdrawal:</p>
-                <ol style="list-style: none; padding: 0;">
-                    <li class="mt-20">
-                        <input type="checkbox" name="" id="issue_cheque">
-                        <label for="issue_cheque">發出以本人/吾等/本公司為抬頭人之支票 Issue cheque in my /our/our company’s
-                            favor.</label>
-                    </li>
-                    <br>
-                    <li>
-                        <input type="checkbox" name="" id="credit" class="checkbox-checked">
-                        <label for="credit">將款項存入本人/吾等/本公司在上列銀行之港幣儲蓄/往來帳戶.-
-                            Credit to my/our HK$ saving /current account with the above bank.
-                        </label>
-                    </li>
-                </ol>
-            </div>
-            <!-- <p class="mini-container">Credit to my/our HK$ saving /current account with the above bank.</p> -->
+                                    <span class="d-in">
+                                        <input type="checkbox" id="1" class="" />
+                                        <label for="1 "> &nbsp;</label>
+                                    </span>
 
-            <table width="100%" cellspacing="0" border="1" class="table">
-                <!-- <tr>
-                    <td width="35%">
-                        <input type="checkbox" name="" id="HSBC">
-                        <label for="HSBC">匯豐銀行 <br>&nbsp; &nbsp; &nbsp; &nbsp; HSBC</label>
-                    </td>
-                    <td class="pad0">
-                        <table width="100%">
-                            <tbody>
-                                <tr class="bod-bottom">
-                                    <td>帳戶號碼 AC No.</td>
-                                </tr>
-                                <tr>
-                                    <td>帳戶名稱 AC Name</td>
-                                </tr>
-                            </tbody>
+                                    <span class="d-in">
+                                        <input type="checkbox" id="2" class="" />
+                                        <label for="2"> &nbsp;</label>
+                                    </span>
+
+                                    <span class="d-in">
+                                        <input type="checkbox" id="3" class="" />
+                                        <label for="3"> &nbsp;</label>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="25%">機構客戶總部設立於那一個國家</td>
+                                <td width="27%">
+                                    <span class="bod-bottom m-width d-in">
+                                        <!-- <strong>XXXXXXX</strong>  -->
+                                    </span>
+                                </td>
+                                <td width="30%">
+
+                                    <span>
+                                        <input type="checkbox" id="1" class="" />
+                                        <label for="1 "> &nbsp;</label>
+                                    </span>
+                                    <span>
+                                        <input type="checkbox" id="2" class="" />
+                                        <label for="2"> &nbsp;</label>
+                                    </span>
+
+                                    <span>
+                                        <input type="checkbox" id="3" class="" />
+                                        <label for="3"> &nbsp;</label>
+                                    </span>
+                                </td>
+                            </tr>
+
                         </table>
+                        <p>**高風險地區 - 根據國際金融反洗黑錢特別工作小組標準的確定為高風險和不合作的司法管轄區)</p>
+                        <p>(**低風險地區 - 根據司法管轄區，關於洗錢問題的四十點建議中的第 40 及第 9 項建議)</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td valign="top" width="5%" style="vertical-align: top">2.</td>
+                    <td colspan="3" width="95%">
+                        個人客戶風險
+                        <table width="100%">
+                            <tr>
+                                <td width="25%">客戶從事什麼類型的企業 </td>
+                                <td width="27%">
+                                    <span class="bod-bottom m-width d-in">
+                                        <!-- <strong>XXXXXXX</strong>  -->
+                                    </span>
+                                </td>
+                                <td width="30%">
+
+                                    <span>
+                                        <input type="checkbox" id="1" class="" />
+                                        <label for="1 "> &nbsp;</label>
+                                    </span>
+                                    <span>
+                                        <input type="checkbox" id="2" class="" />
+                                        <label for="2"> &nbsp;</label>
+                                    </span>
+                                    <span>
+                                        <input type="checkbox" id="3" class="" />
+                                        <label for="3"> &nbsp;</label>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="25%">是屬於現金密集及較為容易牽涉到洗錢的業務</td>
+                                <td width="27%">
+                                    <span class="bod-bottom m-width d-in">
+                                        <!-- <strong>XXXXXXX</strong> -->
+                                    </span>
+                                </td>
+                                <td width="30%">
+
+                                    <span>
+                                        <input type="checkbox" id="1" class="" />
+                                        <label for="1 "> &nbsp;</label>
+                                    </span>
+                                    <span>
+                                        <input type="checkbox" id="2" class="" />
+                                        <label for="2"> &nbsp;</label>
+                                    </span>
+
+                                    <span>
+                                        <input type="checkbox" id="3" class="" />
+                                        <label for="3"> &nbsp;</label>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <p>(例如:買賣貴重珠寶/油畫) </p>
+                                    <p>(**高風險 - 「是」) </p>
+                                    <p>只供機構客戶使用:</p>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="25%">是屬於複雜結構的機構 </td>
+                                <td width="27%">
+                                    <span class="bod-bottom m-width d-in">
+                                        <!-- <strong>XXXXXXX</strong> -->
+                                    </span>
+                                </td>
+                                <td width="30%">
+
+                                    <span>
+                                        <input type="checkbox" id="1" class="" />
+                                        <label for="1 "> &nbsp;</label>
+                                    </span>
+                                    <span>
+                                        <input type="checkbox" id="2" class="" />
+                                        <label for="2"> &nbsp;</label>
+                                    </span>
+
+                                    <span>
+                                        <input type="checkbox" id="3" class="" />
+                                        <label for="3"> &nbsp;</label>
+                                    </span>
+                                </td>
+                            </tr>
+
+                        </table>
+                        <p>(例如:一個眾多附屬公司和聯營公司，位於世界各地的國家，這有利於公司隱藏其身份)</p>
+                        <p>(**高風險 - 「是」) </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td valign="top" width="5%" style="vertical-align: top">3.</td>
+                    <td colspan="3" width="95%">
+                        產品服務風險
+                        <table width="100%">
+                            <tr>
+                                <td width="25%">我們提供什麼樣的產品/服務可能容易牽涉到洗黑錢 </td>
+                                <td width="27%">
+                                    <span class="bod-bottom m-width d-in">
+                                        <!-- <strong>XXXXXXX</strong>  -->
+                                    </span>
+                                </td>
+                                <td width="30%">
+
+                                    <span>
+                                        <input type="checkbox" id="1" class="" />
+                                        <label for="1 "> &nbsp;</label>
+                                    </span>
+                                    <span>
+                                        <input type="checkbox" id="2" class="" />
+                                        <label for="2"> &nbsp;</label>
+                                    </span>
+
+                                    <span>
+                                        <input type="checkbox" id="3" class="" />
+                                        <label for="3"> &nbsp;</label>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <p>(**高風險 – 結構複雜的投資工具)
+                                    </p>
+                                    <p>(**低風險 – 證券/期貨在股市，有健全的監管制度) </p>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="25%">我們直接從客戶那裡接受現金 </td>
+                                <td width="27%">
+                                    <span class="bod-bottom m-width d-in">
+                                        <!-- <strong>XXXXXXX</strong>  -->
+                                    </span>
+                                </td>
+                                <td width="30%">
+
+                                    <span>
+                                        <input type="checkbox" id="1" class="" />
+                                        <label for="1 "> &nbsp;</label>
+                                    </span>
+                                    <span>
+                                        <input type="checkbox" id="2" class="" />
+                                        <label for="2"> &nbsp;</label>
+                                    </span>
+
+                                    <span>
+                                        <input type="checkbox" id="3" class="" />
+                                        <label for="3"> &nbsp;</label>
+                                    </span>
+                                </td>
+                            </tr>
+
+                        </table>
+                        <p>(**高風險 - 「是」)
+                        </p>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td valign="top" width="5%" style="vertical-align: top">4.</td>
+                    <td colspan="3" width="95%">
+                        其他
+                        <table width="100%">
+                            <tr>
+                                <td width="25%">客戶過往投資經驗</td>
+                                <td width="27%">
+                                    <span class="bod-bottom m-width d-in">
+                                        <!-- <strong>XXXXXXX</strong>  -->
+                                    </span>
+                                </td>
+                                <td width="30%">
+
+                                    <span>
+                                        <input type="checkbox" id="1" class="" />
+                                        <label for="1 "> &nbsp; </label>
+                                    </span>
+                                    <span>
+                                        <input type="checkbox" id="2" class="" />
+                                        <label for="2"> &nbsp;</label>
+                                    </span>
+
+                                    <span>
+                                        <input type="checkbox" id="3" class="" />
+                                        <label for="3"> &nbsp;</label>
+                                    </span>
+                                </td>
+                            </tr>
+
+                        </table>
+                        <p>**高風險 – 少於一年) </p>
+                        <p>(**低風險 – 多於三年)</p>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td valign="top" width="5%" style="vertical-align: top">5.</td>
+                    <td colspan="3" width="95%">
+                        <table width="100%">
+                            <tr>
+                                <td width="25%">客戶收入與資產</td>
+                                <td width="27%">
+                                    <span class="bod-bottom m-width d-in">
+                                        <!-- <strong>XXXXXXX</strong>  -->
+                                    </span>
+                                </td>
+                                <td width="30%">
+
+                                    <span>
+                                        <input type="checkbox" id="1" class="" />
+                                        <label for="1 "> &nbsp; </label>
+                                    </span>
+                                    <span>
+                                        <input type="checkbox" id="2" class="" />
+                                        <label for="2"> &nbsp;</label>
+                                    </span>
+
+                                    <span>
+                                        <input type="checkbox" id="3" class="" />
+                                        <label for="3"> &nbsp;</label>
+                                    </span>
+                                </td>
+                            </tr>
+
+                        </table>
+                        <p>(**高風險 – 低 / 無收入但高資產)</p>
+                        <p>(**低風險 – 低收入及低資產 / 高收入及高資產 )</p>
                     </td>
                 </tr>
                 <tr>
-                    <td width="35%">
-                        <input type="checkbox" name="" id="bank_of_china">
-                        <label for="bank_of_china">中國銀行（香港）<br>&nbsp; &nbsp; &nbsp; &nbsp; Bank of China
-                            (HK)</label>
-                    </td>
-                    <td class="pad0">
+                    <td valign="top" width="5%" style="vertical-align: top">6.</td>
+                    <td colspan="3" width="95%">
                         <table width="100%">
-                            <tbody>
-                                <tr class="bod-bottom">
-                                    <td>帳戶號碼 AC No.</td>
-                                </tr>
-                                <tr>
-                                    <td>帳戶名稱 AC Name</td>
-                                </tr>
-                            </tbody>
+                            <tr>
+                                <td width="60%">客戶是被通緝人士(例如:聯邦調查局/香港警務處/廉政公署等等) (用 Google 搜尋)</td>
+                                <td width="10%">
+                                    是/否
+                                </td>
+                                <td width="30%">
+                                    (請刪劃不適合字句)
+                                </td>
+                            </tr>
+
                         </table>
                     </td>
                 </tr>
+
                 <tr>
-                    <td width="35%">
-                        <input type="checkbox" name="" id="hang_seng_bank">
-                        <label for="hang_seng_bank">恒生銀行<br>&nbsp; &nbsp; &nbsp; &nbsp; Hang Seng Bank</label>
-                    </td>
-                    <td class="pad0">
+                    <td valign="top" width="5%" style="vertical-align: top">7.</td>
+                    <td colspan="3" width="95%">
                         <table width="100%">
-                            <tbody>
-                                <tr class="bod-bottom">
-                                    <td>帳戶號碼 AC No.</td>
-                                </tr>
-                                <tr>
-                                    <td>帳戶名稱 AC Name</td>
-                                </tr>
-                            </tbody>
+                            <tr>
+                                <td width="60%">客戶是政界人士 (用 Google 搜尋) </td>
+                                <td width="10%">
+                                    是/否
+                                </td>
+                                <td width="30%">
+                                    (請刪劃不適合字句)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <p>**如問題 6 調查結果是「是」，該客戶被視為風險極高，並且不應該被接受。</p>
+                                    <p>*如問題 7 調查結果是「是」，該客戶被視為高風險的人，應該尋求高級管理層的批准。</p>
+
+                                </td>
+                            </tr>
+
                         </table>
+
+                        <table width="100%">
+                            <tr>
+                                <td width="60%"><span class="bod-bottom">審批程序</span> </td>
+                                <td width="30%">
+                                    <span class="bod-bottom">評估結果</span>
+                                </td>
+                                <td width="10%">
+                                    <span class="bod-bottom"> 歸類</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    必須要得到合規部及負責人員批準 (確定簽署為雙簽)
+
+                                </td>
+                                <td>5-7 個高風險及多於 2 個中風險或以上</td>
+                                <td>高風險</td>
+                            </tr>
+                            <tr>
+                                <td>必須要得到合規部批準</td>
+                                <td>3-4 個高風險同時多於 2 個中風險</td>
+                                <td>中風險</td>
+                            </tr>
+                            <tr>
+                                <td>必須要得到合規部批準</td>
+                                <td>少於 3 個高風險同時少於 2 個中風險</td>
+                                <td>低風險</td>
+                            </tr>
+
+                        </table>
+                        結論:
+                        <p>高風險數量 <span class="bod-bottom m-width d-in">
+                                <!-- <strong>XXXXXXX</strong>  -->
+                            </span> </p>
+
+                        <p> 中風險數量 <span class="bod-bottom m-width d-in">
+                                <!-- <strong>XXXXXXX</strong>  -->
+                            </span> </p>
                     </td>
                 </tr>
                 <tr>
-                    <td width="35%">
-                        <input type="checkbox" name="" id="standard_chartered">
-                        <label for="standard_chartered">渣打銀行<br>&nbsp; &nbsp; &nbsp; &nbsp; Standard Chartered
-                            Bank</label>
-                    </td>
-                    <td class="pad0">
+                    <td valign="top" width="5%" style="vertical-align: top">8.</td>
+                    <td colspan="3" width="95%">
+                        <p>客戶評估為 高 / 中 / 低 風險疑似洗黑錢客戶 (請刪劃不適合字句)</p>
                         <table width="100%">
-                            <tbody>
-                                <tr class="bod-bottom">
-                                    <td>帳戶號碼 AC No.</td>
-                                </tr>
-                                <tr>
-                                    <td>帳戶名稱 AC Name</td>
-                                </tr>
-                            </tbody>
+                            <tr>
+                                <td width="50%">客戶是被通緝人士(例如:聯邦調查局/香港警務處/廉政公署等等) (用 Google 搜尋)</td>
+                                <td width="5%">
+
+                                </td>
+                                <td width="35%">
+                                    確定簽署
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="50%">
+                                    <span class="bod-bottom m-width d-in" style="width: 100%;">
+                                        <!-- <strong>XXXXXXX</strong> -->
+                                    </span>
+                                </td>
+                                <td width="5%">
+
+                                </td>
+                                <td width="35%">
+                                    <span class="bod-bottom m-width d-in" style="width: 100%; margin-top: 25px;">
+                                        <!-- <strong>XXXXXXX</strong>  -->
+                                    </span>
+                                    <p style="margin-top:10px ;">合規部人員姓名: <br>日期:</p>
+                                </td>
+                            </tr>
+
                         </table>
-                    </td>
-                </tr> -->
-                <tr>
-                    <td width="35%">
-                        <!-- <input type="checkbox" name="" id="other_bank"> -->
-                        <label for="other_bank">
-                            <!-- 其他銀行 Other Bank Name -->
-                            <!-- <br>  -->
-                            銀行名稱 &nbsp; &nbsp; &nbsp; &nbsp;
-                            {{account_info.bank_name}}
-                        </label>
-                    </td>
-                    <td class="pad0">
-                        <table width="100%">
-                            <tbody>
-                                <tr class="bod-bottom">
-                                    <td>帳戶號碼 AC No. <strong
-                                            style="margin-left: 10px">{{account_info.bank_account_number}}</strong>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>帳戶名稱 AC Name <strong
-                                            style="margin-left: 10px">{{account_info.name_english}}</strong>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <p class="mt-10">如屬高風險，由負責人員加簽:
+                        </p>
+                        <p class="bod-bottom m-width d-in" style=" margin-top: 25px;">
+                            <!-- <strong>XXXXXXX</strong>  -->
+                        </p> <br>負責人員姓名: <br>
+                        日期: <br>
                     </td>
                 </tr>
+
             </table>
-            <div class="mt-20">
-                <p>本人/吾等/本公司願意對本人/吾等/本公司所發出指示的絕對準確性負上全部責任，特別是有關本人/吾等/本公司之受
-                    款銀行帳戶名稱及號碼之詳細資料。對於因輸入的資料不準確而導致款項錯誤存入或轉出，本人/吾等/本公司將不會為收回款項之延誤或追討賠償而向
-                    貴公司作出要求、索償或訴訟，貴公司毋須為此負上任何責任。本人/本公司確認及同意本常設授權自即日生效直至另行通知為上。</p>
-                <p>
-                    <br>
-                <p>
-                    I/We accept full responsibility for the absolute correctness of my/our instruction, in
-                    particular,
-                    the absolute correctness
-                    of my/our account name and number, particulars of the payee bank as the case may be. I/We will
-                    not
-                    demand, claim or prosecute
-                    against you for recovery of damage and generally hold you harmless in the event that the funds
-                    were
-                    wrongly deposited or paid out on delay
-                    due to mistakes in the entered particulars.
-                    I/We acknowledge and agree that this Standing Authority (Issue of Cheque) is effective from the
-                    date
-                    hereof until further notice.
-                </p>
-            </div>
 
-
-            <table width="100%" class="mt-50" style="margin-top: 120px;">
-                <tbody>
-                    <tr>
-                        <td width="70%">客戶簽署</td>
-                        <td width="100%">負責人批簽</td>
-                    </tr>
-                    <tr>
-                        <td>Client's Specimen Signature(s)</td>
-                        <td>Responsible Officer's Approval</td>
-
-                    </tr>
-                    <tr>
-                        <td><span class="bod-bottom  d-in mt-50" style="min-width: 220px; margin-top: 100px;"></span>
-                        </td>
-                        <td><span class="bod-bottom  d-in mt-50" style="min-width: 220px; margin-top: 100px;"></span>
-                        </td>
-
-                    </tr>
-                </tbody>
-            </table>
-            <div class="page-footer mt-50" style="bottom: -495px;">
+            <div class="page-footer">
 
                 <div class="foot-right">
                     <span class="pt-15">(06/2017) </span>
                     <div class="light-p pad">
-                        5
+                        15
                     </div>
                 </div>
             </div>
 
-            <!-- <div class="clear break-after"></div> -->
-        </div>
-         <!--page15-->
-        <div class="container">
+            <div class="clear break-after"></div>
 
-        </div> 
+        </div>
+        
     </div>
 </body>
