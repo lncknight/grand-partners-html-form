@@ -39,7 +39,7 @@
                                     開戶表格
                                 </td>
                                 <td>
-                                    <strong>Cash Account</strong><br>
+                                    <strong>Margin Account</strong><br>
                                     現金戶口
                                 </td>
                                 <td>
@@ -123,13 +123,13 @@
                                     <strong>姓名(中文):先生/太太/小姐/女士</strong> &nbsp; &nbsp; &nbsp; 姓:
                                 </td>
                                 <td class=" bod-right" width="25%">
-                                    <strong>{{account_info.firstname_zh}}</strong>
+                                    <strong>{{account_info.lastname_zh}}</strong>
                                 </td>
                                 <td class="light-p bod-right" width="15%">
                                     <strong>名:</strong>
                                 </td>
                                 <td width="25%">
-                                    <strong>{{account_info.lastname_zh}}</strong>
+                                    <strong>{{account_info.firstname_zh}}</strong>
                                 </td>
                             </tr>
 
@@ -295,7 +295,7 @@
                                     住宅電話號碼:
                                 </td>
                                 <td class=" bod-right" width="20%">
-                                    <strong>{{account_info.country_phone_code_home}}{{account_info.phone_number_home}}</strong>
+                                    <strong>+{{account_info.country_phone_code_home}} {{account_info.phone_number_home}}</strong>
 
                                 </td>
                                 <td class="light-p bod-right" width="27%">
@@ -753,7 +753,7 @@
 
             </table>
             <div class="page-footer">
-                Grand Partners Securities Limited Cash Account - Individual Account Opening Form
+                Grand Partners Securities Limited Margin Account - Individual Account Opening Form
 
                 <div class="foot-right">
                     <span class="pt-15">(06/2017) </span>
@@ -891,7 +891,7 @@
                                 </td>
                                 <td width="20%">
                                     <div class=" pad bod-bottom">
-                                        <strong>{{account_info.name}}</strong>
+                                        <strong>{{account_info.name_chinese}}</strong>
                                     </div>
                                 </td>
 
@@ -957,14 +957,14 @@
                                 </td>
                                 <td width="20%">
                                     <div class=" pad bod-bottom">
-                                        <!--<strong>XXXXXXXX</strong>-->
+                                        <strong>{{account_info.name_chinese}}</strong>
                                     </div>
                                 </td>
 
                                 <td width="30%">
                                     CE No. 中央編號:
                                     <span class=" pad bod-bottom">
-                                        <!--<strong>XXXXXXXX</strong>-->
+                                        <strong>{{account_info.identity_declaration2_text}}</strong>
                                     </span>
                                 </td>
 
@@ -1113,7 +1113,7 @@
                     </td>
                     <td class="height50">
 
-                        <strong>{{account_info.authorised_person_1_country_phone_code}}{{account_info.authorised_person_1_phone_number}}</strong>
+                        <strong>+{{account_info.authorised_person_1_country_phone_code}} {{account_info.authorised_person_1_phone_number}}</strong>
                     </td>
 
                 </tr>
@@ -1155,7 +1155,7 @@
                     </td>
                     <td class="height50">
 
-                        <strong>{{account_info.authorised_person_2_country_phone_code}}{{account_info.authorised_person_2_phone_number}}</strong>
+                        <strong>+{{account_info.authorised_person_2_country_phone_code}} {{account_info.authorised_person_2_phone_number}}</strong>
                     </td>
 
                 </tr>
@@ -1198,7 +1198,7 @@
                     </td>
                     <td class="height50">
 
-                        <strong>{{account_info.authorised_person_3_country_phone_code}}{{account_info.authorised_person_3_phone_number}}</strong>
+                        <strong>+{{account_info.authorised_person_3_country_phone_code}} {{account_info.authorised_person_3_phone_number}}</strong>
                     </td>
 
                 </tr>
@@ -1210,7 +1210,7 @@
                     2
                 </div>
                 <div class="left">
-                    Grand Partners Securities Limited Cash Account - Individual Account Opening Form
+                    Grand Partners Securities Limited Margin Account - Individual Account Opening Form
                 </div>
 
                 <div class="foot-right">
@@ -1417,7 +1417,7 @@
                     3
                 </div>
                 <div class="left">
-                    Grand Partners Securities Limited Cash Account - Individual Account Opening Form
+                    Grand Partners Securities Limited Margin Account - Individual Account Opening Form
                 </div>
 
                 <div class="foot-right">
@@ -1525,7 +1525,10 @@
                     <td width="10%"></td>
                     <td width="30%">
                         <div class="bod-bottom">
-                            <strong>{{account.create_date}}</strong>
+                            <strong>
+                                &nbsp;
+                                <!-- {{account.create_date}} -->
+                            </strong>
                         </div>
                         Date 日期
                     </td>
@@ -1770,7 +1773,7 @@
             <!-- <div>page 5</div> -->
 
             <div class="page-footer mt-20">
-                Grand Partners Securities Limited Cash Account - Individual Account Opening Form
+                Grand Partners Securities Limited Margin Account - Individual Account Opening Form
 
                 <div class="foot-right">
                     <span class="pt-15">(06/2017) </span>
@@ -2009,7 +2012,7 @@
                     <td><strong>(5) 出生日期 * </strong> (日 /月 /年) </td>
                     <td width="50%">
                         <div class="bod-bottom">
-                            <strong>{{account_info.dob_format2}}</strong>
+                            <strong>{{account_info.dob_dmy}}</strong>
                         </div>
                     </td>
                 </tr>
@@ -2101,7 +2104,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <th align="left" class="pad" width="15%">(1) </th>
+                        <th align="left" class="pad" width="15%">(1) {{account_info.address_country}}</th>
                         <td width="15%">
                             <div class="">
                                 <strong>{{account_info.tax_id}}</strong>
@@ -2346,6 +2349,7 @@
            
         </div>
         <!--page8 cancel page-->
+        <!-- TODO delete -->
         <div class="container">
 
 
@@ -2929,7 +2933,7 @@
                 </p>
 
                 <p class="mt-15">Date (MM/DD/YY) 日期(月/日/年) &nbsp; &nbsp; &nbsp; <span class="bod-bottom m-width d-in">
-                        <strong>{{account.create_date}}</strong>
+                        <strong>{{account.create_date_mmddyy}}</strong>
                     </span>
                 </p>
             </div>
@@ -4231,17 +4235,17 @@
                     </li>
                     <br>
                     <li>
-                        <input type="checkbox" name="" id="credit">
+                        <input type="checkbox" name="" id="credit" class="checkbox-checked">
                         <label for="credit">將款項存入本人/吾等/本公司在上列銀行之港幣儲蓄/往來帳戶.-
                             Credit to my/our HK$ saving /current account with the above bank.
                         </label>
                     </li>
                 </ol>
             </div>
-            <p class="mini-container">Credit to my/our HK$ saving /current account with the above bank.</p>
+            <!-- <p class="mini-container">Credit to my/our HK$ saving /current account with the above bank.</p> -->
 
             <table width="100%" cellspacing="0" border="1" class="table">
-                <tr>
+                <!-- <tr>
                     <td width="35%">
                         <input type="checkbox" name="" id="HSBC">
                         <label for="HSBC">匯豐銀行 <br>&nbsp; &nbsp; &nbsp; &nbsp; HSBC</label>
@@ -4314,11 +4318,16 @@
                             </tbody>
                         </table>
                     </td>
-                </tr>
+                </tr> -->
                 <tr>
                     <td width="35%">
-                        <input type="checkbox" name="" id="other_bank">
-                        <label for="other_bank">其他銀行 Other Bank Name<br>&nbsp; &nbsp; &nbsp; &nbsp; 銀行名稱</label>
+                        <!-- <input type="checkbox" name="" id="other_bank"> -->
+                        <label for="other_bank">
+                            <!-- 其他銀行 Other Bank Name -->
+                            <!-- <br>  -->
+                            銀行名稱 &nbsp; &nbsp; &nbsp; &nbsp;
+                            {{account_info.bank_name}}
+                        </label>
                     </td>
                     <td class="pad0">
                         <table width="100%">
@@ -4330,7 +4339,7 @@
                                 </tr>
                                 <tr>
                                     <td>帳戶名稱 AC Name <strong
-                                            style="margin-left: 10px">{{account_info.bank_name}}</strong>
+                                            style="margin-left: 10px">{{account.name_english}}</strong>
                                     </td>
                                 </tr>
                             </tbody>
