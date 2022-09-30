@@ -3368,6 +3368,7 @@
                                                 address. </strong>
                                         </span></p>
                                 </div>
+                                {{account_info.address}}
                             </td>
                         </div>
                     </tr>
@@ -3386,7 +3387,7 @@
                                     <p><span style="padding-left: 5px;">Country</span>
                                     </p>
                                 </div>
-
+                                <span><strong>{{account_info.identification_country.name_en_US}}</strong></span>
                             </td>
                         </div>
                     </tr>
@@ -3560,7 +3561,7 @@
 
                         <div>
                             <div style="padding-left: 120px; margin-top: 20px;">
-                                <input type="checkbox" id="1" class="" />
+                                <input type="checkbox" id="1" class="checkbox-checked" />
                                 <label for="1 "> &nbsp;
                                     <sub>I certify that I have the capacity to sign for the person identified on line 1
                                         of this form.</sub>
@@ -3833,7 +3834,7 @@
                 </tr> -->
                 <tr>
                     <td width="35%">
-                        <input type="checkbox" name="" id="other_bank">
+                        <!-- <input type="checkbox" name="" id="other_bank"> -->
                         <label for="other_bank">
                             <!-- 其他銀行 Other Bank Name -->
                             <!-- <br>  -->
