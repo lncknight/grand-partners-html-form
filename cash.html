@@ -62,7 +62,7 @@
                                     賬戶號碼
                                 </td>
                                 <td class=" bod-right" width="25%">
-                                    <strong>{{account.id}}</strong>
+                                    <strong>{{{account.id}}}</strong>
 
                                 </td>
                                 <td class="light bod-right" width="25%">
@@ -71,7 +71,7 @@
 
                                 </td>
                                 <td width="25%">
-                                    <strong>{{account.create_date}}</strong>
+                                    <strong>{{{account.create_date}}}</strong>
                                 </td>
                             </tr>
 
@@ -103,13 +103,13 @@
                                     <strong>Surname</strong>:
                                 </td>
                                 <td class=" bod-right" width="25%">
-                                    <strong>{{account_info.lastname_en}}</strong>
+                                    <strong>{{{account_info.lastname_en}}}</strong>
                                 </td>
                                 <td class="light bod-right" width="15%">
                                     <strong>Given Name:</strong>
                                 </td>
                                 <td width="25%">
-                                    <strong>{{account_info.firstname_en}}</strong>
+                                    <strong>{{{account_info.firstname_en}}}</strong>
                                 </td>
                             </tr>
 
@@ -124,13 +124,13 @@
                                     <strong>姓名(中文):先生/太太/小姐/女士</strong> &nbsp; &nbsp; &nbsp; 姓:
                                 </td>
                                 <td class=" bod-right" width="25%">
-                                    <strong>{{account_info.lastname_zh}}</strong>
+                                    <strong>{{{account_info.lastname_zh}}}</strong>
                                 </td>
                                 <td class="light bod-right" width="15%">
                                     <strong>名:</strong>
                                 </td>
                                 <td width="25%">
-                                    <strong>{{account_info.firstname_zh}}</strong>
+                                    <strong>{{{account_info.firstname_zh}}}</strong>
                                 </td>
                             </tr>
 
@@ -145,7 +145,7 @@
                                     <strong>Date of Birth</strong> <br>出生日期:
                                 </td>
                                 <td valign="middle" style="padding-top: 5px;" width="30%">
-                                    <strong>{{account_info.dob}}</strong>
+                                    <strong>{{{account_info.dob}}}</strong>
                                 </td>
                                 <td class=" bod-right" style="padding-top: 5px ; padding-left: 15px;">
                                     <div>(日/月/年) <br>(dd/mm/yyyy)</div>
@@ -155,7 +155,7 @@
                                     出生地:
                                 </td>
                                 <td width="30%">
-                                    <strong>{{account_info.place_of_birth_country_string}}</strong>
+                                    <strong>{{{account_info.place_of_birth_country_string}}}</strong>
                                 </td>
                             </tr>
 
@@ -171,14 +171,14 @@
                                     <strong>Nationality</strong> <br>國籍:
                                 </td>
                                 <td class=" bod-right" width="30%">
-                                    <strong>{{account_info.identification_country_string}}</strong>
+                                    <strong>{{{account_info.identification_country_string}}}</strong>
                                 </td>
                                 <td class="light bod-right" width="25%">
                                     <strong>Identity Card / Passport No.</strong><br>
                                     身份證/護照號碼:
                                 </td>
                                 <td width="30%">
-                                    <strong>{{account_info.identification_number}}</strong>
+                                    <strong>{{{account_info.identification_number}}}</strong>
                                 </td>
                             </tr>
 
@@ -195,21 +195,21 @@
                                 <td class=" bod-right" width="15%">
                                     <p>
                                         <input type="checkbox" id="secondary"
-                                            class="{{account_info.highest_education_id_secondary_checkbox_class}}" />
+                                            class="{{{account_info.highest_education_id_secondary_checkbox_class}}}" />
                                         <label for="secondary">Secondary 中學</label>
                                     </p>
                                 </td>
                                 <td class=" bod-right" width="25%">
                                     <p>
                                         <input type="checkbox" id="post-secondary"
-                                            class="{{account_info.highest_education_id_college_checkbox_class}}" />
+                                            class="{{{account_info.highest_education_id_college_checkbox_class}}}" />
                                         <label for="post-secondary">Post Secondary 預科/專上學院</label>
                                     </p>
                                 </td>
                                 <td class=" bod-right" width="25%">
                                     <p>
                                         <input type="checkbox" id="university"
-                                            class="{{account_info.highest_education_id_university_checkbox_class}}" />
+                                            class="{{{account_info.highest_education_id_university_checkbox_class}}}" />
                                         <label for="university">University or above 大學或以上</label>
                                     </p>
                                 </td>
@@ -235,7 +235,7 @@
                                 <td class="  pad0" width="85%">
                                     <table width="100%">
                                         <tr>
-                                            <td class="bod-bottom"><strong>{{account_info.address}}</strong></td>
+                                            <td class="bod-bottom"><strong>{{{account_info.address}}}</strong></td>
                                         </tr>
                                     </table>
 
@@ -256,25 +256,25 @@
                                 <td class=" bod-right" width="15%">
                                     <p>
                                         <input type="checkbox" id="Owned"
-                                            class="{{account_info.address_type_id_1_checkbox_class}}" />
+                                            class="{{{account_info.address_type_id_1_checkbox_class}}}" />
                                         <label for="Owned"> Owned 自置</label>
                                     </p>
                                 </td>
                                 <td class=" bod-right" width="15%">
                                     <p>
                                         <input type="checkbox" id="Rented"
-                                            class="{{account_info.address_type_id_2_checkbox_class}}" />
+                                            class="{{{account_info.address_type_id_2_checkbox_class}}}" />
                                         <label for="Rented"> Rented 租用 </label>
                                     </p>
                                 </td>
                                 <td class="" width="37%">
                                     <p>
                                         <input type="checkbox" id="Others2"
-                                            class="{{account_info.address_type_id_999_checkbox_class}}" />
-                                        <label for="Others2"> Others 其他 {{account_info.address_type_other_text}}</label>
+                                            class="{{{account_info.address_type_id_999_checkbox_class}}}" />
+                                        <label for="Others2"> Others 其他 {{{account_info.address_type_other_text}}}</label>
                                     </p>
                                     &nbsp; &nbsp; &nbsp; &nbsp; Years in residence 居住年數
-                                    {{account_info.address_live_duration}}
+                                    {{{account_info.address_live_duration}}}
                                 </td>
 
                             </tr>
@@ -292,7 +292,7 @@
                                     住宅電話號碼:
                                 </td>
                                 <td class=" bod-right" width="20%">
-                                    <strong>+{{account_info.country_phone_code_home}} {{account_info.phone_number_home}}</strong>
+                                    <strong>+{{{account_info.country_phone_code_home}}} {{{account_info.phone_number_home}}}</strong>
 
                                 </td>
                                 <td class="light bod-right" width="27%">
@@ -301,7 +301,7 @@
 
                                 </td>
                                 <td width="20%">
-                                    <strong>{{account_info.country_phone_code}}{{account_info.phone_number}}</strong>
+                                    <strong>{{{account_info.country_phone_code}}}{{{account_info.phone_number}}}</strong>
                                 </td>
                             </tr>
 
@@ -318,7 +318,7 @@
                                 </td>
                                 <td class="" width="67%">
                                     <strong>
-                                        <!-- {{account_info.employer_address}} -->
+                                        <!-- {{{account_info.employer_address}}} -->
                                     </strong>
 
                                 </td>
@@ -339,7 +339,7 @@
                                     僱主業務性質:
                                 </td>
                                 <td class=" bod-right" width="15%">
-                                    <strong>{{account_info.business_nature_text}}</strong>
+                                    <strong>{{{account_info.business_nature_text}}}</strong>
 
                                 </td>
                                 <td class="light bod-right" width="10%">
@@ -347,7 +347,7 @@
                                     職位:
                                 </td>
                                 <td width="15%">
-                                    <strong>{{account_info.career_position}}</strong>
+                                    <strong>{{{account_info.career_position}}}</strong>
                                 </td>
 
                                 <td class="light bod-right TODO_field" width="12%">
@@ -373,7 +373,7 @@
                                     營業/辦公地址:
                                 </td>
                                 <td class="" width="67%">
-                                    <strong>{{account_info.employer_address}}</strong>
+                                    <strong>{{{account_info.employer_address}}}</strong>
                                 </td>
                             </tr>
 
@@ -391,7 +391,7 @@
                                     營業電話號碼
                                 </td>
                                 <td class=" bod-right" width="20%">
-                                    <strong>{{account_info.employer_country_phone_code}}{{account_info.employer_phone_number}}</strong>
+                                    <strong>{{{account_info.employer_country_phone_code}}}{{{account_info.employer_phone_number}}}</strong>
 
                                 </td>
                                 <td class="light bod-right" width="25%">
@@ -399,7 +399,7 @@
                                     營業傳真號碼:
                                 </td>
                                 <td width="22%">
-                                    <strong>{{account_info.employer_fax_text}}</strong>
+                                    <strong>{{{account_info.employer_fax_text}}}</strong>
                                 </td>
                             </tr>
 
@@ -416,7 +416,7 @@
                                     電子郵件地址:
                                 </td>
                                 <td class="" width="67%">
-                                    <strong>{{account_info.email}}</strong>
+                                    <strong>{{{account_info.email}}}</strong>
 
                                 </td>
 
@@ -441,7 +441,7 @@
                                             <td style="width: 100%;" colspan="3">
                                                 <p>
                                                     <input type="checkbox" id="E-mail"
-                                                        class="{{account_info.settlement_collection_by_email_yesno_checkbox_class}}" />
+                                                        class="{{{account_info.settlement_collection_by_email_yesno_checkbox_class}}}" />
                                                     <label for="E-mail"> <strong>E-mail </strong> <br>
                                                         &nbsp; &nbsp; &nbsp; 電郵</label>
                                                 </p>
@@ -458,7 +458,7 @@
                                             <td class="bod-right" width="33%">
                                                 <p>
                                                     <input type="checkbox" id="Residential"
-                                                        class="{{account_info.settlement_collection_by_mail_yesno_checkbox_class}}" />
+                                                        class="{{{account_info.settlement_collection_by_mail_yesno_checkbox_class}}}" />
                                                     <label for="Residential"> <strong>Residential Address</strong> <br>
                                                         &nbsp; &nbsp; &nbsp; 住址</label>
                                                 </p>
@@ -466,7 +466,7 @@
                                             <td width="33%">
                                                 <p>
                                                     <input type="checkbox" id="Business"
-                                                        class="{{account_info.settlement_collection_in_person_yesno_checkbox_class}}" />
+                                                        class="{{{account_info.settlement_collection_in_person_yesno_checkbox_class}}}" />
                                                     <label for="Business"><strong>Business / Office Address </strong>
                                                         <br>
                                                         &nbsp; &nbsp; &nbsp; 營業 / 辦公地址</label>
@@ -494,7 +494,7 @@
                                 <td class="bod-right" width="30%">
                                     <p>
                                         <input type="checkbox" id="English"
-                                            class="{{account_info.settlement_lang_en_checkbox_class}}" />
+                                            class="{{{account_info.settlement_lang_en_checkbox_class}}}" />
                                         <label for="English"><strong>English</strong> <br>
                                             &nbsp; &nbsp; &nbsp; 英文發出</label>
                                     </p>
@@ -504,7 +504,7 @@
                                 <td class="" width="37%">
                                     <p>
                                         <input type="checkbox" id="Chinese"
-                                            class="{{account_info.settlement_lang_zh_checkbox_class}}" />
+                                            class="{{{account_info.settlement_lang_zh_checkbox_class}}}" />
                                         <label for="Chinese"><strong>Chinese</strong> <br>
                                             &nbsp; &nbsp; &nbsp; 中文發出</label>
                                     </p>
@@ -533,15 +533,15 @@
                     <td width="9%">
                         <p>
                             <input type="checkbox" id="No"
-                                class="{{account_info.stock_experience_id_no_checkbox_class}}" />
+                                class="{{{account_info.stock_experience_id_no_checkbox_class}}}" />
                             <label for="No">No 無</label>
                         </p>
                     </td>
                     <td class="bod-right" width="20%">
                         <p>
                             <input type="checkbox" id="Yes"
-                                class="{{account_info.stock_experience_id_yes_checkbox_class}}" />
-                            <label for="Yes">Yes 有 {{account_info.stock_experience_id_txt}}</label>
+                                class="{{{account_info.stock_experience_id_yes_checkbox_class}}}" />
+                            <label for="Yes">Yes 有 {{{account_info.stock_experience_id_txt}}}</label>
                             <!--<label for="Yes">Yes 有   _____year (s) 年</label>-->
                         </p>
                     </td>
@@ -549,15 +549,15 @@
                     <td class="bod0" width="9%">
                         <p>
                             <input type="checkbox" id="No2"
-                                class="{{account_info.futures_options_experience_id_no_checkbox_class}}" />
+                                class="{{{account_info.futures_options_experience_id_no_checkbox_class}}}" />
                             <label for="No2">No 無</label>
                         </p>
                     </td>
                     <td class="bod-right" width="22%">
                         <p>
                             <input type="checkbox" id="Yes2"
-                                class="{{account_info.futures_options_experience_id_yes_checkbox_class}}" />
-                            <label for="Yes2">Yes 有 {{account_info.futures_options_experience_id_txt}}</label>
+                                class="{{{account_info.futures_options_experience_id_yes_checkbox_class}}}" />
+                            <label for="Yes2">Yes 有 {{{account_info.futures_options_experience_id_txt}}}</label>
                             <!--<label for="Yes2">Yes 有 ______year (s) 年</label>-->
                         </p>
                     </td>
@@ -567,15 +567,15 @@
                     <td width="9%">
                         <p>
                             <input type="checkbox" id="No3"
-                                class="{{account_info.structured_product_experience_id_no_checkbox_class}}" />
+                                class="{{{account_info.structured_product_experience_id_no_checkbox_class}}}" />
                             <label for="No3">No 無</label>
                         </p>
                     </td>
                     <td class="bod-right" width="20%">
                         <p>
                             <input type="checkbox" id="Yes3"
-                                class="{{account_info.structured_product_experience_id_yes_checkbox_class}}" />
-                            <label for="Yes3">Yes 有 {{account_info.structured_product_experience_id_txt}}</label>
+                                class="{{{account_info.structured_product_experience_id_yes_checkbox_class}}}" />
+                            <label for="Yes3">Yes 有 {{{account_info.structured_product_experience_id_txt}}}</label>
                             <!--<label for="Yes3">Yes 有 _____year (s) 年</label>-->
                         </p>
                     </td>
@@ -583,15 +583,15 @@
                     <td width="9%">
                         <p>
                             <input type="checkbox" id="No4"
-                                class="{{account_info.foreign_currency_gold_experience_id_no_checkbox_class}}" />
+                                class="{{{account_info.foreign_currency_gold_experience_id_no_checkbox_class}}}" />
                             <label for="No4">No 無</label>
                         </p>
                     </td>
                     <td class="bod-right" width="22%">
                         <p>
                             <input type="checkbox" id="Yes4"
-                                class="{{account_info.foreign_currency_gold_experience_id_yes_checkbox_class}}" />
-                            <label for="Yes4">Yes 有 {{account_info.foreign_currency_gold_experience_id_txt}}</label>
+                                class="{{{account_info.foreign_currency_gold_experience_id_yes_checkbox_class}}}" />
+                            <label for="Yes4">Yes 有 {{{account_info.foreign_currency_gold_experience_id_txt}}}</label>
                             <!--<label for="Yes4">Yes 有 ______year (s) 年</label>-->
                         </p>
                     </td>
@@ -601,15 +601,15 @@
                     <td width="9%">
                         <p>
                             <input type="checkbox" id="No5"
-                                class="{{account_info.other_experience_id_no_checkbox_class}}" />
+                                class="{{{account_info.other_experience_id_no_checkbox_class}}}" />
                             <label for="No5">No 無</label>
                         </p>
                     </td>
                     <td class="" colspan="4" width="71%">
                         <p>
                             <input type="checkbox" id="Yes5"
-                                class="{{account_info.other_experience_id_yes_checkbox_class}}" />
-                            <label for="Yes5">Yes 有 {{account_info.other_experience_id_txt}}</label>
+                                class="{{{account_info.other_experience_id_yes_checkbox_class}}}" />
+                            <label for="Yes5">Yes 有 {{{account_info.other_experience_id_txt}}}</label>
                             <!--<label for="Yes5">Yes 有 _____year (s) 年</label>-->
                         </p>
                     </td>
@@ -622,28 +622,28 @@
                     <td>
                         <p>
                             <input type="checkbox" id="Short-term"
-                                class="{{account_info.investment_objective_id_1_checkbox_class}}" />
+                                class="{{{account_info.investment_objective_id_1_checkbox_class}}}" />
                             <label for="Short-term">Short term <br> &nbsp; &nbsp; &nbsp; 短線</label>
                         </p>
                     </td>
                     <td>
                         <p>
                             <input type="checkbox" id="Medium"
-                                class="{{account_info.investment_objective_id_2_checkbox_class}}" />
+                                class="{{{account_info.investment_objective_id_2_checkbox_class}}}" />
                             <label for="Medium">Medium <br> &nbsp; &nbsp; &nbsp; 中線 </label>
                         </p>
                     </td>
                     <td>
                         <p>
                             <input type="checkbox" id="LongTerm"
-                                class="{{account_info.investment_objective_id_3_checkbox_class}}" />
+                                class="{{{account_info.investment_objective_id_3_checkbox_class}}}" />
                             <label for="LongTerm">Long Term <br> &nbsp; &nbsp; &nbsp; 長線</label>
                         </p>
                     </td>
                     <td>
                         <p>
                             <input type="checkbox" id="OthersInvestment"
-                                class="{{account_info.investment_objective_id_4_checkbox_class}}" />
+                                class="{{{account_info.investment_objective_id_4_checkbox_class}}}" />
                             <label for="OthersInvestment">Others <br> &nbsp; &nbsp; &nbsp; 其他</label>
                         </p>
                     </td>
@@ -653,21 +653,21 @@
                     <td>
                         <p>
                             <input type="checkbox" id="Aggressive"
-                                class="{{account_info.risk_tolerance_id_1_checkbox_class}}" />
+                                class="{{{account_info.risk_tolerance_id_1_checkbox_class}}}" />
                             <label for="Aggressive">Aggressive 高 (5)</label>
                         </p>
                     </td>
                     <td>
                         <p>
                             <input type="checkbox" id="Moderate"
-                                class="{{account_info.risk_tolerance_id_2_checkbox_class}}" />
+                                class="{{{account_info.risk_tolerance_id_2_checkbox_class}}}" />
                             <label for="Moderate"> Moderate 中 (3) </label>
                         </p>
                     </td>
                     <td>
                         <p>
                             <input type="checkbox" id="Conservative"
-                                class="{{account_info.risk_tolerance_id_3_checkbox_class}}" />
+                                class="{{{account_info.risk_tolerance_id_3_checkbox_class}}}" />
                             <label for="Conservative"> Conservative 低 (1) </label>
                         </p>
                     </td>
@@ -679,28 +679,28 @@
                     <td width="16%">
                         <p>
                             <input type="checkbox" id="≤$500000"
-                                class="{{account_info.annual_income_id_1_checkbox_class}}" />
+                                class="{{{account_info.annual_income_id_1_checkbox_class}}}" />
                             <label for="≤$500000"> ≤$500,000 </label>
                         </p>
                     </td>
                     <td width="18%">
                         <p>
                             <input type="checkbox" id="5-9"
-                                class="{{account_info.annual_income_id_2_checkbox_class}}" />
+                                class="{{{account_info.annual_income_id_2_checkbox_class}}}" />
                             <label for="5-9"> $500,001-$900,000 </label>
                         </p>
                     </td>
                     <td width="18%">
                         <p>
                             <input type="checkbox" id="9-13"
-                                class="{{account_info.annual_income_id_3_checkbox_class}}" />
+                                class="{{{account_info.annual_income_id_3_checkbox_class}}}" />
                             <label for="9-13"> $900,001-$1,300,000 </label>
                         </p>
                     </td>
                     <td width="176%">
                         <p>
                             <input type="checkbox" id="gt13"
-                                class="{{account_info.annual_income_id_4_checkbox_class}}" />
+                                class="{{{account_info.annual_income_id_4_checkbox_class}}}" />
                             <label for="gt13"> ＞$1,300,001 </label>
                         </p>
                     </td>
@@ -712,21 +712,21 @@
                     <td>
                         <p>
                             <input type="checkbox" id="gt13"
-                                class="{{account_info.total_net_asset_value_id_1_checkbox_class}}" />
+                                class="{{{account_info.total_net_asset_value_id_1_checkbox_class}}}" />
                             <label for="gt5"> ≤$500,000 </label>
                         </p>
                     </td>
                     <td> <input type="checkbox">
                         <p>
                             <input type="checkbox" id="5-9"
-                                class="{{account_info.total_net_asset_value_id_2_checkbox_class}}" />
+                                class="{{{account_info.total_net_asset_value_id_2_checkbox_class}}}" />
                             <label for="5-9">$500,001-$900,000 </label>
                         </p>
                     </td>
                     <td>
                         <p>
                             <input type="checkbox" id="5-9"
-                                class="{{account_info.total_net_asset_value_id_3_checkbox_class}}" />
+                                class="{{{account_info.total_net_asset_value_id_3_checkbox_class}}}" />
                             <label for="9-2"> $900,001-$2,000,000</label>
                         </p>
 
@@ -734,7 +734,7 @@
                     <td>
                         <p>
                             <input type="checkbox" id="assets2"
-                                class="{{account_info.total_net_asset_value_id_4_checkbox_class}}" />
+                                class="{{{account_info.total_net_asset_value_id_4_checkbox_class}}}" />
                             <label for="assets2">＞$2,000,001</label>
                         </p>
                     </td>
@@ -780,7 +780,7 @@
                     </td>
                     <td class="" width="30%">
                         <div class="bod-bottom">
-                            <strong>{{account_info.bank_name}}</strong>
+                            <strong>{{{account_info.bank_name}}}</strong>
                         </div>
 
                     </td>
@@ -791,7 +791,7 @@
                     </td>
                     <td width="35%">
                         <div class="bod-bottom">
-                            <strong>{{account_info.bank_account_number}}</strong>
+                            <strong>{{{account_info.bank_account_number}}}</strong>
                         </div>
                     </td>
                 </tr>
@@ -804,7 +804,7 @@
                     </td>
                     <td colspan="3" width="80%">
                         <div class="bod-bottom">
-                            <strong>{{account_info.bank_account_holder}}</strong>
+                            <strong>{{{account_info.bank_account_holder}}}</strong>
                         </div>
                     </td>
 
@@ -830,20 +830,20 @@
 
                                     <span>
                                         <input type="checkbox" id="noApplicant"
-                                            class="{{account_info.identity_declaration1_id_1_checkbox_class}}" />
+                                            class="{{{account_info.identity_declaration1_id_1_checkbox_class}}}" />
                                         <label for="noApplicant">No 否</label>
                                     </span>
                                 </td>
                                 <td width="25%">
                                     <span>
                                         <input type="checkbox" id="YesApplicant"
-                                            class="{{account_info.identity_declaration1_id_999_checkbox_class}}" />
+                                            class="{{{account_info.identity_declaration1_id_999_checkbox_class}}}" />
                                         <label for="YesApplicant">Yes 是, CE No 中央編號</label>
                                     </span>
                                 </td>
                                 <td width="25%">
                                     <div class=" pad bod-bottom">
-                                        <strong>{{account_info.identity_declaration1_text}}</strong>
+                                        <strong>{{{account_info.identity_declaration1_text}}}</strong>
                                     </div>
                                 </td>
 
@@ -863,27 +863,27 @@
 
                                     <span>
                                         <input type="checkbox" id="nolicensed"
-                                            class="{{account_info.identity_declaration2_id_1_checkbox_class}}" />
+                                            class="{{{account_info.identity_declaration2_id_1_checkbox_class}}}" />
                                         <label for="nolicensed">No 否</label>
                                     </span>
                                 </td>
                                 <td width="25%">
                                     <span>
                                         <input type="checkbox" id="Yeslicensed"
-                                            class="{{account_info.identity_declaration2_id_999_checkbox_class}}" />
+                                            class="{{{account_info.identity_declaration2_id_999_checkbox_class}}}" />
                                         <label for="Yeslicensed">Yes 是, Name 姓名: </label>
                                     </span>
                                 </td>
                                 <td width="20%">
                                     <div class=" pad bod-bottom">
-                                        <strong>{{account_info.name_chinese}}</strong>
+                                        <strong>{{{account_info.name_chinese}}}</strong>
                                     </div>
                                 </td>
 
                                 <td width="30%">
                                     CE No. 中央編號:
                                     <span class=" pad bod-bottom">
-                                        <strong>{{account_info.identity_declaration2_text}}</strong>
+                                        <strong>{{{account_info.identity_declaration2_text}}}</strong>
                                     </span>
                                 </td>
 
@@ -903,7 +903,7 @@
                                 </td>
                                 <td width="75%">
                                     <div class=" pad bod-bottom">
-                                        <strong>{{account_info.referral_person_text}}</strong>
+                                        <strong>{{{account_info.referral_person_text}}}</strong>
                                     </div>
                                 </td>
 
@@ -928,14 +928,14 @@
                     <td>
                         <span>
                             <input type="checkbox" id="YesCapacity"
-                                class="{{account_info.capacity_of_applicant_yesno_1_yes}}" />
+                                class="{{{account_info.capacity_of_applicant_yesno_1_yes}}}" />
                             <label for="YesCapacity">Yes 是 </label>
                         </span>
                     </td>
                     <td>
                         <span>
                             <input type="checkbox" id="noCapacity"
-                                class="{{account_info.capacity_of_applicant_yesno_1_no}}" />
+                                class="{{{account_info.capacity_of_applicant_yesno_1_no}}}" />
                             <label for="noCapacity">No 否 </label>
                         </span>
 
@@ -951,14 +951,14 @@
                     <td>
                         <span>
                             <input type="checkbox" id="YesCapacity2"
-                                class="{{account_info.capacity_of_applicant_yesno_2_yes}}" />
+                                class="{{{account_info.capacity_of_applicant_yesno_2_yes}}}" />
                             <label for="YesCapacity2">Yes 是 </label>
                         </span>
                     </td>
                     <td>
                         <span>
                             <input type="checkbox" id="noCapacity2"
-                                class="{{account_info.capacity_of_applicant_yesno_2_no}}" />
+                                class="{{{account_info.capacity_of_applicant_yesno_2_no}}}" />
                             <label for="noCapacity2">No 否 </label>
                         </span>
 
@@ -974,14 +974,14 @@
                     <td>
                         <span>
                             <input type="checkbox" id="YesCapacity3"
-                                class="{{account_info.capacity_of_applicant_yesno_3_yes}}" />
+                                class="{{{account_info.capacity_of_applicant_yesno_3_yes}}}" />
                             <label for="YesCapacity3">Yes 是 </label>
                         </span>
                     </td>
                     <td>
                         <span>
                             <input type="checkbox" id="noCapacity3"
-                                class="{{account_info.capacity_of_applicant_yesno_3_no}}" />
+                                class="{{{account_info.capacity_of_applicant_yesno_3_no}}}" />
                             <label for="noCapacity3">No 否 </label>
                         </span>
 
@@ -1019,7 +1019,7 @@
                     </td>
                     <td class="height50" width="20%">
                         Mr/Mrs/Miss/Ms.<br>
-                        <strong>{{account_info.authorised_person_1_name}}</strong>
+                        <strong>{{{account_info.authorised_person_1_name}}}</strong>
                     </td>
                     <td class="dark height50" width="20%">
                         Relationship: <br>
@@ -1027,7 +1027,7 @@
                     </td>
                     <td class="height50" width="20%">
 
-                        <strong>{{account_info.authorised_person_1_relationship}}</strong>
+                        <strong>{{{account_info.authorised_person_1_relationship}}}</strong>
                     </td>
                     <td class="" rowspan="2" valign="bottom" width="22%">
 
@@ -1041,7 +1041,7 @@
                     </td>
                     <td class="height50">
 
-                        <strong>{{account_info.authorised_person_1_id_card}}</strong>
+                        <strong>{{{account_info.authorised_person_1_id_card}}}</strong>
                     </td>
                     <td class="dark height50">
                         Contact Tel. No <br>
@@ -1050,7 +1050,7 @@
                     </td>
                     <td class="height50">
 
-                        <strong>+{{account_info.authorised_person_1_country_phone_code}} {{account_info.authorised_person_1_phone_number}}</strong>
+                        <strong>+{{{account_info.authorised_person_1_country_phone_code}}} {{{account_info.authorised_person_1_phone_number}}}</strong>
                     </td>
 
                 </tr>
@@ -1062,14 +1062,14 @@
                     </td>
                     <td class="height50">
                         Mr/Mrs/Miss/Ms.<br>
-                        <strong>{{account_info.authorised_person_2_relationship}}</strong>
+                        <strong>{{{account_info.authorised_person_2_relationship}}}</strong>
                     </td>
                     <td class="dark height50">
                         Relationship: <br>
                         關係:
                     </td>
                     <td class="height50">
-                        <strong>{{account_info.authorised_person_2_relationship}}</strong>
+                        <strong>{{{account_info.authorised_person_2_relationship}}}</strong>
                     </td>
                     <td class="" rowspan="2" valign="bottom">
 
@@ -1083,7 +1083,7 @@
                     </td>
                     <td class="height50">
 
-                        <strong>{{account_info.authorised_person_2_id_card}}</strong>
+                        <strong>{{{account_info.authorised_person_2_id_card}}}</strong>
                     </td>
                     <td class="dark height50">
                         Contact Tel. No <br>
@@ -1092,7 +1092,7 @@
                     </td>
                     <td class="height50">
 
-                        <strong>+{{account_info.authorised_person_2_country_phone_code}} {{account_info.authorised_person_2_phone_number}}</strong>
+                        <strong>+{{{account_info.authorised_person_2_country_phone_code}}} {{{account_info.authorised_person_2_phone_number}}}</strong>
                     </td>
 
                 </tr>
@@ -1104,7 +1104,7 @@
                     </td>
                     <td class="height50">
                         Mr/Mrs/Miss/Ms.<br>
-                        <strong>{{account_info.authorised_person_3_name}}</strong>
+                        <strong>{{{account_info.authorised_person_3_name}}}</strong>
                     </td>
                     <td class="dark height50">
                         Relationship: <br>
@@ -1112,7 +1112,7 @@
                     </td>
                     <td class="height50">
 
-                        <strong>{{account_info.authorised_person_3_relationship}}</strong>
+                        <strong>{{{account_info.authorised_person_3_relationship}}}</strong>
                     </td>
                     <td class="" rowspan="2" valign="bottom">
 
@@ -1126,7 +1126,7 @@
                     </td>
                     <td class=" height50">
 
-                        <strong>{{account_info.authorised_person_3_id_card}}</strong>
+                        <strong>{{{account_info.authorised_person_3_id_card}}}</strong>
                     </td>
                     <td class="dark height50">
                         Contact Tel. No <br>
@@ -1135,7 +1135,7 @@
                     </td>
                     <td class="height50">
 
-                        <strong>+{{account_info.authorised_person_3_country_phone_code}} {{account_info.authorised_person_3_phone_number}}</strong>
+                        <strong>+{{{account_info.authorised_person_3_country_phone_code}}} {{{account_info.authorised_person_3_phone_number}}}</strong>
                     </td>
 
                 </tr>
@@ -1371,7 +1371,7 @@
             </div>
             <div class="linespace1-5 pad mt-50">
                 <p>Executed as a deed on 簽訂作契約於: <span class="bod-bottom" style="width: 50%; display: inline-block;">
-                        <strong>{{account.create_date}}</strong>
+                        <strong>{{{account.create_date}}}</strong>
                     </span> (insert date 請填上日期)</p>
                 <p>Signed and delivered by: 簽署、蓋印及交付：</p>
             </div>
@@ -1390,7 +1390,7 @@
                 <tr>
                     <td width="32%">
                         <div class="bod-bottom mt-20">
-                            <strong>{{account_info.firstname_en}} {{account_info.lastname_en}}</strong>
+                            <strong>{{{account_info.firstname_en}}} {{{account_info.lastname_en}}}</strong>
                         </div>
                     </td>
                     <td width="32%">
@@ -1447,7 +1447,7 @@
                         <div class="bod-bottom">
                             <strong>
                                 &nbsp;
-                                <!-- {{account.create_date}} -->
+                                <!-- {{{account.create_date}}} -->
                             </strong>
                         </div>
                         Date 日期
@@ -1700,16 +1700,16 @@
             </div>
 
             <div width="30%">
-                <p>日期 Date: <span class="bod-bottom m-width d-in"> <strong>{{account.create_date}}</strong></span></p>
+                <p>日期 Date: <span class="bod-bottom m-width d-in"> <strong>{{{account.create_date}}}</strong></span></p>
             </div>
 
             <div width="30%" style="margin-top: 15px;">
                 <p>证券账户名称 Securities A/C Name: <span
-                        class="bod-bottom m-width d-in"><strong>{{account.id}}</strong></span></p>
+                        class="bod-bottom m-width d-in"><strong>{{{account.id}}}</strong></span></p>
             </div>
             <div width="30%" style="margin-top: 15px;">
                 <p>帳戶名稱 A/C Name: <span
-                        class="bod-bottom m-width d-in"><strong>{{account_info.name_english}}</strong></span></p>
+                        class="bod-bottom m-width d-in"><strong>{{{account_info.name_english}}}</strong></span></p>
             </div>
             <div style="margin-top: 30px;">
                 <p>懇請貴公司在接獲本人/吾等/本公司之電話提款指示後:-</p>
@@ -1812,7 +1812,7 @@
                             <!-- 其他銀行 Other Bank Name -->
                             <!-- <br>  -->
                             銀行名稱 &nbsp; &nbsp; &nbsp; &nbsp;
-                            {{account_info.bank_name}}
+                            {{{account_info.bank_name}}}
                         </label>
                     </td>
                     <td class="pad0">
@@ -1820,11 +1820,11 @@
                             <tbody>
                                 <tr class="bod-bottom">
                                     <td>帳戶號碼 AC No. <strong
-                                            style="margin-left: 10px">{{account_info.bank_account_number}}</strong></td>
+                                            style="margin-left: 10px">{{{account_info.bank_account_number}}}</strong></td>
                                 </tr>
                                 <tr>
                                     <td>帳戶名稱 AC Name <strong
-                                            style="margin-left: 10px">{{account_info.name_english}}</strong></td>
+                                            style="margin-left: 10px">{{{account_info.name_english}}}</strong></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1927,7 +1927,7 @@
             <table width='100%' class='table mt-20'>
                 <tr>
                     <td width="65%">客戶姓名: <span style="min-width: 45%;" class="bod-bottom m-width d-in">
-                            <strong>{{account_info.name_chinese}}</strong>
+                            <strong>{{{account_info.name_chinese}}}</strong>
                         </span>
                     </td>
 
@@ -1938,12 +1938,12 @@
                 </tr>
                 <tr>
                     <td width="65%">賬戶號碼: <span style="min-width: 45%;" class="bod-bottom m-width d-in">
-                            <strong>{{account_info.id}}</strong>
+                            <strong>{{{account_info.id}}}</strong>
                         </span>
                     </td>
 
                     <td width="35%">CE No. <span style="min-width: 70%;" class="bod-bottom m-width d-in">
-                            {{account_info.identity_declaration1_text}}
+                            {{{account_info.identity_declaration1_text}}}
                         </span>
                     </td>
                 </tr>
@@ -1966,7 +1966,7 @@
 
                 <tr>
                     <td width="65%">日期: <span style="min-width: 45%;" class="bod-bottom m-width d-in">
-                            <strong>{{account.create_date}}</strong>
+                            <strong>{{{account.create_date}}}</strong>
                         </span>
                     </td>
 
@@ -2023,13 +2023,13 @@
             <table width='100%' class='table mt-20'>
                 <tr>
                     <td width="65%">Account Number <br> 帳戶號碼 :<span class="bod-bottom m-width d-in">
-                            <strong>{{account_info.id}}</strong>
+                            <strong>{{{account_info.id}}}</strong>
                         </span>
                     </td>
 
                     <td width="35%"">Account Name <br> 帳戶名稱 :  <span style=" min-width: 70% ;"
                         class="bod-bottom m-width d-in">
-                        <strong>{{account_info.name_chinese}}</strong>
+                        <strong>{{{account_info.name_chinese}}}</strong>
                         </span>
                     </td>
                 </tr>
@@ -2065,17 +2065,17 @@
             <p class="linespace1-5 mt-20">Password Collection 收取密碼方式 :</p>
             <p class="mt-15">
                 <input type="checkbox" id="Byemail"
-                    class={{account_info.password_collection_by_email_yesno_checkbox_class}} />
+                    class={{{account_info.password_collection_by_email_yesno_checkbox_class}}} />
                 <label for="Byemail">By email 電子郵件 (必須與本公司紀錄相同)</label>
             </p>
             <p class="mt-15">
                 <input type="checkbox" id="Bymail"
-                    class={{account_info.password_collection_by_mail_yesno_checkbox_class}} />
+                    class={{{account_info.password_collection_by_mail_yesno_checkbox_class}}} />
                 <label for="Bymail">By Mail 郵寄 (寄往與本公司紀錄相同地址)</label>
             </p>
             <p class="mt-15">
                 <input type="checkbox" id="Inperson"
-                    class={{account_info.password_collection_in_person_yesno_checkbox_class}} />
+                    class={{{account_info.password_collection_in_person_yesno_checkbox_class}}} />
                 <label for="Inperson">In person (客戶親自到取)</label>
             </p>
             <hr height="5" class="mt-15">
@@ -2189,7 +2189,7 @@
 
             <div class="clear pad mt-20">
                 參考編號：<span class="bod-bottom d-in  m-width">
-                    <strong>{{account_info.id}}</strong>
+                    <strong>{{{account_info.id}}}</strong>
                 </span>
             </div>
             <div class="mt-15">
@@ -2223,7 +2223,7 @@
                     <td>稱謂 (例如：先生、太太、女士、小姐) </td>
                     <td width="50%">
                         <div class="bod-bottom">
-                            <strong>{{account_info.applicant_title}}</strong>
+                            <strong>{{{account_info.applicant_title}}}</strong>
                         </div>
                     </td>
                 </tr>
@@ -2234,7 +2234,7 @@
                     <td>姓氏 *</td>
                     <td width="50%">
                         <div class="bod-bottom">
-                            <strong>{{account_info.lastname_zh}}</strong>
+                            <strong>{{{account_info.lastname_zh}}}</strong>
                         </div>
                     </td>
                 </tr>
@@ -2245,7 +2245,7 @@
                     <td>名字 *</td>
                     <td width="50%">
                         <div class="bod-bottom">
-                            <strong>{{account_info.firstname_zh}}</strong>
+                            <strong>{{{account_info.firstname_zh}}}</strong>
                         </div>
                     </td>
                 </tr>
@@ -2268,7 +2268,7 @@
                     <td><strong>(2) 香港身份證或護照號碼 </strong> </td>
                     <td width="50%">
                         <div class="bod-bottom">
-                            <strong>{{account_info.identification_number}}</strong>
+                            <strong>{{{account_info.identification_number}}}</strong>
                         </div>
                     </td>
                 </tr>
@@ -2288,7 +2288,7 @@
                     <td>道、地區) </td>
                     <td width="50%">
                         <div class="bod-bottom">
-                            <strong>{{account_info.address}}</strong>
+                            <strong>{{{account_info.address}}}</strong>
                         </div>
                     </td>
                 </tr>
@@ -2299,7 +2299,7 @@
                     <td>第 2 行 (城市)</td>
                     <td width="50%">
                         <div class="bod-bottom">
-                            <strong>{{account_info.address_city}}</strong>
+                            <strong>{{{account_info.address_city}}}</strong>
                         </div>
                     </td>
                 </tr>
@@ -2310,7 +2310,7 @@
                     <td>第 3 行 (例如：省、州) </td>
                     <td width="50%">
                         <div class="bod-bottom">
-                            <strong>{{account_info.address_type_other_text}}</strong>
+                            <strong>{{{account_info.address_type_other_text}}}</strong>
                         </div>
                     </td>
                 </tr>
@@ -2332,7 +2332,7 @@
                     <td>郵政編碼 /郵遞區號碼 </td>
                     <td width="50%">
                         <div class="bod-bottom">
-                            <strong>{{account_info.address_country}}</strong>
+                            <strong>{{{account_info.address_country}}}</strong>
                         </div>
                     </td>
                 </tr>
@@ -2406,7 +2406,7 @@
                     <td><strong>(5) 出生日期 * </strong> (日 /月 /年) </td>
                     <td width="50%">
                         <div class="bod-bottom">
-                            <strong>{{account_info.dob_dmy}}</strong>
+                            <strong>{{{account_info.dob_dmy}}}</strong>
                         </div>
                     </td>
                 </tr>
@@ -2436,7 +2436,7 @@
                     <td>省 /州 </td>
                     <td width="50%">
                         <div class="bod-bottom">
-                            <strong>{{account_info.place_of_birth_province_text}}</strong>
+                            <strong>{{{account_info.place_of_birth_province_text}}}</strong>
                         </div>
                     </td>
                 </tr>
@@ -2447,7 +2447,7 @@
                     <td>國家 </td>
                     <td width="50%">
                         <div class="bod-bottom">
-                            <strong>{{account_info.place_of_birth_other_country_text}}</strong>
+                            <strong>{{{account_info.place_of_birth_other_country_text}}}</strong>
                         </div>
                     </td>
                 </tr>
@@ -2494,10 +2494,10 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <th align="left" class="pad" width="15%">(1) {{account_info.address_country}}</th>
+                        <th align="left" class="pad" width="15%">(1) {{{account_info.address_country}}}</th>
                         <td width="15%">
                             <div class="">
-                                <strong>{{account_info.tax_id}}</strong>
+                                <strong>{{{account_info.tax_id}}}</strong>
                             </div>
                         </td>
                         <td width="25%">
@@ -2615,14 +2615,14 @@
                         <!--<strong>XXXXXXXX</strong>-->
                     </span></p>
                 <p class="mt-20">姓名 ： <span class="bod-bottom m-width d-in">
-                        <strong>{{account_info.name_chinese}}</strong>
+                        <strong>{{{account_info.name_chinese}}}</strong>
                     </span></p>
                 <p>身分 ： <span class="bod-bottom m-width d-in">
                         <!-- <strong>XXXXXXXX</strong> -->
                     </span>(如你不是第 1 部所述的個人，說明你的身分。如果你是
                 </p>
                 <p>日期 ： <span class="bod-bottom m-width d-in">
-                        <strong>{{account.create_date}}</strong>
+                        <strong>{{{account.create_date}}}</strong>
                     </span>以授權人身分簽署這份表格，須夾附該援權書的核證副本。)
                 </p>
                 <p class="mt-15"># 刪去不適用者</p>
@@ -2666,7 +2666,7 @@
             <div class="mt-15">U.S. Tax Withholding and Reporting FATCA Return Sheet
                 <div class="right ">
                     <span class="d-in">日期(月/日/年) : <span class="bod-bottom  d-in m-width">
-                            <strong>{{account.create_date}}</strong>
+                            <strong>{{{account.create_date}}}</strong>
                         </span></span>
                 </div>
                 <div class="clear"></div>
@@ -2677,7 +2677,7 @@
                 <美國賬戶稅務合規法案>回覆便條
                     <div class="right" style="margin-right: 124px">
                         <span class="d-in">Date (MM/DD/YY) : <span class="bod-bottom  d-in m-width">
-                                <strong>{{account.create_date}}</strong>
+                                <strong>{{{account.create_date}}}</strong>
                             </span></span>
                     </div>
             </div>
@@ -2705,7 +2705,7 @@
                     <td class="bod-left0">
                         <p>
                             <span class="bod-bottom m-width d-in" style="margin-left: 15px;">
-                                <strong> {{account_info.bank_account_number}}</strong>
+                                <strong> {{{account_info.bank_account_number}}}</strong>
                             </span>
                         </p>
                     </td>
@@ -2720,7 +2720,7 @@
                     <td class="bod-left0">
                         <p>
                             <span class="bod-bottom m-width d-in" style="margin-left: 15px;">
-                                <strong> {{account_info.name_chinese}}</strong>
+                                <strong> {{{account_info.name_chinese}}}</strong>
                             </span>
                         </p>
 
@@ -2736,7 +2736,7 @@
                     <td class="bod-left0">
                         <p>
                             <span class="bod-bottom m-width d-in" style="margin-left: 15px;">
-                                <strong> {{account_info.name_english}}</strong>
+                                <strong> {{{account_info.name_english}}}</strong>
                             </span>
                         </p>
 
@@ -2773,7 +2773,7 @@
                     <td class="bod-left0">
                         <p>
                             <span class="bod-bottom m-width d-in" style="margin-left: 15px;">
-                                <strong> {{account_info.identification_number}}</strong>
+                                <strong> {{{account_info.identification_number}}}</strong>
                             </span>
                         </p>
                     </td>
@@ -2791,14 +2791,14 @@
                 <tr>
                     <td>
                         <p>
-                            <input type="checkbox" id="W-8BEN" class={{account_info.us_residence_no_checkbox_class}} />
+                            <input type="checkbox" id="W-8BEN" class={{{account_info.us_residence_no_checkbox_class}}} />
                             <label for="W-8BEN"> I, by ticking this box, declare that I am not a U.S. citizen. (To
                                 complete Form W-8BEN)<br>
                                 &nbsp; &nbsp; &nbsp; 本人，通過在此格中加上剔號，謹此聲明本人並非美國公民。(需填寫 W-8BEN 表格) </label>
                         </p>
 
                         <p>
-                            <input type="checkbox" id="W-9" class={{account_info.us_residence_yes_checkbox_class}} />
+                            <input type="checkbox" id="W-9" class={{{account_info.us_residence_yes_checkbox_class}}} />
                             <label for="W-9">I, by ticking this box, declare that I am a U.S. citizen. (To complete Form
                                 W-9)<br>
                                 &nbsp; &nbsp; &nbsp; 本人，通過在此格中加上剔號，謹此聲明本人是美國公民。(需填寫 W-9 表格) </label>
@@ -2943,14 +2943,14 @@
                                         </span> 
                                     </p>
                                 </div>
-                                <span style="padding-left: 70px;"><strong>{{account_info.identification_country.name_en_US}}</strong></span>
+                                <span style="padding-left: 70px;"><strong>{{{account_info.identification_country.name_en_US}}}</strong></span>
                             </td>
                             <td style="border:1px solid black; border-right: none;">
                                 <div style="margin-top: -13px; margin-bottom: 20px;">
                                     <p><strong>2</strong> <span style="padding-left: 5px;">Country of citizenship</span>
                                     </p>
                                 </div>
-                                <span><strong>{{account_info.identification_country.name_zh_HK}}</strong></span>
+                                <span><strong>{{{account_info.identification_country.name_zh_HK}}}</strong></span>
                             </td>
                         </div>
                     </tr>
@@ -2963,14 +2963,14 @@
                                             Owner</strong>(see instructions)
                                         </span> </p>
                                 </div>
-                                <span><strong style="padding-left: 70px;">{{account_info.name_chinese}}</strong></span>
+                                <span><strong style="padding-left: 70px;">{{{account_info.name_chinese}}}</strong></span>
                             </td>
                             <td style="border:1px solid black; border-right: none;">
                                 <div style="margin-top: -10px; margin-bottom: 20px;">
                                     <p><strong>2</strong> <span style="padding-left: 5px;">Country of citizenship</span>
                                     </p>
                                 </div>
-                                <span><strong>{{account_info.identification_country.name_en_US}}</strong></span>
+                                <span><strong>{{{account_info.identification_country.name_en_US}}}</strong></span>
                             </td> -->
                     <!-- </div>
                     </tr> -->
@@ -2985,7 +2985,7 @@
                                                 address. </strong>
                                         </span></p>
                                 </div>
-                                {{account_info.address}}
+                                {{{account_info.address}}}
                             </td>
                         </div>
                     </tr>
@@ -3004,7 +3004,7 @@
                                     <p><span style="padding-left: 5px;">Country</span>
                                     </p>
                                 </div>
-                                <span><strong>{{account_info.identification_country.name_en_US}}</strong></span>
+                                <span><strong>{{{account_info.identification_country.name_en_US}}}</strong></span>
                             </td>
                         </div>
                     </tr>
@@ -3091,7 +3091,7 @@
                                         instructions)</span>
                                 </p>
                             </div>
-                            <span style="padding-left: 50px; "><strong>{{account.create_date}}</strong></span>
+                            <span style="padding-left: 50px; "><strong>{{{account.create_date}}}</strong></span>
                         </td>
                     </tr>
                 </table>
@@ -3192,13 +3192,13 @@
                                         <span class="bod-bottom  d-in" style="min-width: 460px;"></span>
                                         <span class="bod-bottom  d-in"
                                             style="min-width: 300px; margin-left: 50px;"><strong
-                                                style="padding-left: 50px;">{{account.create_date}}</strong></span>
+                                                style="padding-left: 50px;">{{{account.create_date}}}</strong></span>
                                         <sub style="padding-left: 30px;">Signature of beneficial owner (or individual
                                             authorized to sign for beneficial owner)</sub>
                                         <sub style="padding-left: 130px;">Date (MM-DD-YYYY)</sub>
                                     </div>
                                     <span class="bod-bottom  d-in" style="min-width: 460px;"><strong
-                                            style="padding-left: 70px;">{{account_info.name_chinese}}</strong></span>
+                                            style="padding-left: 70px;">{{{account_info.name_chinese}}}</strong></span>
                                 </div>
 
                         </div>
@@ -3252,15 +3252,15 @@
                 </span><br><br>
 
                 </span> 客戶名稱 : <span class="bod-bottom m-width d-in" style="margin-left:10px ; width: 430px">
-                    <strong>{{account_info.name_chinese}}</strong>
+                    <strong>{{{account_info.name_chinese}}}</strong>
                 </span><br><br>
 
                 </span> 戶口號碼 : <span class="bod-bottom m-width d-in" style="margin-left:10px ; width: 430px">
-                    <strong>{{account.id}}</strong>
+                    <strong>{{{account.id}}}</strong>
                 </span><br><br>
 
                 </span> 日期 <span class="bod-bottom m-width d-in" style="margin-left:30px ; width: 430px">:
-                    <strong>{{account.create_date}}</strong>
+                    <strong>{{{account.create_date}}}</strong>
                 </span>
             </div>
             <p style="padding-top:25px;">
@@ -3439,15 +3439,15 @@
             </div>
             <div style="font-size: 25px; margin-top: 50px;">
                 <label>客戶名稱: <span class="bod-bottom  d-in mt-50"
-                        style="min-width: 220px; margin-top: 50px;"><strong>{{account_info.name_chinese}}</strong></span></label>
+                        style="min-width: 220px; margin-top: 50px;"><strong>{{{account_info.name_chinese}}}</strong></span></label>
             </div>
             <div style="font-size: 25px; margin-top: 50px;">
                 <label>客戶號碼: <span class="bod-bottom  d-in mt-50"
-                        style="min-width: 220px; margin-top: 50px;"><strong>{{account.bank_account_number}}</strong></span></label>
+                        style="min-width: 220px; margin-top: 50px;"><strong>{{{account.bank_account_number}}}</strong></span></label>
             </div>
             <div style="font-size: 25px; margin-top: 50px;">
                 <label>日 期：<span class="bod-bottom  d-in mt-50"
-                        style="min-width: 220px; margin-top: 50px;"><strong>{{account.create_date}}</strong></span></label>
+                        style="min-width: 220px; margin-top: 50px;"><strong>{{{account.create_date}}}</strong></span></label>
             </div>
             <div>
                 <span class="bod-bottom  d-in mt-50" style="min-width: 1000px; margin-top: 50px;"></span>
