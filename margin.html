@@ -1467,7 +1467,10 @@
             <table class="mt-20" width="100%">
                 <tr>
                     <td width="33%" class="height70">Applicant’s Signature:<br>
-                        申請人簽署: </td>
+                        申請人簽署: 
+                        <br><br>
+                        {{{account_info.name_english}}}
+                    </td>
                     <td width="33%" class="height70"> Witness Signature*:<br>
                         見證人簽署*: </td>
                     <td width="33%" class="height70">Grand Partners Securities Limited licensed representative name
@@ -1972,12 +1975,19 @@
                                 <td width="100%">負責人批簽</td>
                             </tr>
                             <tr>
-                                <td>Client's Specimen Signature(s)</td>
+                                <td>Client's Specimen Signature(s)
+                                    
+                                </td>
                                 <td>Responsible Officer's Approval</td>
         
                             </tr>
                             <tr>
-                                <td><span class="bod-bottom  d-in mt-50" style="min-width: 220px; margin-top: 100px;"></span>
+                                <td>
+                                    <span class="d-in mt-50" style="min-width: 220px; margin-top: 50px;"></span>
+                                    <br>
+                                    {{{account_info.name_english}}}
+                                    <br>
+                                    <span class="bod-bottom  d-in mt-50" style="min-width: 220px; margin-top: 50px;"></span>
                                 </td>
                                 <td><span class="bod-bottom  d-in mt-50" style="min-width: 220px; margin-top: 100px;"></span>
                                 </td>
@@ -2200,7 +2210,9 @@
             </p>
             <hr height="5">
 
-            <div class="mt-20" style="padding-top: 30px; margin-top: 150px;">
+            <div class="mt-20" style="padding-top: 30px; margin-top: 100px;"></div>
+            {{{account_info.name_english}}}
+            <div class="mt-20" style="padding-top: 30px; margin-top: 0px;">
                 <span class="bod-top2">Client Signature (s) 客戶簽署* :</span>
                 <p>Date 日期 : <span class="bod-bottom m-width d-in">
                         <strong>{{{account.create_date}}}</strong>
@@ -2924,7 +2936,7 @@
                 <p>Signature of Customer 客戶簽署</p>
 
                 <p class="mt-50">X &nbsp; &nbsp; &nbsp; <span class="bod-bottom m-width d-in">
-                        <!--<strong>XXXXXXXX</strong> -->
+                        <strong>{{{account_info.name_chinese}}}</strong>
                     </span>
                 </p>
 
@@ -3273,10 +3285,11 @@
                                         of this form.</sub>
                             </div>
 
-                            <span">
+                            <span>
                                 <h3>Sign Here ▶</h3></span>
                                 <div style="padding-left: 120px; margin-top: -10px;">
-
+                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                                    {{{account_info.name_english}}}
                                     <div>
                                         <span class="bod-bottom  d-in" style="min-width: 460px;"></span>
                                         <span class="bod-bottom  d-in"
