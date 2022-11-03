@@ -221,6 +221,9 @@ ol li{
 [type="checkbox"].checkbox-checked + label:before{
     background: #0ad1f1;
 }
+.exclude_fill [type="checkbox"].checkbox-checked + label:before{
+    background: none
+}
 
 /* hover style just for information */
 label:hover:before {
